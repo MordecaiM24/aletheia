@@ -41,7 +41,7 @@ export const chunks = pgTable(
     documentId: text("document_id").references(() => documents.id),
     content: text("content").notNull(),
     metadata: jsonb("metadata").notNull(),
-    embedding: vector("embedding", { dimensions: 1536 }),
+    embedding: vector("embedding", { dimensions: 768 }),
   },
   (table) => [
     index("idx_embedding").using(

@@ -61,9 +61,15 @@ function UploadForm({ setOpen }: { setOpen: (open: boolean) => void }) {
     filename: z.string().min(2).max(50),
     file: z
       .instanceof(File)
-      .refine((file) => ["application/pdf", "text/plain"].includes(file.type), {
-        message: "Invalid document file type",
-      }),
+      .refine(
+        (file) =>
+          ["application/pdf", "text/plain", "application/json"].includes(
+            file.type
+          ),
+        {
+          message: "Invalid document file type",
+        }
+      ),
   });
 
   type FormSchema = z.infer<typeof formSchema>;
@@ -125,7 +131,7 @@ function UploadForm({ setOpen }: { setOpen: (open: boolean) => void }) {
               <FormControl>
                 <Input
                   type="file"
-                  accept=".pdf,.txt"
+                  accept=".pdf,.txt,.json"
                   onChange={(e) => {
                     const file = e.target.files?.[0];
                     if (file) {
@@ -135,7 +141,7 @@ function UploadForm({ setOpen }: { setOpen: (open: boolean) => void }) {
                   {...field}
                 />
               </FormControl>
-              <FormDescription>Upload a PDF or TXT file</FormDescription>
+              <FormDescription>Upload a PDF, TXT, or JSON file</FormDescription>
               <FormMessage />
             </FormItem>
           )}

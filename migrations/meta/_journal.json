@@ -22,6 +22,13 @@
       "when": 1752094936974,
       "tag": "0002_freezing_moondragon",
       "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1752097215910,
+      "tag": "0003_black_sauron",
+      "breakpoints": true
     }
   ]
 }
