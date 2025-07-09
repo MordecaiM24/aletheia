@@ -48,7 +48,7 @@ export function UploadButton() {
           </DialogTrigger>
           <DialogContent>
             <DialogTitle>Upload</DialogTitle>
-            <UploadForm open={open} setOpen={setOpen} />
+            <UploadForm setOpen={setOpen} />
           </DialogContent>
         </SidebarMenuItem>
       </SidebarMenu>
@@ -56,32 +56,48 @@ export function UploadButton() {
   );
 }
 
-function UploadForm({
-  open,
-  setOpen,
-}: {
-  open: boolean;
-  setOpen: (open: boolean) => void;
-}) {
+function UploadForm({ setOpen }: { setOpen: (open: boolean) => void }) {
   const formSchema = z.object({
-    username: z.string().min(2).max(50),
+    filename: z.string().min(2).max(50),
+    file: z
+      .instanceof(File)
+      .refine((file) => ["application/pdf", "text/plain"].includes(file.type), {
+        message: "Invalid document file type",
+      }),
   });
 
-  const form = useForm<z.infer<typeof formSchema>>({
+  type FormSchema = z.infer<typeof formSchema>;
+
+  const form = useForm<FormSchema>({
     resolver: zodResolver(formSchema),
     defaultValues: {
-      username: "",
+      filename: "",
     },
   });
 
-  async function onSubmit(values: z.infer<typeof formSchema>) {
-    const response = await fetch("/api/upload", {
-      method: "POST",
-      body: JSON.stringify(values),
-    });
-    const data = await response.json();
-    console.log(data);
-    setOpen(false);
+  async function onSubmit(values: FormSchema) {
+    try {
+      const formData = new FormData();
+      formData.append("filename", values.filename);
+      formData.append("file", values.file);
+
+      const response = await fetch("/api/upload", {
+        method: "POST",
+        body: formData,
+      });
+
+      console.log(response);
+
+      if (!response.ok) {
+        throw new Error("Upload failed");
+      }
+
+      const data = await response.json();
+      console.log(data);
+      setOpen(false);
+    } catch (error) {
+      console.error("Upload error:", error);
+    }
   }
 
   return (
@@ -89,23 +105,42 @@ function UploadForm({
       <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
         <FormField
           control={form.control}
-          name="username"
+          name="filename"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Username</FormLabel>
+              <FormLabel>Filename</FormLabel>
               <FormControl>
-                <Input placeholder="shadcn" {...field} />
+                <Input placeholder="Filename..." {...field} />
               </FormControl>
-              <FormDescription>
-                This is your public display name.
-              </FormDescription>
               <FormMessage />
             </FormItem>
           )}
         />
-        <DialogClose asChild>
-          <Button type="submit">Submit</Button>
-        </DialogClose>
+        <FormField
+          control={form.control}
+          name="file"
+          render={({ field: { onChange, value, ...field } }) => (
+            <FormItem>
+              <FormLabel>File</FormLabel>
+              <FormControl>
+                <Input
+                  type="file"
+                  accept=".pdf,.txt"
+                  onChange={(e) => {
+                    const file = e.target.files?.[0];
+                    if (file) {
+                      onChange(file);
+                    }
+                  }}
+                  {...field}
+                />
+              </FormControl>
+              <FormDescription>Upload a PDF or TXT file</FormDescription>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+        <Button type="submit">Submit</Button>
       </form>
     </Form>
   );
