@@ -3,15 +3,16 @@ import {
   SidebarGroup,
   SidebarMenu,
   SidebarMenuItem,
-} from "../ui/sidebar";
+} from "@/components/ui/sidebar";
 import Link from "next/link";
-import { SidebarMenuButton } from "../ui/sidebar";
+import { SidebarMenuButton } from "@/components/ui/sidebar";
 import { IconDashboard } from "@tabler/icons-react";
 import {
   IconFileDescription,
   IconMessageCircle,
   IconSearch,
 } from "@tabler/icons-react";
+import { UploadButton } from "./upload-button";
 
 export function NavMain() {
   const items = [
@@ -24,6 +25,7 @@ export function NavMain() {
   return (
     <SidebarContent>
       <SidebarGroup>
+        <UploadButton />
         <SidebarMenu>
           {items.map((item) => (
             <SidebarMenuItem key={item.title}>
