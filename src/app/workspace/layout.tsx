@@ -5,6 +5,7 @@ import { auth } from "@clerk/nextjs/server";
 import { redirect } from "next/navigation";
 import React from "react";
 
+// TODO: add loading states, separate admin vs member view
 export default async function Layout({
   children,
 }: {
