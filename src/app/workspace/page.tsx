@@ -85,98 +85,103 @@ export default async function Home() {
 
         <div className="p-4">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-            {/* Left Column */}
             <div className="lg:col-span-2 space-y-6">
-              {/* Recent Activity */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                {/* Recent Searches */}
-                <Card>
+                <Card className="gap-2">
                   <CardHeader>
                     <CardTitle className="flex items-center gap-2">
                       <Clock className="w-5 h-5" />
                       Recent Searches
                     </CardTitle>
                   </CardHeader>
-                  <CardContent className="space-y-3">
+                  <CardContent className="h-full">
                     {recentSearches.length > 0 ? (
-                      recentSearches.map((search, idx) => (
-                        <div
-                          key={idx}
-                          className="flex justify-between items-start p-3 rounded-lg border hover:bg-accent cursor-pointer"
-                        >
-                          <div className="flex-1">
-                            <p className="font-medium text-sm line-clamp-2">
-                              {search.query}
-                            </p>
-                            <div className="flex items-center gap-2 mt-1">
-                              <span className="text-xs text-muted-foreground">
-                                {search.timestamp}
-                              </span>
-                              <Badge variant="secondary" className="text-xs">
-                                {search.results} results
-                              </Badge>
+                      <div className="space-y-2">
+                        {recentSearches.slice(0, 3).map((search, idx) => (
+                          <div
+                            key={idx}
+                            className="flex justify-between items-start p-3 rounded-lg border hover:bg-accent cursor-pointer"
+                          >
+                            <div className="flex-1">
+                              <p className="font-medium text-sm line-clamp-2">
+                                {search.query}
+                              </p>
+                              <div className="flex items-center gap-2 mt-1">
+                                <span className="text-xs text-muted-foreground">
+                                  {search.timestamp}
+                                </span>
+                                <Badge variant="secondary" className="text-xs">
+                                  {search.results} results
+                                </Badge>
+                              </div>
                             </div>
                           </div>
-                        </div>
-                      ))
+                        ))}
+                        <Button variant="ghost" className="w-full text-sm">
+                          View All Searches
+                        </Button>
+                      </div>
                     ) : (
-                      <div className="flex justify-center items-center h-full">
-                        <p className="text-muted-foreground">
+                      <div className="flex flex-col items-center justify-between h-full">
+                        <p className="text-muted-foreground py-4">
                           Start searching to see your recent searches!
                         </p>
+                        <Button variant="default" className="w-full text-sm">
+                          New Search
+                        </Button>
                       </div>
                     )}
-                    <Button variant="ghost" className="w-full text-sm">
-                      View All Searches
-                    </Button>
                   </CardContent>
                 </Card>
 
-                {/* Recent Chats */}
-                <Card>
+                <Card className="gap-2">
                   <CardHeader>
                     <CardTitle className="flex items-center gap-2">
                       <MessageSquare className="w-5 h-5" />
                       Recent Chats
                     </CardTitle>
                   </CardHeader>
-                  <CardContent className="space-y-3">
+                  <CardContent className="h-full">
                     {recentChats.length > 0 ? (
-                      recentChats.map((chat, idx) => (
-                        <div
-                          key={idx}
-                          className="flex justify-between items-start p-3 rounded-lg border hover:bg-accent cursor-pointer"
-                        >
-                          <div className="flex-1">
-                            <p className="font-medium text-sm line-clamp-2">
-                              {chat.title}
-                            </p>
-                            <div className="flex items-center gap-2 mt-1">
-                              <span className="text-xs text-muted-foreground">
-                                {chat.timestamp}
-                              </span>
-                              <Badge variant="secondary" className="text-xs">
-                                {chat.messages} messages
-                              </Badge>
+                      <div className="space-y-2">
+                        {recentChats.slice(0, 3).map((chat, idx) => (
+                          <div
+                            key={idx}
+                            className="flex justify-between items-start p-3 rounded-lg border hover:bg-accent cursor-pointer"
+                          >
+                            <div className="flex-1">
+                              <p className="font-medium text-sm line-clamp-2">
+                                {chat.title}
+                              </p>
+                              <div className="flex items-center gap-2 mt-1">
+                                <span className="text-xs text-muted-foreground">
+                                  {chat.timestamp}
+                                </span>
+                                <Badge variant="secondary" className="text-xs">
+                                  {chat.messages} messages
+                                </Badge>
+                              </div>
                             </div>
                           </div>
-                        </div>
-                      ))
+                        ))}
+                        <Button variant="ghost" className="w-full text-sm">
+                          View All Chats
+                        </Button>
+                      </div>
                     ) : (
-                      <div className="flex justify-center items-center h-full">
-                        <p className="text-muted-foreground">
+                      <div className="flex flex-col items-center justify-between h-full">
+                        <p className="text-muted-foreground py-4">
                           Start chatting to see your recent chats!
                         </p>
+                        <Button variant="default" className="w-full text-sm">
+                          New Chat
+                        </Button>
                       </div>
                     )}
-                    <Button variant="ghost" className="w-full text-sm">
-                      View All Chats
-                    </Button>
                   </CardContent>
                 </Card>
               </div>
 
-              {/* Recent Documents */}
               <Card>
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2">
@@ -218,9 +223,7 @@ export default async function Home() {
               </Card>
             </div>
 
-            {/* Right Column */}
             <div className="space-y-6">
-              {/* Pinned Items */}
               <Card>
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2">
@@ -250,7 +253,6 @@ export default async function Home() {
                 </CardContent>
               </Card>
 
-              {/* Notifications */}
               <Card>
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2">
@@ -260,23 +262,28 @@ export default async function Home() {
                 </CardHeader>
                 <CardContent className="space-y-3">
                   {notifications.length > 0 ? (
-                    notifications.map((notif, idx) => (
-                      <div
-                        key={idx}
-                        className="space-y-1 p-3 rounded-lg border"
-                      >
-                        <div className="flex items-start justify-between">
-                          <p className="font-medium text-sm">{notif.title}</p>
-                          <AlertCircle className="w-4 h-4 text-orange-500 mt-0.5" />
+                    <div className="space-y-2">
+                      {notifications.map((notif, idx) => (
+                        <div
+                          key={idx}
+                          className="space-y-1 p-3 rounded-lg border"
+                        >
+                          <div className="flex items-start justify-between">
+                            <p className="font-medium text-sm">{notif.title}</p>
+                            <AlertCircle className="w-4 h-4 text-orange-500 mt-0.5" />
+                          </div>
+                          <p className="text-xs text-muted-foreground line-clamp-2">
+                            {notif.description}
+                          </p>
+                          <span className="text-xs text-muted-foreground">
+                            {notif.time}
+                          </span>
                         </div>
-                        <p className="text-xs text-muted-foreground line-clamp-2">
-                          {notif.description}
-                        </p>
-                        <span className="text-xs text-muted-foreground">
-                          {notif.time}
-                        </span>
-                      </div>
-                    ))
+                      ))}
+                      <Button variant="ghost" className="w-full text-sm">
+                        View All Updates
+                      </Button>
+                    </div>
                   ) : (
                     <div className="flex justify-center items-center h-full">
                       <p className="text-muted-foreground">
@@ -284,13 +291,9 @@ export default async function Home() {
                       </p>
                     </div>
                   )}
-                  <Button variant="ghost" className="w-full text-sm">
-                    View All Updates
-                  </Button>
                 </CardContent>
               </Card>
 
-              {/* Usage Stats */}
               <Card>
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2">
