@@ -32,12 +32,16 @@ export default async function Layout({
   };
 
   return (
-    <SidebarProvider>
-      <AppSidebar user={user} />
-      <main>
-        <SidebarTrigger />
-        {children}
-      </main>
+    <SidebarProvider
+      style={
+        {
+          "--sidebar-width": "calc(var(--spacing) * 72)",
+          "--header-height": "calc(var(--spacing) * 12)",
+        } as React.CSSProperties
+      }
+    >
+      <AppSidebar user={user} variant="inset" />
+      {children}
     </SidebarProvider>
   );
 }
