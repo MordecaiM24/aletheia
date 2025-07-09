@@ -32,18 +32,6 @@ export const documents = pgTable("documents", {
   metadata: jsonb("metadata").notNull(),
 });
 
-export const users = pgTable("users", {
-  id: text("id")
-    .primaryKey()
-    .default(sql`gen_random_uuid()`),
-  orgId: text("org_id").notNull(),
-  email: text("email").notNull().unique(),
-  name: text("name").notNull(),
-  role: text("role").notNull(),
-  createdAt: timestamp("created_at").defaultNow().notNull(),
-  updatedAt: timestamp("updated_at").defaultNow().notNull(),
-});
-
 export const chunks = pgTable(
   "chunks",
   {
