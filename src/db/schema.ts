@@ -8,6 +8,8 @@ import {
   jsonb,
   vector,
   index,
+  pgEnum,
+  integer,
 } from "drizzle-orm/pg-core";
 
 config({ path: ".env.local" });
@@ -15,32 +17,31 @@ config({ path: ".env.local" });
 export const db = drizzle(process.env.DATABASE_URL!);
 
 export const documents = pgTable("documents", {
-  id: text("id")
+  id: text()
     .primaryKey()
     .default(sql`gen_random_uuid()`),
   orgId: text("org_id").notNull(),
   userId: text("user_id").notNull(),
   createdAt: timestamp("created_at").defaultNow().notNull(),
   updatedAt: timestamp("updated_at").defaultNow().notNull(),
-  title: text("title").notNull(),
+  title: text().notNull(),
   sourceUrl: text("source_url").notNull(),
   filePath: text("file_path").notNull(),
   docType: text("doc_type").notNull(),
-  jurisdiction: text("jurisdiction").notNull(),
   effectiveDate: timestamp("effective_date").notNull(),
   lastUpdated: timestamp("last_updated").defaultNow().notNull(),
-  metadata: jsonb("metadata").notNull(),
+  metadata: jsonb().notNull(),
 });
 
 export const chunks = pgTable(
   "chunks",
   {
-    id: text("id")
+    id: text()
       .primaryKey()
       .default(sql`gen_random_uuid()`),
     documentId: text("document_id").references(() => documents.id),
-    content: text("content").notNull(),
-    metadata: jsonb("metadata").notNull(),
+    content: text().notNull(),
+    metadata: jsonb().notNull(),
     embedding: vector("embedding", { dimensions: 768 }),
   },
   (table) => [
@@ -50,3 +51,39 @@ export const chunks = pgTable(
     ),
   ]
 );
+
+export const statusEnum = pgEnum("status", [
+  "uploaded",
+  "converted",
+  "extracted",
+  "chunked",
+  "embedded",
+  "indexed",
+  "completed",
+  "failed",
+]);
+
+export const processing = pgTable("processing", {
+  id: text("id")
+    .primaryKey()
+    .default(sql`gen_random_uuid()`),
+  orgId: text("org_id").notNull(),
+  userId: text("user_id").notNull(),
+  status: statusEnum().notNull().default("uploaded"),
+  retries: integer().notNull().default(0),
+
+  // document fields to incrementally add
+  title: text(),
+  sourceUrl: text("source_url"),
+  filePath: text("file_path"),
+  docType: text("doc_type"),
+  effectiveDate: timestamp("effective_date"),
+  lastUpdated: timestamp("last_updated"),
+  content: text(), // the actual content
+  documentMetadata: jsonb("document_metadata"), // separate from processing metadata
+
+  // processing metadata
+  metadata: jsonb("metadata"), // for processing-specific stuff
+  createdAt: timestamp("created_at").defaultNow().notNull(),
+  updatedAt: timestamp("updated_at").defaultNow().notNull(),
+});

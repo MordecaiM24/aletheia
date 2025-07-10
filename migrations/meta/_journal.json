@@ -29,6 +29,20 @@
       "when": 1752097215910,
       "tag": "0003_black_sauron",
       "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1752109947910,
+      "tag": "0004_fixed_hercules",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "7",
+      "when": 1752112973372,
+      "tag": "0005_goofy_dagger",
+      "breakpoints": true
     }
   ]
 }
