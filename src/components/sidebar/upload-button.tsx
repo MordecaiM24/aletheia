@@ -58,7 +58,7 @@ export function UploadButton() {
   );
 }
 
-function UploadTabs({ setOpen }: { setOpen: (open: boolean) => void }) {
+export function UploadTabs({ setOpen }: { setOpen: (open: boolean) => void }) {
   return (
     <Tabs defaultValue="file" className="w-full">
       <TabsList className="w-full">

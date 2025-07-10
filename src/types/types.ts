@@ -1,3 +1,9 @@
+import { relations, type InferSelectModel } from "drizzle-orm";
+import { chunks, documents } from "@/db/schema";
+
+export type Doc = InferSelectModel<typeof documents>;
+export type Chunk = InferSelectModel<typeof chunks>;
+
 export type SidebarUser = {
   username: string;
   email: string;
