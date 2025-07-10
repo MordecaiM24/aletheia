@@ -1,5 +1,5 @@
 import { config } from "dotenv";
-import { sql } from "drizzle-orm";
+import { SQL, sql } from "drizzle-orm";
 import { drizzle } from "drizzle-orm/neon-http";
 import {
   text,
@@ -10,6 +10,7 @@ import {
   index,
   pgEnum,
   integer,
+  customType,
 } from "drizzle-orm/pg-core";
 
 config({ path: ".env.local" });
@@ -33,6 +34,12 @@ export const documents = pgTable("documents", {
   metadata: jsonb().notNull(),
 });
 
+export const tsvector = customType<{ data: string }>({
+  dataType() {
+    return "tsvector";
+  },
+});
+
 export const chunks = pgTable(
   "chunks",
   {
@@ -43,12 +50,18 @@ export const chunks = pgTable(
     content: text().notNull(),
     metadata: jsonb().notNull(),
     embedding: vector("embedding", { dimensions: 768 }),
+    searchVector: tsvector("search_vector")
+      .notNull()
+      .generatedAlwaysAs(
+        (): SQL => sql`to_tsvector('english', ${chunks.content})`
+      ),
   },
   (table) => [
     index("idx_embedding").using(
       "hnsw",
       table.embedding.op("vector_cosine_ops")
     ),
+    index("idx_search_vector").using("gin", table.searchVector),
   ]
 );
 

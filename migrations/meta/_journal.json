@@ -43,6 +43,13 @@
       "when": 1752112973372,
       "tag": "0005_goofy_dagger",
       "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "7",
+      "when": 1752115614507,
+      "tag": "0006_giant_giant_girl",
+      "breakpoints": true
     }
   ]
 }
