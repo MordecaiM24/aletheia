@@ -23,12 +23,14 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from "../ui/form";
+} from "@/components/ui/form";
 import { useForm } from "react-hook-form";
-import { Input } from "../ui/input";
+import { Input } from "@/components/ui/input";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useState } from "react";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { toast } from "sonner";
 
 export function UploadButton() {
   const [open, setOpen] = useState(false);
@@ -48,7 +50,7 @@ export function UploadButton() {
           </DialogTrigger>
           <DialogContent>
             <DialogTitle>Upload</DialogTitle>
-            <UploadForm setOpen={setOpen} />
+            <UploadTabs setOpen={setOpen} />
           </DialogContent>
         </SidebarMenuItem>
       </SidebarMenu>
@@ -56,9 +58,30 @@ export function UploadButton() {
   );
 }
 
-function UploadForm({ setOpen }: { setOpen: (open: boolean) => void }) {
+function UploadTabs({ setOpen }: { setOpen: (open: boolean) => void }) {
+  return (
+    <Tabs defaultValue="file" className="w-full">
+      <TabsList className="w-full">
+        <TabsTrigger value="file">File</TabsTrigger>
+        <TabsTrigger value="folder">Folder</TabsTrigger>
+        <TabsTrigger value="url">URL</TabsTrigger>
+      </TabsList>
+
+      <TabsContent value="file">
+        <FileUploadForm setOpen={setOpen} />
+      </TabsContent>
+      <TabsContent value="folder">
+        <FolderUploadForm setOpen={setOpen} />
+      </TabsContent>
+      <TabsContent value="url">
+        <URLUploadForm setOpen={setOpen} />
+      </TabsContent>
+    </Tabs>
+  );
+}
+
+function FileUploadForm({ setOpen }: { setOpen: (open: boolean) => void }) {
   const formSchema = z.object({
-    filename: z.string().min(2).max(50),
     file: z
       .instanceof(File)
       .refine(
@@ -76,52 +99,32 @@ function UploadForm({ setOpen }: { setOpen: (open: boolean) => void }) {
 
   const form = useForm<FormSchema>({
     resolver: zodResolver(formSchema),
-    defaultValues: {
-      filename: "",
-    },
   });
 
   async function onSubmit(values: FormSchema) {
     try {
       const formData = new FormData();
-      formData.append("filename", values.filename);
       formData.append("file", values.file);
 
-      const response = await fetch("/api/upload", {
+      const response = await fetch("/api/upload/file", {
         method: "POST",
         body: formData,
       });
-
-      console.log(response);
 
       if (!response.ok) {
         throw new Error("Upload failed");
       }
 
-      const data = await response.json();
-      console.log(data);
       setOpen(false);
+      toast.success("Upload successful");
     } catch (error) {
-      console.error("Upload error:", error);
+      toast.error("Upload failed");
     }
   }
 
   return (
     <Form {...form}>
       <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
-        <FormField
-          control={form.control}
-          name="filename"
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel>Filename</FormLabel>
-              <FormControl>
-                <Input placeholder="Filename..." {...field} />
-              </FormControl>
-              <FormMessage />
-            </FormItem>
-          )}
-        />
         <FormField
           control={form.control}
           name="file"
@@ -146,7 +149,155 @@ function UploadForm({ setOpen }: { setOpen: (open: boolean) => void }) {
             </FormItem>
           )}
         />
-        <Button type="submit">Submit</Button>
+        <Button type="submit" disabled={form.formState.isSubmitting}>
+          {form.formState.isSubmitting ? "Uploading..." : "Submit"}
+        </Button>
+      </form>
+    </Form>
+  );
+}
+
+function FolderUploadForm({ setOpen }: { setOpen: (open: boolean) => void }) {
+  const formSchema = z.object({
+    files: z
+      .array(z.instanceof(File))
+      .min(1, "select at least one file")
+      .refine(
+        (files) =>
+          files.every((file) =>
+            ["application/pdf", "text/plain", "application/json"].includes(
+              file.type
+            )
+          ),
+        {
+          message: "Only PDF, TXT, and JSON files allowed",
+        }
+      ),
+  });
+
+  type FormSchema = z.infer<typeof formSchema>;
+
+  const form = useForm<FormSchema>({
+    resolver: zodResolver(formSchema),
+  });
+
+  async function onSubmit(values: FormSchema) {
+    try {
+      const formData = new FormData();
+      values.files.forEach((file) => {
+        formData.append("files", file);
+      });
+
+      const response = await fetch("/api/upload/folder", {
+        method: "POST",
+        body: formData,
+      });
+
+      if (!response.ok) {
+        throw new Error("folder upload failed");
+      }
+
+      setOpen(false);
+      toast.success("Upload successful");
+    } catch (error) {
+      toast.error("Upload failed");
+    }
+  }
+
+  return (
+    <Form {...form}>
+      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
+        <FormField
+          control={form.control}
+          name="files"
+          render={({ field: { onChange, value, ...field } }) => (
+            <FormItem>
+              <FormLabel>Folder</FormLabel>
+              <FormControl>
+                <Input
+                  type="file"
+                  multiple
+                  accept=".pdf,.txt,.json"
+                  onChange={(e) => {
+                    const files = Array.from(e.target.files || []);
+                    if (files.length > 0) {
+                      onChange(files);
+                    }
+                  }}
+                  {...field}
+                />
+              </FormControl>
+              <FormDescription>
+                Upload a folder of documents (PDF, TXT, JSON)
+              </FormDescription>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+        <Button type="submit" disabled={form.formState.isSubmitting}>
+          {form.formState.isSubmitting ? "Uploading..." : "Submit"}
+        </Button>
+      </form>
+    </Form>
+  );
+}
+
+function URLUploadForm({ setOpen }: { setOpen: (open: boolean) => void }) {
+  const formSchema = z.object({
+    url: z.string().url("Enter a valid URL").min(1, "URL required"),
+  });
+
+  type FormSchema = z.infer<typeof formSchema>;
+
+  const form = useForm<FormSchema>({
+    resolver: zodResolver(formSchema),
+  });
+
+  async function onSubmit(values: FormSchema) {
+    try {
+      const response = await fetch("/api/upload/drive", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ url: values.url }),
+      });
+
+      if (!response.ok) {
+        throw new Error("link upload failed");
+      }
+
+      setOpen(false);
+      toast.success("Upload successful");
+    } catch (error) {
+      toast.error("Upload failed");
+    }
+  }
+
+  return (
+    <Form {...form}>
+      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
+        <FormField
+          control={form.control}
+          name="url"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel>URL (Google Drive)</FormLabel>
+              <FormControl>
+                <Input
+                  type="url"
+                  placeholder="https://drive.google.com/file/"
+                  {...field}
+                />
+              </FormControl>
+              <FormDescription>Upload a Google Drive link</FormDescription>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+        <Button type="submit" disabled={form.formState.isSubmitting}>
+          {form.formState.isSubmitting ? "Uploading..." : "Submit"}
+        </Button>
       </form>
     </Form>
   );
