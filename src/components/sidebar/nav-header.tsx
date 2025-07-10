@@ -1,7 +1,11 @@
+import {
+  SidebarHeader,
+  SidebarMenu,
+  SidebarMenuButton,
+} from "@/components/ui/sidebar";
+import { SidebarUser } from "@/types/types";
 import { IconInnerShadowTop } from "@tabler/icons-react";
 import Link from "next/link";
-import { SidebarHeader, SidebarMenu, SidebarMenuButton } from "../ui/sidebar";
-import { SidebarUser } from "@/types/types";
 
 export function NavHeader({ user }: { user: SidebarUser }) {
   return (

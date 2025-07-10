@@ -1,31 +1,30 @@
 import { SiteHeader } from "@/components/site-header";
-import { SidebarInset } from "@/components/ui/sidebar";
-import { auth } from "@clerk/nextjs/server";
-import { redirect } from "next/navigation";
-import Dashboard from "@/components/temp/dashboard";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { SidebarInset } from "@/components/ui/sidebar";
 import {
+  Notification,
+  PinnedItem,
+  RecentChat,
+  RecentDoc,
+  RecentSearch,
+  UsageStat,
+} from "@/types/types";
+import { auth } from "@clerk/nextjs/server";
+import {
+  AlertCircle,
+  Bell,
+  BookOpen,
+  Clock,
   FileText,
   MessageSquare,
   Search,
-  Clock,
-  BookOpen,
   Star,
-  Bell,
   TrendingUp,
-  AlertCircle,
 } from "lucide-react";
-import { Input } from "@/components/ui/input";
-import { Badge } from "@/components/ui/badge";
-import {
-  RecentSearch,
-  RecentChat,
-  RecentDoc,
-  PinnedItem,
-  Notification,
-  UsageStat,
-} from "@/types/types";
+import { redirect } from "next/navigation";
 
 export default async function Home() {
   const recentSearches: RecentSearch[] = [];
@@ -35,7 +34,7 @@ export default async function Home() {
   const notifications: Notification[] = [];
   const usageStats: UsageStat[] = [];
 
-  const { userId, orgId, sessionClaims } = await auth();
+  const { userId, orgId } = await auth();
   if (!userId && !orgId) {
     redirect("/sign-in");
   }
@@ -43,8 +42,6 @@ export default async function Home() {
   if (userId && !orgId) {
     redirect("/org");
   }
-
-  const username = sessionClaims?.username as string;
 
   return (
     <SidebarInset>

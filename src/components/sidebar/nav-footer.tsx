@@ -1,25 +1,23 @@
+import CustomSignOutButton from "@/components/auth/CustomSignOutButton";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuLabel,
   DropdownMenuTrigger,
-} from "../ui/dropdown-menu";
-import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
-import { IconDotsVertical } from "@tabler/icons-react";
-import Link from "next/link";
-import { SidebarUser } from "@/types/types";
-import { IconSettings } from "@tabler/icons-react";
-import { IconHelp } from "@tabler/icons-react";
+} from "@/components/ui/dropdown-menu";
 import {
   SidebarFooter,
-  SidebarGroupContent,
   SidebarGroup,
+  SidebarGroupContent,
   SidebarMenu,
-  SidebarMenuItem,
   SidebarMenuButton,
-} from "../ui/sidebar";
-import CustomSignOutButton from "../auth/CustomSignOutButton";
+  SidebarMenuItem,
+} from "@/components/ui/sidebar";
+import { SidebarUser } from "@/types/types";
+import { IconDotsVertical, IconHelp, IconSettings } from "@tabler/icons-react";
+import Link from "next/link";
 
 export function NavFooter({ user }: { user: SidebarUser }) {
   const items = [

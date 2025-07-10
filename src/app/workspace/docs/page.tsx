@@ -1,8 +1,8 @@
 import { SiteHeader } from "@/components/site-header";
+import { columns } from "@/components/table/columns";
+import { DataTable } from "@/components/table/data-table";
 import { SidebarInset } from "@/components/ui/sidebar";
 import { Doc } from "@/types/types";
-import { DataTable } from "@/components/table/data-table";
-import { columns } from "@/components/table/columns";
 
 async function getData(): Promise<Doc[]> {
   return [

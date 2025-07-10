@@ -1,9 +1,9 @@
-import { documents, chunks, processing } from "@/db/schema";
+import { chunks, documents, processing } from "@/db/schema";
 import { google } from "@ai-sdk/google";
-import { drizzle } from "drizzle-orm/neon-http";
 import { auth } from "@clerk/nextjs/server";
 import { embed } from "ai";
 import { eq, sql } from "drizzle-orm";
+import { drizzle } from "drizzle-orm/neon-http";
 
 export async function POST(request: Request) {
   const db = drizzle(process.env.DATABASE_URL!);

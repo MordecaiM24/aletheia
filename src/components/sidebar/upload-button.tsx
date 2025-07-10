@@ -1,20 +1,11 @@
 "use client";
 import { Button } from "@/components/ui/button";
 import {
-  DialogFooter,
-  DialogHeader,
   Dialog,
   DialogContent,
   DialogTitle,
   DialogTrigger,
-  DialogClose,
 } from "@/components/ui/dialog";
-import {
-  SidebarMenu,
-  SidebarMenuItem,
-  SidebarMenuButton,
-} from "@/components/ui/sidebar";
-import { IconCirclePlusFilled } from "@tabler/icons-react";
 import {
   Form,
   FormControl,
@@ -24,13 +15,19 @@ import {
   FormLabel,
   FormMessage,
 } from "@/components/ui/form";
-import { useForm } from "react-hook-form";
 import { Input } from "@/components/ui/input";
-import { z } from "zod";
-import { zodResolver } from "@hookform/resolvers/zod";
-import { useState } from "react";
+import {
+  SidebarMenu,
+  SidebarMenuButton,
+  SidebarMenuItem,
+} from "@/components/ui/sidebar";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { IconCirclePlusFilled } from "@tabler/icons-react";
+import { useState } from "react";
+import { useForm } from "react-hook-form";
 import { toast } from "sonner";
+import { z } from "zod";
 
 export function UploadButton() {
   const [open, setOpen] = useState(false);

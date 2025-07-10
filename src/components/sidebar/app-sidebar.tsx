@@ -1,8 +1,8 @@
 import { Sidebar } from "@/components/ui/sidebar";
 import { SidebarUser } from "@/types/types";
+import { NavFooter } from "./nav-footer";
 import { NavHeader } from "./nav-header";
 import { NavMain } from "./nav-main";
-import { NavFooter } from "./nav-footer";
 
 export function AppSidebar({
   user,

@@ -2,16 +2,16 @@ import {
   SidebarContent,
   SidebarGroup,
   SidebarMenu,
+  SidebarMenuButton,
   SidebarMenuItem,
 } from "@/components/ui/sidebar";
-import Link from "next/link";
-import { SidebarMenuButton } from "@/components/ui/sidebar";
-import { IconDashboard } from "@tabler/icons-react";
 import {
+  IconDashboard,
   IconFileDescription,
   IconMessageCircle,
   IconSearch,
 } from "@tabler/icons-react";
+import Link from "next/link";
 import { UploadButton } from "./upload-button";
 
 export function NavMain() {

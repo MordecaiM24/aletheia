@@ -2,15 +2,15 @@ import { config } from "dotenv";
 import { SQL, sql } from "drizzle-orm";
 import { drizzle } from "drizzle-orm/neon-http";
 import {
-  text,
-  pgTable,
-  timestamp,
-  jsonb,
-  vector,
-  index,
-  pgEnum,
-  integer,
   customType,
+  index,
+  integer,
+  jsonb,
+  pgEnum,
+  pgTable,
+  text,
+  timestamp,
+  vector,
 } from "drizzle-orm/pg-core";
 
 config({ path: ".env.local" });

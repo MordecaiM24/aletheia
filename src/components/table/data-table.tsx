@@ -13,6 +13,15 @@ import {
   VisibilityState,
 } from "@tanstack/react-table";
 
+import { Button } from "@/components/ui/button";
+import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
+import {
+  DropdownMenu,
+  DropdownMenuCheckboxItem,
+  DropdownMenuContent,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+import { Input } from "@/components/ui/input";
 import {
   Table,
   TableBody,
@@ -21,28 +30,9 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-import { Button } from "@/components/ui/button";
-import React, { useState } from "react";
-import { Input } from "@/components/ui/input";
-import {
-  DropdownMenu,
-  DropdownMenuCheckboxItem,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
-import { DataTablePagination } from "./data-table-pagination";
-import { SidebarMenuButton } from "../ui/sidebar";
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogTitle,
-  DialogTrigger,
-} from "../ui/dialog";
-import { IconCirclePlusFilled, IconUpload } from "@tabler/icons-react";
-import { UploadTabs } from "../sidebar/upload-button";
 import { Doc } from "@/types/types";
+import { useState } from "react";
+import { DataTablePagination } from "./data-table-pagination";
 
 interface DataTableProps<TData, TValue> {
   columns: ColumnDef<TData, TValue>[];
@@ -53,7 +43,6 @@ export function DataTable<TData, TValue>({
   columns,
   data,
 }: DataTableProps<TData, TValue>) {
-  const [open, setOpen] = useState(false);
   const [selectedRow, setSelectedRow] = useState<Doc | null>(null);
 
   const [sorting, setSorting] = useState<SortingState>([]);
@@ -133,19 +122,6 @@ export function DataTable<TData, TValue>({
                 <p>Source URL: {selectedRow?.sourceUrl ?? "No source URL"}</p>
               </div>
             </DialogContent>
-          </div>
-
-          <div>
-            {/* <DialogTrigger asChild>
-              <Button className="bg-primary text-primary-foreground hover:bg-primary/90 hover:text-primary-foreground active:bg-primary/90 active:text-primary-foreground min-w-8 duration-200 ease-linear">
-                <IconUpload />
-                <span>Upload</span>
-              </Button>
-            </DialogTrigger>
-            <DialogContent>
-              <DialogTitle>Upload</DialogTitle>
-              <UploadTabs setOpen={setOpen} />
-            </DialogContent> */}
           </div>
         </div>
         <div className="rounded-md border">
