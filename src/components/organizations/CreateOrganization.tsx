@@ -16,7 +16,7 @@ export function CustomCreateOrganizationForm() {
     setSubmitting(true);
 
     const submittedData = Object.fromEntries(
-      new FormData(e.currentTarget).entries()
+      new FormData(e.currentTarget).entries(),
     ) as { organizationName: string | undefined; asActive?: "on" };
 
     if (!submittedData.organizationName) {

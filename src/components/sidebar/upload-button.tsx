@@ -84,11 +84,11 @@ function FileUploadForm({ setOpen }: { setOpen: (open: boolean) => void }) {
       .refine(
         (file) =>
           ["application/pdf", "text/plain", "application/json"].includes(
-            file.type
+            file.type,
           ),
         {
           message: "Invalid document file type",
-        }
+        },
       ),
   });
 
@@ -163,12 +163,12 @@ function FolderUploadForm({ setOpen }: { setOpen: (open: boolean) => void }) {
         (files) =>
           files.every((file) =>
             ["application/pdf", "text/plain", "application/json"].includes(
-              file.type
-            )
+              file.type,
+            ),
           ),
         {
           message: "Only PDF, TXT, and JSON files allowed",
-        }
+        },
       ),
   });
 

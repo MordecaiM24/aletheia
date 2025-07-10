@@ -79,7 +79,7 @@ export async function POST(request: Request) {
           cookie: request.headers.get("cookie") || "",
         },
         body: JSON.stringify({ processingId }),
-      }
+      },
     );
 
     if (!processResponse.ok) {

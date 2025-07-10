@@ -76,7 +76,7 @@ export function DataTable<TData, TValue>({
       }}
     >
       <div>
-        <div className="flex items-center py-4 w-full justify-between">
+        <div className="flex w-full items-center justify-between py-4">
           <div className="flex items-center gap-2">
             <Input
               placeholder="Filter titles..."
@@ -137,7 +137,7 @@ export function DataTable<TData, TValue>({
                             ? null
                             : flexRender(
                                 header.column.columnDef.header,
-                                header.getContext()
+                                header.getContext(),
                               )}
                         </TableHead>
                       );
@@ -160,7 +160,7 @@ export function DataTable<TData, TValue>({
                       <TableCell key={cell.id}>
                         {flexRender(
                           cell.column.columnDef.cell,
-                          cell.getContext()
+                          cell.getContext(),
                         )}
                       </TableCell>
                     ))}

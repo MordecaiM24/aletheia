@@ -53,16 +53,16 @@ export const chunks = pgTable(
     searchVector: tsvector("search_vector")
       .notNull()
       .generatedAlwaysAs(
-        (): SQL => sql`to_tsvector('english', ${chunks.content})`
+        (): SQL => sql`to_tsvector('english', ${chunks.content})`,
       ),
   },
   (table) => [
     index("idx_embedding").using(
       "hnsw",
-      table.embedding.op("vector_cosine_ops")
+      table.embedding.op("vector_cosine_ops"),
     ),
     index("idx_search_vector").using("gin", table.searchVector),
-  ]
+  ],
 );
 
 export const statusEnum = pgEnum("status", [

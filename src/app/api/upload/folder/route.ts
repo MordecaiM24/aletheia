@@ -46,7 +46,7 @@ export async function POST(request: Request) {
           headers: {
             cookie: request.headers.get("cookie") || "",
           },
-        }
+        },
       );
 
       if (response.ok) {

@@ -170,7 +170,7 @@ export default async function Docs() {
     <SidebarInset>
       <SiteHeader title="Documents" />
 
-      <div className="container mx-auto py-10 p-4">
+      <div className="container mx-auto p-4 py-10">
         <DataTable columns={columns} data={data} />
       </div>
     </SidebarInset>

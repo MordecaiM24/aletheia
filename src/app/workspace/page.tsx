@@ -50,7 +50,7 @@ export default async function Home() {
         <Card className="border-none shadow-none">
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
-              <Search className="w-5 h-5" />
+              <Search className="h-5 w-5" />
               Quick Actions
             </CardTitle>
           </CardHeader>
@@ -63,17 +63,17 @@ export default async function Home() {
                 />
               </div>
               <Button>
-                <Search className="w-4 h-4 mr-2" />
+                <Search className="mr-2 h-4 w-4" />
                 Search
               </Button>
             </div>
             <div className="flex gap-2">
               <Button variant="outline" size="sm">
-                <MessageSquare className="w-4 h-4 mr-2" />
+                <MessageSquare className="mr-2 h-4 w-4" />
                 New Chat
               </Button>
               <Button variant="outline" size="sm">
-                <FileText className="w-4 h-4 mr-2" />
+                <FileText className="mr-2 h-4 w-4" />
                 Browse Documents
               </Button>
             </div>
@@ -81,13 +81,13 @@ export default async function Home() {
         </Card>
 
         <div className="p-4">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-            <div className="lg:col-span-2 space-y-6">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
+            <div className="space-y-6 lg:col-span-2">
+              <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
                 <Card className="gap-2">
                   <CardHeader>
                     <CardTitle className="flex items-center gap-2">
-                      <Clock className="w-5 h-5" />
+                      <Clock className="h-5 w-5" />
                       Recent Searches
                     </CardTitle>
                   </CardHeader>
@@ -97,14 +97,14 @@ export default async function Home() {
                         {recentSearches.slice(0, 3).map((search, idx) => (
                           <div
                             key={idx}
-                            className="flex justify-between items-start p-3 rounded-lg border hover:bg-accent cursor-pointer"
+                            className="hover:bg-accent flex cursor-pointer items-start justify-between rounded-lg border p-3"
                           >
                             <div className="flex-1">
-                              <p className="font-medium text-sm line-clamp-2">
+                              <p className="line-clamp-2 text-sm font-medium">
                                 {search.query}
                               </p>
-                              <div className="flex items-center gap-2 mt-1">
-                                <span className="text-xs text-muted-foreground">
+                              <div className="mt-1 flex items-center gap-2">
+                                <span className="text-muted-foreground text-xs">
                                   {search.timestamp}
                                 </span>
                                 <Badge variant="secondary" className="text-xs">
@@ -119,7 +119,7 @@ export default async function Home() {
                         </Button>
                       </div>
                     ) : (
-                      <div className="flex flex-col items-center justify-between h-full">
+                      <div className="flex h-full flex-col items-center justify-between">
                         <p className="text-muted-foreground py-4">
                           Start searching to see your recent searches!
                         </p>
@@ -134,7 +134,7 @@ export default async function Home() {
                 <Card className="gap-2">
                   <CardHeader>
                     <CardTitle className="flex items-center gap-2">
-                      <MessageSquare className="w-5 h-5" />
+                      <MessageSquare className="h-5 w-5" />
                       Recent Chats
                     </CardTitle>
                   </CardHeader>
@@ -144,14 +144,14 @@ export default async function Home() {
                         {recentChats.slice(0, 3).map((chat, idx) => (
                           <div
                             key={idx}
-                            className="flex justify-between items-start p-3 rounded-lg border hover:bg-accent cursor-pointer"
+                            className="hover:bg-accent flex cursor-pointer items-start justify-between rounded-lg border p-3"
                           >
                             <div className="flex-1">
-                              <p className="font-medium text-sm line-clamp-2">
+                              <p className="line-clamp-2 text-sm font-medium">
                                 {chat.title}
                               </p>
-                              <div className="flex items-center gap-2 mt-1">
-                                <span className="text-xs text-muted-foreground">
+                              <div className="mt-1 flex items-center gap-2">
+                                <span className="text-muted-foreground text-xs">
                                   {chat.timestamp}
                                 </span>
                                 <Badge variant="secondary" className="text-xs">
@@ -166,7 +166,7 @@ export default async function Home() {
                         </Button>
                       </div>
                     ) : (
-                      <div className="flex flex-col items-center justify-between h-full">
+                      <div className="flex h-full flex-col items-center justify-between">
                         <p className="text-muted-foreground py-4">
                           Start chatting to see your recent chats!
                         </p>
@@ -182,7 +182,7 @@ export default async function Home() {
               <Card>
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2">
-                    <BookOpen className="w-5 h-5" />
+                    <BookOpen className="h-5 w-5" />
                     Recently Viewed Documents
                   </CardTitle>
                 </CardHeader>
@@ -192,24 +192,24 @@ export default async function Home() {
                       recentDocs.map((doc, idx) => (
                         <div
                           key={idx}
-                          className="flex justify-between items-center p-3 rounded-lg border hover:bg-accent cursor-pointer"
+                          className="hover:bg-accent flex cursor-pointer items-center justify-between rounded-lg border p-3"
                         >
                           <div className="flex items-center gap-3">
-                            <FileText className="w-5 h-5 text-muted-foreground" />
+                            <FileText className="text-muted-foreground h-5 w-5" />
                             <div>
-                              <p className="font-medium text-sm">{doc.title}</p>
-                              <p className="text-xs text-muted-foreground">
+                              <p className="text-sm font-medium">{doc.title}</p>
+                              <p className="text-muted-foreground text-xs">
                                 {doc.type}
                               </p>
                             </div>
                           </div>
-                          <span className="text-xs text-muted-foreground">
+                          <span className="text-muted-foreground text-xs">
                             {doc.accessed}
                           </span>
                         </div>
                       ))
                     ) : (
-                      <div className="flex justify-center items-center h-full">
+                      <div className="flex h-full items-center justify-center">
                         <p className="text-muted-foreground">
                           Start browsing to see your recent documents!
                         </p>
@@ -224,7 +224,7 @@ export default async function Home() {
               <Card>
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2">
-                    <Star className="w-5 h-5" />
+                    <Star className="h-5 w-5" />
                     Pinned Items
                   </CardTitle>
                 </CardHeader>
@@ -233,7 +233,7 @@ export default async function Home() {
                     pinnedItems.map((item, idx) => (
                       <div
                         key={idx}
-                        className="flex items-center gap-3 p-2 rounded-lg hover:bg-accent cursor-pointer"
+                        className="hover:bg-accent flex cursor-pointer items-center gap-3 rounded-lg p-2"
                       >
                         <span className="text-sm font-medium">
                           {item.title}
@@ -241,7 +241,7 @@ export default async function Home() {
                       </div>
                     ))
                   ) : (
-                    <div className="flex justify-center items-center h-full">
+                    <div className="flex h-full items-center justify-center">
                       <p className="text-muted-foreground">
                         Start pinning items to see your pinned items!
                       </p>
@@ -253,7 +253,7 @@ export default async function Home() {
               <Card>
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2">
-                    <Bell className="w-5 h-5" />
+                    <Bell className="h-5 w-5" />
                     Recent Updates
                   </CardTitle>
                 </CardHeader>
@@ -263,16 +263,16 @@ export default async function Home() {
                       {notifications.map((notif, idx) => (
                         <div
                           key={idx}
-                          className="space-y-1 p-3 rounded-lg border"
+                          className="space-y-1 rounded-lg border p-3"
                         >
                           <div className="flex items-start justify-between">
-                            <p className="font-medium text-sm">{notif.title}</p>
-                            <AlertCircle className="w-4 h-4 text-orange-500 mt-0.5" />
+                            <p className="text-sm font-medium">{notif.title}</p>
+                            <AlertCircle className="mt-0.5 h-4 w-4 text-orange-500" />
                           </div>
-                          <p className="text-xs text-muted-foreground line-clamp-2">
+                          <p className="text-muted-foreground line-clamp-2 text-xs">
                             {notif.description}
                           </p>
-                          <span className="text-xs text-muted-foreground">
+                          <span className="text-muted-foreground text-xs">
                             {notif.time}
                           </span>
                         </div>
@@ -282,7 +282,7 @@ export default async function Home() {
                       </Button>
                     </div>
                   ) : (
-                    <div className="flex justify-center items-center h-full">
+                    <div className="flex h-full items-center justify-center">
                       <p className="text-muted-foreground">
                         Start updating to see your recent updates!
                       </p>
@@ -294,7 +294,7 @@ export default async function Home() {
               <Card>
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2">
-                    <TrendingUp className="w-5 h-5" />
+                    <TrendingUp className="h-5 w-5" />
                     This Month
                   </CardTitle>
                 </CardHeader>
@@ -303,9 +303,9 @@ export default async function Home() {
                     usageStats.map((stat, idx) => (
                       <div
                         key={idx}
-                        className="flex justify-between items-center"
+                        className="flex items-center justify-between"
                       >
-                        <span className="text-sm text-muted-foreground">
+                        <span className="text-muted-foreground text-sm">
                           {stat.label}
                         </span>
                         <div className="flex items-center gap-2">
@@ -317,7 +317,7 @@ export default async function Home() {
                       </div>
                     ))
                   ) : (
-                    <div className="flex justify-center items-center h-full">
+                    <div className="flex h-full items-center justify-center">
                       <p className="text-muted-foreground">
                         Start using to see your usage stats!
                       </p>

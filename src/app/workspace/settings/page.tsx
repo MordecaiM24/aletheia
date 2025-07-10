@@ -14,7 +14,7 @@ export default async function DashboardPage() {
   }
 
   return (
-    <main className={"col-span-2 m-auto w-full max-w-lg space-y-6 pt-6"}>
+    <main className="col-span-2 m-auto w-full max-w-lg space-y-6 py-2">
       <Link
         href="/settings/authorization-playground"
         className="block w-full rounded border p-5 text-center text-2xl font-bold shadow"

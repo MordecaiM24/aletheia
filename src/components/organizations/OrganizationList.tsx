@@ -1,20 +1,20 @@
-"use client"
+"use client";
 
-import { useOrganizationList } from "@clerk/nextjs"
+import { useOrganizationList } from "@clerk/nextjs";
 import {
   UserInvitationsParams,
   UserMembershipParams,
   UserSuggestionsParams,
-} from "@/utils/organizations"
-import { useRouter } from "next/navigation"
+} from "@/utils/organizations";
+import { useRouter } from "next/navigation";
 
 export const MyMemberships = () => {
-  const { push } = useRouter()
+  const { push } = useRouter();
   const { isLoaded, setActive, userMemberships } =
-    useOrganizationList(UserMembershipParams)
+    useOrganizationList(UserMembershipParams);
 
   if (!isLoaded) {
-    return <>Loading</>
+    return <>Loading</>;
   }
 
   return (
@@ -34,7 +34,7 @@ export const MyMemberships = () => {
                   setActive({
                     organization: mem.organization.id,
                     beforeEmit: () => {
-                      push("/organization")
+                      push("/organization");
                     },
                   })
                 }
@@ -54,22 +54,22 @@ export const MyMemberships = () => {
         {userMemberships.isFetching
           ? "Loading"
           : userMemberships.hasNextPage
-          ? "Load more"
-          : "No more to load"}
+            ? "Load more"
+            : "No more to load"}
       </button>
     </>
-  )
-}
+  );
+};
 
 export const MyInvitations = () => {
   const { isLoaded, setActive, userInvitations, userMemberships } =
     useOrganizationList({
       ...UserInvitationsParams,
       ...UserMembershipParams,
-    })
+    });
 
   if (!isLoaded) {
-    return <>Loading</>
+    return <>Loading</>;
   }
 
   return (
@@ -81,9 +81,9 @@ export const MyInvitations = () => {
             <div>
               <button
                 onClick={async () => {
-                  await mem.accept()
-                  await userMemberships.revalidate()
-                  await userInvitations.revalidate()
+                  await mem.accept();
+                  await userMemberships.revalidate();
+                  await userInvitations.revalidate();
                 }}
               >
                 Accept
@@ -101,18 +101,18 @@ export const MyInvitations = () => {
         {userInvitations.hasNextPage ? "Load more" : "No more to load"}
       </button>
     </>
-  )
-}
+  );
+};
 
 export const MySuggestions = () => {
   const { isLoaded, setActive, userSuggestions, userMemberships } =
     useOrganizationList({
       ...UserSuggestionsParams,
       ...UserMembershipParams,
-    })
+    });
 
   if (!isLoaded) {
-    return <>Loading</>
+    return <>Loading</>;
   }
 
   return (
@@ -124,9 +124,9 @@ export const MySuggestions = () => {
             <div>
               <button
                 onClick={async () => {
-                  await mem.accept()
-                  await userMemberships.revalidate()
-                  await userSuggestions.revalidate()
+                  await mem.accept();
+                  await userMemberships.revalidate();
+                  await userSuggestions.revalidate();
                 }}
               >
                 Request to join
@@ -144,5 +144,5 @@ export const MySuggestions = () => {
         {userSuggestions.hasNextPage ? "Load more" : "No more to load"}
       </button>
     </>
-  )
-}
+  );
+};

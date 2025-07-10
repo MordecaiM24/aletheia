@@ -153,7 +153,7 @@ export const OrgInvitations = () => {
 
 export const OrgMembershipRequests = () => {
   const { isLoaded, membershipRequests } = useOrganization(
-    OrgMembershipRequestsParams
+    OrgMembershipRequestsParams,
   );
 
   if (!isLoaded) {
@@ -259,7 +259,7 @@ export const OrgInviteMemberForm = () => {
     e.preventDefault();
 
     const submittedData = Object.fromEntries(
-      new FormData(e.currentTarget).entries()
+      new FormData(e.currentTarget).entries(),
     ) as {
       email: string | undefined;
       role: OrganizationCustomRoleKey | undefined;

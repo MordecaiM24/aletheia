@@ -1,13 +1,13 @@
-import { ChangeEventHandler, useEffect, useRef, useState } from "react"
-import { OrganizationCustomRoleKey } from "@clerk/types"
-import { useOrganization } from "@clerk/nextjs"
+import { ChangeEventHandler, useEffect, useRef, useState } from "react";
+import { OrganizationCustomRoleKey } from "@clerk/types";
+import { useOrganization } from "@clerk/nextjs";
 
 type SelectRoleProps = {
-  fieldName?: string
-  isDisabled?: boolean
-  onChange?: ChangeEventHandler<HTMLSelectElement>
-  defaultRole?: string
-}
+  fieldName?: string;
+  isDisabled?: boolean;
+  onChange?: ChangeEventHandler<HTMLSelectElement>;
+  defaultRole?: string;
+};
 
 export const SelectRole = ({
   fieldName,
@@ -15,26 +15,26 @@ export const SelectRole = ({
   onChange,
   defaultRole,
 }: SelectRoleProps) => {
-  const { organization } = useOrganization()
-  const [fetchedRoles, setRoles] = useState<OrganizationCustomRoleKey[]>([])
-  const isPopulated = useRef(false)
+  const { organization } = useOrganization();
+  const [fetchedRoles, setRoles] = useState<OrganizationCustomRoleKey[]>([]);
+  const isPopulated = useRef(false);
 
   useEffect(() => {
-    if (isPopulated.current) return
+    if (isPopulated.current) return;
     organization
       ?.getRoles({
         pageSize: 20,
         initialPage: 1,
       })
       .then((res) => {
-        isPopulated.current = true
+        isPopulated.current = true;
         setRoles(
-          res.data.map((roles) => roles.key as OrganizationCustomRoleKey)
-        )
-      })
-  }, [organization?.id])
+          res.data.map((roles) => roles.key as OrganizationCustomRoleKey),
+        );
+      });
+  }, [organization?.id]);
 
-  if (fetchedRoles.length === 0) return null
+  if (fetchedRoles.length === 0) return null;
 
   return (
     <select
@@ -50,5 +50,5 @@ export const SelectRole = ({
         </option>
       ))}
     </select>
-  )
-}
+  );
+};
