@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowUpIcon } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { ChatMessage } from "@/components/chat/message";
+import { useEffect, useRef } from "react";
 
 type Status = "submitted" | "streaming" | "error" | "ready";
 
@@ -16,6 +17,20 @@ export default function Chat() {
     useChat({
       api: "/api/ai/chat",
     });
+
+  const scrollAreaRef = useRef<HTMLDivElement>(null);
+
+  // autoscroll to bottom when messages change
+  useEffect(() => {
+    if (scrollAreaRef.current) {
+      const viewport = scrollAreaRef.current.querySelector(
+        '[data-slot="scroll-area-viewport"]',
+      );
+      if (viewport) {
+        viewport.scrollTop = viewport.scrollHeight;
+      }
+    }
+  }, [messages]);
 
   if (messages.length === 0) {
     return (
@@ -32,7 +47,7 @@ export default function Chat() {
   return (
     // 1rem + header height is the height of the header. had to set it here because sticky bullshit and whatnot.
     <div className="stretch mx-auto flex h-[calc(100vh-var(--header-height)-1rem)] w-full max-w-3xl flex-col pb-6">
-      <ScrollArea className="h-0 flex-1 px-4 py-6">
+      <ScrollArea ref={scrollAreaRef} className="h-0 flex-1 px-4 py-6">
         <div className="space-y-4">
           {messages.map((message) => {
             return <ChatMessage key={message.id} message={message} />;
