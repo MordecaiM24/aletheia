@@ -25,6 +25,8 @@ import {
   TrendingUp,
 } from "lucide-react";
 import { redirect } from "next/navigation";
+import { DashboardSearch } from "./dashboard-search";
+import Link from "next/link";
 
 export default async function Home() {
   const recentSearches: RecentSearch[] = [];
@@ -54,30 +56,7 @@ export default async function Home() {
               Quick Actions
             </CardTitle>
           </CardHeader>
-          <CardContent className="space-y-4">
-            <div className="flex gap-4">
-              <div className="flex-1">
-                <Input
-                  placeholder="Search regulations, requirements, guidance..."
-                  className="w-full"
-                />
-              </div>
-              <Button>
-                <Search className="mr-2 h-4 w-4" />
-                Search
-              </Button>
-            </div>
-            <div className="flex gap-2">
-              <Button variant="outline" size="sm">
-                <MessageSquare className="mr-2 h-4 w-4" />
-                New Chat
-              </Button>
-              <Button variant="outline" size="sm">
-                <FileText className="mr-2 h-4 w-4" />
-                Browse Documents
-              </Button>
-            </div>
-          </CardContent>
+          <DashboardSearch />
         </Card>
 
         <div className="p-4">
@@ -123,9 +102,7 @@ export default async function Home() {
                         <p className="text-muted-foreground py-4">
                           Start searching to see your recent searches!
                         </p>
-                        <Button variant="default" className="w-full text-sm">
-                          New Search
-                        </Button>
+                        <Link href="/workspace/search">New Search</Link>
                       </div>
                     )}
                   </CardContent>
@@ -170,9 +147,7 @@ export default async function Home() {
                         <p className="text-muted-foreground py-4">
                           Start chatting to see your recent chats!
                         </p>
-                        <Button variant="default" className="w-full text-sm">
-                          New Chat
-                        </Button>
+                        <Link href="/workspace/chat">New Chat</Link>
                       </div>
                     )}
                   </CardContent>
