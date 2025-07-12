@@ -47,3 +47,19 @@ export type UsageStat = {
   value: string;
   change: string;
 };
+export type SearchResult = {
+  id: string;
+  title: string;
+  content: string;
+  type: "document" | "passage" | "answer";
+  source?: string;
+  section?: string;
+  relevance: number;
+  metadata?: Record<string, any>;
+};
+
+export type SearchResponse = {
+  results: SearchResult[];
+  total: number;
+  query: string;
+};
