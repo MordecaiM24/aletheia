@@ -50,6 +50,20 @@
       "when": 1752115614507,
       "tag": "0006_giant_giant_girl",
       "breakpoints": true
+    },
+    {
+      "idx": 7,
+      "version": "7",
+      "when": 1752515665033,
+      "tag": "0007_ambitious_toro",
+      "breakpoints": true
+    },
+    {
+      "idx": 8,
+      "version": "7",
+      "when": 1752515680661,
+      "tag": "0008_moaning_morlocks",
+      "breakpoints": true
     }
   ]
 }
