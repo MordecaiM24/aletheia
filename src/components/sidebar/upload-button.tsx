@@ -39,7 +39,7 @@ export function UploadButton() {
           <DialogTrigger asChild>
             <SidebarMenuButton
               tooltip="Quick Create"
-              className="bg-primary text-primary-foreground hover:bg-primary/90 hover:text-primary-foreground active:bg-primary/90 active:text-primary-foreground min-w-8 duration-200 ease-linear"
+              className="bg-primary text-primary-foreground hover:bg-primary/90 hover:text-primary-foreground active:bg-primary/90 active:text-primary-foreground min-w-8 cursor-pointer duration-200 ease-linear"
             >
               <IconCirclePlusFilled />
               <span>Quick Create</span>
@@ -247,6 +247,9 @@ function URLUploadForm({ setOpen }: { setOpen: (open: boolean) => void }) {
   type FormSchema = z.infer<typeof formSchema>;
 
   const form = useForm<FormSchema>({
+    defaultValues: {
+      url: "",
+    },
     resolver: zodResolver(formSchema),
   });
 
@@ -259,6 +262,8 @@ function URLUploadForm({ setOpen }: { setOpen: (open: boolean) => void }) {
         },
         body: JSON.stringify({ url: values.url }),
       });
+
+      console.log(response);
 
       if (!response.ok) {
         throw new Error("link upload failed");

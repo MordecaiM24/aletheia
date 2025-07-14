@@ -1,0 +1,4020 @@
+{
+  "": {
+    "files": [],
+    "folders": {
+      "SR-A_60": {
+        "id": "1Xb_sBIG_F6vd11oJUtA2D7aVSJd3Jzcj",
+        "path": "SR-A_60"
+      },
+      "FB_149": {
+        "id": "1ncvlpOMGk6q_z4oOraK9erI6v-oe5KQN",
+        "path": "FB_149"
+      },
+      "FB_147": {
+        "id": "1_bRvcdpp3TI5_1jNkJJhRyotRK4Xy0PB",
+        "path": "FB_147"
+      },
+      "GB_144": {
+        "id": "1UK8t5JmbYL8LzAqAOVXuCTH4X0K_ib5i",
+        "path": "GB_144"
+      },
+      "GB_145": {
+        "id": "1iNwqcDPVzQSrz6mWsCXClnB4OlAlqTcS",
+        "path": "GB_145"
+      },
+      "SR_119": {
+        "id": "1WqNCHu6AT_1HYpO8HKSuNDvlmAIIOKkv",
+        "path": "SR_119"
+      },
+      "FB_150": {
+        "id": "1SgG4yb28IjX774StWzWAhI5S-G3x_b8j",
+        "path": "FB_150"
+      },
+      "FB_148": {
+        "id": "183FK6kZojjsKvO4GUcxC_5rlWCpwNmKR",
+        "path": "FB_148"
+      },
+      "FB_146": {
+        "id": "1jn2ohmFvsetTj59uXrh48d88XHtAs5U8",
+        "path": "FB_146"
+      },
+      "GB_143": {
+        "id": "1hFgs1c2KNaCZB44SUA4PNbUiXW2DhBrH",
+        "path": "GB_143"
+      },
+      "R_142": {
+        "id": "1gfzliC6SXjVyrda3Hp6aFnjky0U_SrHa",
+        "path": "R_142"
+      },
+      "R_141": {
+        "id": "1x5_0d9ke-th5nml6dW10-YZa409BM3BD",
+        "path": "R_141"
+      },
+      "GB_139": {
+        "id": "1pHixYmx8zu0vaDL_XSJhPCJ4qe4UunWc",
+        "path": "GB_139"
+      },
+      "GB_140": {
+        "id": "1KjAzDAiIU887HNSCyQRXRe_MlYyRFZ2D",
+        "path": "GB_140"
+      },
+      "R_138": {
+        "id": "1zBeLE_hWzhEmLSdoJIW0Www39ivESq80",
+        "path": "R_138"
+      },
+      "R_137": {
+        "id": "1Uo0jOGQFOVnVo_QxjpfVF8T52YejTqpQ",
+        "path": "R_137"
+      },
+      "SB_135": {
+        "id": "1_EAexc7SPcq1buaiPN8sQzzQwc8oUWzV",
+        "path": "SB_135"
+      },
+      "R_133": {
+        "id": "1Zpb2oKvG6-BT6Ke3KFKkiFDOMfYCHQm4",
+        "path": "R_133"
+      },
+      "GB_134": {
+        "id": "1A434CPQj47Zkprdc3NdcuNUPiT4PjXXi",
+        "path": "GB_134"
+      },
+      "FB_136": {
+        "id": "1d7uQccdv6J0J_Dsdo_KuMwDPtm4Al8QD",
+        "path": "FB_136"
+      },
+      "R_131": {
+        "id": "1rJvHw4hXaG1n6PzpDyG04TfjH3zv1Seu",
+        "path": "R_131"
+      },
+      "BB_132": {
+        "id": "1SRPz5zkBBHk5ku87cnV50btMJQQDuams",
+        "path": "BB_132"
+      },
+      "SB_130": {
+        "id": "1kDbo7MKkjqKLmALH8Hovkl37ApeUhY9N",
+        "path": "SB_130"
+      },
+      "SB_129": {
+        "id": "1iXyZUaUhezgWpKvDXx3T5Z8uFn_knNuQ",
+        "path": "SB_129"
+      },
+      "FB_128": {
+        "id": "1DH5j7RzyiWfRr2mCa6_gt4vkYrJbYnNm",
+        "path": "FB_128"
+      },
+      "FB_127": {
+        "id": "1xS00A_uZt05afFESxbe0cYh8aQ8i4UBb",
+        "path": "FB_127"
+      },
+      "FB_126": {
+        "id": "1zSpaf4A_5AeXpfCvUpNGUlGO6_TIrYBP",
+        "path": "FB_126"
+      },
+      "GB_125": {
+        "id": "1MR4NvPEWoYaa5S5hSrZ5dvKupWtUfNzo",
+        "path": "GB_125"
+      },
+      "R_124": {
+        "id": "1mYNeF5SWuURKlpJ_3X4__GlH4aujvndv",
+        "path": "R_124"
+      },
+      "R_123": {
+        "id": "1J3mt7G0imFzX2aYHLId0UHbhXfiNGs-F",
+        "path": "R_123"
+      },
+      "GB_122": {
+        "id": "1ordvM49qQTklC1871MRwGzKY6omHBL0d",
+        "path": "GB_122"
+      },
+      "GB_121": {
+        "id": "1HBs9smLE2OcEZbEd-YX3ciFMawP4IYzP",
+        "path": "GB_121"
+      },
+      "R_120": {
+        "id": "1nIRUH8sEX_Fr9bd7MClga3szuI7w6Lu1",
+        "path": "R_120"
+      },
+      "GB_118": {
+        "id": "1mTe3Nxcq4jC9h0lwHrOPNs6vRCHNIJ_-",
+        "path": "GB_118"
+      },
+      "GB_117": {
+        "id": "15NmlOpY2LJphp3OOj2_ju-TZz3m2al_F",
+        "path": "GB_117"
+      },
+      "R_116": {
+        "id": "18jgR3-3jWla6ac_g0SAqlcPOLgxsuFov",
+        "path": "R_116"
+      },
+      "FB_115": {
+        "id": "1g1rOkFcfpyRyED6B1YuADbdAy8OUAo7W",
+        "path": "FB_115"
+      },
+      "AB_110": {
+        "id": "1gkbIp-Oq1c7ANSn4gSqxMsgyDHKS7M5V",
+        "path": "AB_110"
+      },
+      "FB_114": {
+        "id": "1yUzXE5KyarW-QPqDXhcNy3ylsutxTksg",
+        "path": "FB_114"
+      },
+      "SR-A_113": {
+        "id": "1t4lgGKFk48gu10sXJNEULDSVlN0KttSO",
+        "path": "SR-A_113"
+      },
+      "SR-A_112": {
+        "id": "1r-VMgPIks-mjdks98QZIov5eQhqIxFTe",
+        "path": "SR-A_112"
+      },
+      "R_111": {
+        "id": "1d45BP_x4gXKbv-HcHemtXYNFJcJF2hKm",
+        "path": "R_111"
+      },
+      "SR-A_109": {
+        "id": "1qEGxoaJDNKKaWE81yCHAurf_OWGfJ5Tv",
+        "path": "SR-A_109"
+      },
+      "SR-A_88": {
+        "id": "1FZmLIw4LOiARiqgJVzog9-PFu2_Yl052",
+        "path": "SR-A_88"
+      },
+      "SR-A_87": {
+        "id": "1waG20GJmGTiTh5JM6OL0oZ5chpstRNUj",
+        "path": "SR-A_87"
+      },
+      "SR-A_84": {
+        "id": "1aGa_75zQgDwB-0bQGdQLipGcbbKRcf2A",
+        "path": "SR-A_84"
+      },
+      "SR-A_85": {
+        "id": "1xNZGr0wz5MvKZOKD-Wgynmu_Fe3a0N9p",
+        "path": "SR-A_85"
+      },
+      "SR-A_80": {
+        "id": "1cp50m_3mH2vZtvR16SWdCuhyPL5lD1db",
+        "path": "SR-A_80"
+      },
+      "SR-A_79": {
+        "id": "1_UukaeoxpHfbeS0Fr38GLcWaiYtwsiz9",
+        "path": "SR-A_79"
+      },
+      "SR-A_78": {
+        "id": "1q9XYReh_eSQGg-iJNAdMr8e0JvdK6Oq3",
+        "path": "SR-A_78"
+      },
+      "FB_104": {
+        "id": "1Q2kdlCmaEhCYKCzqToWr0MD4v-PS3X82",
+        "path": "FB_104"
+      },
+      "R_108": {
+        "id": "1XCFXm13C8e1wBDrQkbpEe82JoaEWz__s",
+        "path": "R_108"
+      },
+      "R_107": {
+        "id": "15NSrX5NpGCu3hZtZl1Cr5y4xywkNuXMy",
+        "path": "R_107"
+      },
+      "SR_106": {
+        "id": "1HG1YlSegvRh8gqghGgS5n3JacWCwGLkP",
+        "path": "SR_106"
+      },
+      "R_105": {
+        "id": "1YQRXm0r7ntkvqSY_QVUAqtJqJa7gQroh",
+        "path": "R_105"
+      },
+      "FB_103": {
+        "id": "16nMH8bZ3H6BGe0zx4jbA2ZT-4zhKSSmq",
+        "path": "FB_103"
+      },
+      "FB_102": {
+        "id": "1aBUj_3o30Tc1nSfE4IKiCTgxuMPKzRgg",
+        "path": "FB_102"
+      },
+      "FB_101": {
+        "id": "1CsiRKdl6-OQqCMw8QRB_mqHm6hIPnTzF",
+        "path": "FB_101"
+      },
+      "GB_100": {
+        "id": "1NOqHj5t2BMBS5dPAe_D4BKJ-GjOXSInT",
+        "path": "GB_100"
+      },
+      "R_99": {
+        "id": "1Dn0eZ0M0PUjxw49L2mEhTMe2mps55hC3",
+        "path": "R_99"
+      },
+      "SR_98": {
+        "id": "1ha_Gqo6B1JsFJI4vSADgNWZWHJdeWvAl",
+        "path": "SR_98"
+      },
+      "R_97": {
+        "id": "1HIz8qnNov-gYHb8vsTeZdk_wjMg0eYDa",
+        "path": "R_97"
+      },
+      "GB_96": {
+        "id": "16B3_UzATjaSC5850tfWKJ1F5l9cfePYp",
+        "path": "GB_96"
+      },
+      "SR_95": {
+        "id": "1w_VJpjd7BO7wIfLUVdf-q0Z9rxgDvNAw",
+        "path": "SR_95"
+      },
+      "R_94": {
+        "id": "1QHKohlIkCViRrBrxpiX90rdttLSpSoJL",
+        "path": "R_94"
+      },
+      "R_93": {
+        "id": "13zQNLkyK6_Om7gf0oPPFJ3YlyOtGFl_n",
+        "path": "R_93"
+      },
+      "R_92": {
+        "id": "1Z50uexg-lZ179Yv2CLyB8wh5lJTri1e3",
+        "path": "R_92"
+      },
+      "FB_91": {
+        "id": "1EwARUrVFUwECBcpZBxqmpyJwJPe7i4Ip",
+        "path": "FB_91"
+      },
+      "SR_90": {
+        "id": "16e8itz1-hZWBf8x4fE0Xg_5VThR-IoDj",
+        "path": "SR_90"
+      },
+      "R_89": {
+        "id": "15m3jY2QoQiVJKxElpiJ90E7i6JtSfPnk",
+        "path": "R_89"
+      },
+      "SR-A_86": {
+        "id": "1mIy4wwuRs68VUjQtwWWmzdBCFTKbfM9P",
+        "path": "SR-A_86"
+      },
+      "SR-A_83": {
+        "id": "1rWRS8WRaGIB4_nQECTPhG4RUBg_xFrEi",
+        "path": "SR-A_83"
+      },
+      "SR-A_82": {
+        "id": "1ZAU6r5NtWoxCtWA63stf08WPGXoQR2-t",
+        "path": "SR-A_82"
+      },
+      "SR-A_81": {
+        "id": "1y9mQ1ChUZOEFo3WsFr7h0YMOxWU0WIfl",
+        "path": "SR-A_81"
+      },
+      "SR_70": {
+        "id": "1FJ9f8IlOYyj6HsU0KdUbv-SQmBuMYITG",
+        "path": "SR_70"
+      },
+      "GB_69": {
+        "id": "1g1bQgEn8XntE-EcIuPFL5rHPgiYhKCob",
+        "path": "GB_69"
+      },
+      "FB_77": {
+        "id": "1Ykdis6-vq6rKcyLMdR3T4xopLLchgH39",
+        "path": "FB_77"
+      },
+      "FB_76": {
+        "id": "1kBHOyWHXXmrRVD-gBLaDONT_xZ0Lgzq8",
+        "path": "FB_76"
+      },
+      "FB_75": {
+        "id": "1FUCcgG7TlFlTathStY_014f-8XvjITJV",
+        "path": "FB_75"
+      },
+      "FB_74": {
+        "id": "1XOQbYGh6jySuqRpESG83C-PJQTfZb9wC",
+        "path": "FB_74"
+      },
+      "FB_73": {
+        "id": "1V0zKnWmQfCNGEIxiQqYHWULujeHPL_NV",
+        "path": "FB_73"
+      },
+      "R_72": {
+        "id": "1mgmVw0PYB7Lh8iZeKkq_dlvdLykqDS9R",
+        "path": "R_72"
+      },
+      "SB_71": {
+        "id": "12OywNBKL2YD1o8dwJ78Tf7IgvAezeywM",
+        "path": "SB_71"
+      },
+      "FB_58": {
+        "id": "1rDwbBOjJNqNtm2ie75c2DfdoQmN_Sqox",
+        "path": "FB_58"
+      },
+      "FB_64": {
+        "id": "1H6YyoM93U3lBoA-nfPjEw_ElHlUMVx75",
+        "path": "FB_64"
+      },
+      "SB_68": {
+        "id": "1Jp4Xa__WtLVaxl7FRj6tWy6FgsU_RbPA",
+        "path": "SB_68"
+      },
+      "SB_67": {
+        "id": "1Z-eCXECVKZonueCEfxxmZowksJ8pRGdp",
+        "path": "SB_67"
+      },
+      "GB_66": {
+        "id": "1AsCkWqLV98RqNl4hEXmomIrAHceHHkC0",
+        "path": "GB_66"
+      },
+      "FB_65": {
+        "id": "16d1FL-qEADVblUsT-XOO6tZpJUr16qCW",
+        "path": "FB_65"
+      },
+      "FB_63": {
+        "id": "1r8LAfGcvHOVrdr06fI3HKpXrHut6AfqU",
+        "path": "FB_63"
+      },
+      "FB_62": {
+        "id": "1qX9O1xFo-TV59Mk4I88HQK7tbPltOqEt",
+        "path": "FB_62"
+      },
+      "FB_61": {
+        "id": "1w6U5to7cIntk7sllPAQNknAaD2jB4TRy",
+        "path": "FB_61"
+      },
+      "FB_57": {
+        "id": "19Hjx4wzgarQWF5f0vWmBTlsCPJ1m6afD",
+        "path": "FB_57"
+      },
+      "R_59": {
+        "id": "1Y1Ldktvb_SOYuCaN23zcKzq-CnLAhotM",
+        "path": "R_59"
+      },
+      "GB_56": {
+        "id": "1e7I8QzpJ2qf-txWORuAI2GpdVP1IpG1N",
+        "path": "GB_56"
+      },
+      "SB_55": {
+        "id": "1nE-EPx7OiSj1joQLSBpjtiRdjG2Tp3N0",
+        "path": "SB_55"
+      },
+      "SB_54": {
+        "id": "1-uatWwy0PA3Z4_sRJUiAPesAhR0XqOuq",
+        "path": "SB_54"
+      },
+      "SR_53": {
+        "id": "1FRo65ZmZeI8h4b1YRk5GnV-ZNwhe-FxJ",
+        "path": "SR_53"
+      },
+      "SR_52": {
+        "id": "1Y5IaqKcgOwgFioqS_xqC9twWrFtdFkyK",
+        "path": "SR_52"
+      },
+      "SR_51": {
+        "id": "1z3wxTfhGjABotIVjEH-tgOuArze9FjWc",
+        "path": "SR_51"
+      },
+      "SR_50": {
+        "id": "1eZ4da5AN1ezyEamEIHhpKpipXjYkO9nO",
+        "path": "SR_50"
+      },
+      "SR_49": {
+        "id": "1gs2Xn1S52Z093goeG4S-_Z3inyaSymYQ",
+        "path": "SR_49"
+      },
+      "GB_48": {
+        "id": "1mi-EDiLYdGAGtPET1-XgfuMffpzldI4-",
+        "path": "GB_48"
+      },
+      "R_47": {
+        "id": "15puFVgbXzfjbQxm7FNe1O_UOf6yA9gbf",
+        "path": "R_47"
+      },
+      "SR_46": {
+        "id": "1e9AWzx77hoFAMUI7l5joImG69yu5NhPk",
+        "path": "SR_46"
+      },
+      "GB_45": {
+        "id": "1PdCRAKkKrII3aOwwFL918fa0yhadwu_3",
+        "path": "GB_45"
+      },
+      "R_44": {
+        "id": "1B3j-T7z1zRZU3aRnNFA_YfB-tu_5I64L",
+        "path": "R_44"
+      },
+      "SB_43": {
+        "id": "1f48yEyxMhW43aizG2rIO5f1awU0vvUTx",
+        "path": "SB_43"
+      },
+      "SB_42": {
+        "id": "1j4QHFcqoHpR83jb01NYiA0Vo7h6sEUFQ",
+        "path": "SB_42"
+      },
+      "SB_41": {
+        "id": "1m0wJtpRzqBL5wid54b8HEzJ_nJaiW0jT",
+        "path": "SB_41"
+      },
+      "SR-A_40": {
+        "id": "1hn9A-rx74M3ePG0VeIlhquaLlNcppKZ1",
+        "path": "SR-A_40"
+      },
+      "AB_39": {
+        "id": "1qqdNu7GtUWgOG9CFU8D8YA5xcPKy0bkD",
+        "path": "AB_39"
+      },
+      "SR-A_38": {
+        "id": "1e-vCoH_1920Rt0AnoL7zgwNaQ8EVy8ty",
+        "path": "SR-A_38"
+      },
+      "SR-A_37": {
+        "id": "1K4PpLL2OhjHk4PU2D5N0KLWsTwQtGO8b",
+        "path": "SR-A_37"
+      },
+      "R_36": {
+        "id": "1C8YyzG9MP4RRat4ZNymUK0hgtvPOlsQj",
+        "path": "R_36"
+      },
+      "SB_35": {
+        "id": "1QkFhudIpLTw_hM2SuJAzC1W2xaJnDTkm",
+        "path": "SB_35"
+      },
+      "SR-A_34": {
+        "id": "11-Cu44V4Hem2VKy5Y20g8MvAGjGIstiR",
+        "path": "SR-A_34"
+      },
+      "SR-A_26": {
+        "id": "1RUCqrVW25X2_CFWi_LKcyADxki_9klGn",
+        "path": "SR-A_26"
+      },
+      "SR-A_25": {
+        "id": "1kLwGrZ5xSF_J3wfb7beSrXV1d1ODmdxc",
+        "path": "SR-A_25"
+      },
+      "SR-A_24": {
+        "id": "1coJ0X7yhvpHRPbQVYlakbKA3VwuIbaMq",
+        "path": "SR-A_24"
+      },
+      "SR-A_23": {
+        "id": "1aIFS_MBvLNuo5vwgx9H2L58RPfDG_lYF",
+        "path": "SR-A_23"
+      },
+      "SR-A_22": {
+        "id": "14h38bsRvQ5ZQwIAsskxOGBzpRJTZ1eOk",
+        "path": "SR-A_22"
+      },
+      "SR-A_21": {
+        "id": "1tpX1HQ4N11vr59ZjCdsLiUoIOS8CpC3m",
+        "path": "SR-A_21"
+      },
+      "SR-A_20": {
+        "id": "1jmNvcNUMXXGtPYjznwM6KdQ8n-wsw5fG",
+        "path": "SR-A_20"
+      },
+      "SR-A_19": {
+        "id": "1ESlvWtpNZiEk1RnOJgHJ5TIG5gUszGaS",
+        "path": "SR-A_19"
+      },
+      "SR-A_18": {
+        "id": "1VuIQqJIC9UCNSAorJ1-9_CII7F_EokTv",
+        "path": "SR-A_18"
+      },
+      "SR-A_17": {
+        "id": "10nLFc6CpCZ00CZCGOZn0Iiz9m0slDmzr",
+        "path": "SR-A_17"
+      },
+      "SR-A_16": {
+        "id": "1_CykTa_HnKrWy3J5pR8alhu_xJTcJviw",
+        "path": "SR-A_16"
+      },
+      "SR-A_15": {
+        "id": "1aW1MKJKXNMHTlAFSjhuakCs6yJOaiWa3",
+        "path": "SR-A_15"
+      },
+      "SR-A_14": {
+        "id": "1BB8grY_8cx68gr7j-z8rDxQ-xPqBRf6v",
+        "path": "SR-A_14"
+      },
+      "SR-A_13": {
+        "id": "1ciO7uBXC7kAz2QhAaCUCAj9I9hVfxNwa",
+        "path": "SR-A_13"
+      },
+      "SR-A_12": {
+        "id": "1y4Os_tAaxZRjqy105hsgmrP5ZG3Tw6h6",
+        "path": "SR-A_12"
+      },
+      "SR-A_11": {
+        "id": "1-2-3ftTGID_cZdM9HUTEokttHm6kenfZ",
+        "path": "SR-A_11"
+      },
+      "SR-A_10": {
+        "id": "1DDfqqZvzNsDOtHPm_GlScD2TwAFCJ2FH",
+        "path": "SR-A_10"
+      },
+      "SR-A_09": {
+        "id": "1rKWs9gD51t5gX2gVme5wr_unUMDtPibq",
+        "path": "SR-A_09"
+      },
+      "SR-A_08": {
+        "id": "1hLjWU0NhMEMoMAw8ximAzPs0TRdxHZhe",
+        "path": "SR-A_08"
+      },
+      "SR-A_07": {
+        "id": "1P35UW-IEcVD9JFV1pHtvPz1ca3aMVkZ7",
+        "path": "SR-A_07"
+      },
+      "SR-A_06": {
+        "id": "1zFWQaCF1HqKymk697S7nqi57T52qiJb6",
+        "path": "SR-A_06"
+      },
+      "SR-A_05": {
+        "id": "17GClY2FkXCeerWll5Ben7ycvWyvCGZ5x",
+        "path": "SR-A_05"
+      },
+      "SR-A_04": {
+        "id": "1J_eA1wwr-ZhyKb_kvomg_QEnsjUkDRCZ",
+        "path": "SR-A_04"
+      },
+      "SR-A_03": {
+        "id": "1RjG8r_vi7EP9H6z9FLfKraxdsoZC6wg3",
+        "path": "SR-A_03"
+      },
+      "SR-A_02": {
+        "id": "1-YzsEyXgRzV196LFcjv_xFo_deXqS5Ww",
+        "path": "SR-A_02"
+      },
+      "SR-A_01": {
+        "id": "1vaclHn3Vk9RMIp2NtwwnNHwnhtX8X7u3",
+        "path": "SR-A_01"
+      },
+      "R_33": {
+        "id": "1EMVhW9-UlzmFRhNzcIN2Zl-cs03q8v-7",
+        "path": "R_33"
+      },
+      "GB_32": {
+        "id": "1FnXHnR1zpv-5JAyLc3sy5fOVFEjn0HpA",
+        "path": "GB_32"
+      },
+      "GB_31": {
+        "id": "1iQpsRK-dhVX6ze6QoSHAmsW4rJ3EzfpK",
+        "path": "GB_31"
+      },
+      "R_30": {
+        "id": "1CwpZBnIQ6SYrWRjhVNIMxKSBxhTbT3zZ",
+        "path": "R_30"
+      },
+      "R_29": {
+        "id": "18i0IaDrf-8w41h1GICnGd2Hp6d9S0o4j",
+        "path": "R_29"
+      },
+      "R_28": {
+        "id": "1XNOuzH6IeY7J2gmney9T8gAmI_HiqJbg",
+        "path": "R_28"
+      },
+      "GB_27": {
+        "id": "1dUkZ4Zl9GcsIsdiNp8Sv8VHPJkMDIHx0",
+        "path": "GB_27"
+      }
+    }
+  },
+  "SR-A_60": {
+    "files": [
+      {
+        "id": "1ztfm9o2PyXlTcOqeyVRTerCAst7jCeOABPLh-BNkm1A",
+        "name": "OFFICIATED_-_SR-A_60_Alexander_Treasury_Official_Confirmation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-31T17:27:42.766Z"
+      },
+      {
+        "id": "1TnbnQ-EFFljBJvCK5hvObBnGTi5cGWzmONzMdSky6go",
+        "name": "SR-A_60_Alexander_Treasury_Official_Confirmation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-10-04T17:43:15.052Z"
+      }
+    ],
+    "folders": {}
+  },
+  "FB_149": {
+    "files": [
+      {
+        "id": "1QfPsig2LHLJlBhIDiFHQqaPuUp5lJfiMLHOMCpbuiYQ",
+        "name": "OFFICIATED_-_FB_149_-_Alpha_Omega_Epsilon_Reimbursement_Act_-_Student_Senate_Finance_at_NC_State",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-31T16:00:58.983Z"
+      },
+      {
+        "id": "1wwor8izUmkPFy1c1PkzCRIfEU6ZFFGPs9q4L166JEm8",
+        "name": "FIRST_READING_-_FB_149_-_Alpha_Omega_Epsilon_Reimbursement_Act_-_Student_Senate_Finance_at_NC_State",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-28T19:19:31.533Z"
+      }
+    ],
+    "folders": {}
+  },
+  "FB_147": {
+    "files": [
+      {
+        "id": "1VI0gWh_5wMCgm7kuM94DgwCpAv9H9Y4Hhk7Gfs1lTOQ",
+        "name": "OFFICIATED_-_FB_147_-_MSA_Funding_Act_-_Student_Senate_Finance_at_NC_State",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-28T19:38:22.388Z"
+      },
+      {
+        "id": "1Z7pHj0aQzR4bIndzJvB380LauKz0WZzTrKA4auci_fw",
+        "name": "FIRST_READING_-_FB_147_-_MSA_Funding_Act_-_Student_Senate_Finance_at_NC_State",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-28T19:27:55.263Z"
+      }
+    ],
+    "folders": {}
+  },
+  "GB_144": {
+    "files": [
+      {
+        "id": "17VmtrXzBa_082D6Nc3mpJHmBvXH-he5OkzljfkFM274",
+        "name": "OFFICIATED_-_GB_144-_Senator_Onboarding_and_Longevity_Act_-_Jodie_Roberson",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-28T19:15:23.639Z"
+      },
+      {
+        "id": "1r1JDQp_jDE7pQTAdxHWOn_LXg9qPA3Tt6ES9hs67urw",
+        "name": "FIRST_READING-_GB_144-_Senator_Onboarding_and_Longevity_Act_-_Jodie_Roberson",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-21T04:55:36.391Z"
+      },
+      {
+        "id": "1ubHUD8MfJME4aehn_wtiYCjSd8wbNv-ttWopfSXBQYI",
+        "name": "SECOND_READING-_SB_144-_Senator_Onboarding_and_Longevity_Act_-_Jodie_Roberson",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-20T01:53:43.057Z"
+      }
+    ],
+    "folders": {}
+  },
+  "GB_145": {
+    "files": [
+      {
+        "id": "1uOZozDI0VhOJ6aHwYPuq1d4LwsZDpOXDU_atvrc9ePM",
+        "name": "OFFICIATED_-_GB_145-_104th_Session_Rolling_Review_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-28T19:45:05.163Z"
+      },
+      {
+        "id": "1IrSiV5LmVFLxJD-kBWLbBcoBwGs-jAUaiw_kmKJGrZo",
+        "name": "FIRST_READING-_GB_145-_104th_Session_Rolling_Review_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-28T19:44:16.913Z"
+      },
+      {
+        "id": "1Uo4bKCCHbc_2DuY5D0GDmQOMuG5Z9bgoUKVO_LWDE50",
+        "name": "OFFICIATED_-_GB_145-_104th_Session_Rolling_Review_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-28T19:17:07.664Z"
+      },
+      {
+        "id": "1EzKt7Ori38dMO2BDRz5d-5sSXcUyaKjIPoEdpV8cSAo",
+        "name": "SECOND_READING_-_GB_145_-_104th_Session_Rolling_Review_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-21T04:28:27.899Z"
+      }
+    ],
+    "folders": {}
+  },
+  "SR_119": {
+    "files": [
+      {
+        "id": "1yMH99XqsR0_P9kXcESiUSJ_rH2gFJiv37TShW5EGGZg",
+        "name": "OFFICIATED_-_SR_119_-_The_104th_Session_Sine_Die_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-25T15:40:16.215Z"
+      },
+      {
+        "id": "1K0V0v4n3KJEqKLzattWAUvkVK8TSR4X3n6yl5vBQw2k",
+        "name": "FIRST_READING_-_SR_119_-_104th_Session_Sine_Die_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-19T23:54:43.797Z"
+      }
+    ],
+    "folders": {}
+  },
+  "FB_150": {
+    "files": [
+      {
+        "id": "1ac4CjMTd23A7gewo1BxCCq-VXlZyYRaqFOBynYHUPFM",
+        "name": "OFFICIATED_-_FB_150_-_Packenomics_Funding_Act_-_Student_Senate_Finance_at_NC_State",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-31T16:01:18.345Z"
+      },
+      {
+        "id": "1rGTBFDA-s1dT2wZE_6bnA6WraZB_SQgys_4ENOuZ4pI",
+        "name": "SECOND_READING_-_FB_150_-_Packenomics_Funding_Act_-_Student_Senate_Finance_at_NC_State",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-20T01:57:31.973Z"
+      }
+    ],
+    "folders": {}
+  },
+  "FB_148": {
+    "files": [
+      {
+        "id": "17c7rT-AusIQviNayRhz9NEre8VCgC0Ikrxno3xHzUZs",
+        "name": "OFFICIATED_-_FB_148_-_Ethiopian_Eritrean_Student_Association_Funding_Act_-_Student_Senate_Finance_at_NC_State",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-31T16:00:40.487Z"
+      },
+      {
+        "id": "1qH5W7knppf42RvlTQlrafJkKrzXBtIl9dBfER0x6oCw",
+        "name": "SECOND_READING_-_FB_148_-_Ethiopian_Eritrean_Student_Association_Funding_Act_-_Student_Senate_Finance_at_NC_State",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-28T19:27:31.268Z"
+      }
+    ],
+    "folders": {}
+  },
+  "FB_146": {
+    "files": [
+      {
+        "id": "1ndmzxLkMTv1sMR0GV064AFNKlwebenQIumH37mf_RHI",
+        "name": "OFFICIATED_-_FB_146_-_SolarPack_Reimbursment_Act_-_Student_Senate_Finance_at_NC_State",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-31T16:00:02.296Z"
+      },
+      {
+        "id": "1BASDIeUiX766A8GyZynvaH9T2tCqNwqMIcR0-0C_oyQ",
+        "name": "SECOND_READING_-_FB_146_-_SolarPack_Reimbursment_Act_-_Student_Senate_Finance_at_NC_State",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-20T01:56:51.505Z"
+      }
+    ],
+    "folders": {}
+  },
+  "GB_143": {
+    "files": [
+      {
+        "id": "1VqeXoC7Z38sb2DPn6fiywXka8Vtks49i9bJrsHg4CCQ",
+        "name": "SECOND_READING-_GB_143_-_Updating_the_Executive_Branch_Statutes_Act_-_Chloe_Webster",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-06-23T22:49:33.832Z"
+      },
+      {
+        "id": "1001vtb8rNHEFXTnscGdeUrlRMhOfmmoyBbeyuw19Qzc",
+        "name": "OFFICIATED_-_GB_143_-_Updating_the_Executive_Branch_Statutes_Act_-_Chloe_Webster",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-31T16:32:56.434Z"
+      },
+      {
+        "id": "15YextOBfYVIGjlDSUFVU7lMAFMu6n68HSnoMJe8O73s",
+        "name": "FIRST_READING-_GB_143-_Updating_the_Executive_Branch_Statutes_Act_-_Chloe_Webster",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-18T21:38:39.596Z"
+      }
+    ],
+    "folders": {}
+  },
+  "R_142": {
+    "files": [
+      {
+        "id": "1NrU7ljGRd7xhsA1r5DTtGW9DEPmRrdl8HUqHAbHhonw",
+        "name": "OFFICIATED_-_R_142_-_African_American_Cultural_Center_Protections_Act_-_Chloe_Webster",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-31T13:54:09.082Z"
+      },
+      {
+        "id": "1PllRb4FEEPLftwYXsaNG_m1-oVSCj4zuxa5k9A5c3B8",
+        "name": "SECOND_READING_-_R_142_-_African_American_Cultural_Center_Protections_Act_-_Chloe_Webster",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-19T00:43:12.065Z"
+      },
+      {
+        "id": "19r--cJreso1YUvnqKk1meX4f6CRb2UpKHJKS3_sXReE",
+        "name": "FIRST_READING_-_R_142_-_African_American_Cultural_Center_Protections_Act_-_Chloe_Webster",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-18T21:37:55.664Z"
+      }
+    ],
+    "folders": {}
+  },
+  "R_141": {
+    "files": [
+      {
+        "id": "1EKjL2m32-bG4Ra0RUwLOvJFKOJ0JGoGwSOaY2B71ntg",
+        "name": "OFFICIATED_-_R_141_-_Multicultural_Student_Affairs_Protections_Act_-_Bonnie_Jo_Taylor",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-28T01:19:51.213Z"
+      },
+      {
+        "id": "1rX_G6tKVDjOvMeqctOcYk02FG1NpgFjmkk96iSxY07k",
+        "name": "SECOND_READING-_R_141_-_Multicultural_Student_Affairs_Protections_Act_-_Bonnie_Jo_Taylor",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-19T00:44:19.395Z"
+      },
+      {
+        "id": "1OZJ9twuzP7dHn0RjFs-ub4eaW1wIvn0VOGll0yAyP_A",
+        "name": "FIRST_READING-_R_141_-_Multicultural_Student_Affairs_Protections_Act_-_Bonnie_Jo_Taylor",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-18T21:36:03.234Z"
+      }
+    ],
+    "folders": {}
+  },
+  "GB_139": {
+    "files": [
+      {
+        "id": "1UxESJhVm_eeXJnuMvubW1kqBC2UdKrcC6KZxkm_vFT8",
+        "name": "SECOND_READING-_GB_139_-_Student_Government_Statutes_Modernization_Act_-_Student_Senate_Pro_Tempore",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-06-23T22:46:26.424Z"
+      },
+      {
+        "id": "1kcXbNVdhQ2G89WByhq2J4FqH3AdP6mo4-zl7YvNgfkY",
+        "name": "OFFICIATED_-_GB_139_-_Student_Government_Statutes_Modernization_Act_-_Student_Senate_Pro_Tempore",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-28T01:14:51.973Z"
+      },
+      {
+        "id": "1uDq9L2zLhPMbYGEFX4VUTby54flaJHchhgYnvOtsHmM",
+        "name": "SECOND_READING-_GB_139_-_Student_Government_Statutes_Modernization_Act_-_Student_Senate_Pro_Tempore",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-20T01:02:02.415Z"
+      },
+      {
+        "id": "1cTnqUjspg_W_TRTVAbNsaudXXwrtnOCsMnmEPukY6RE",
+        "name": "COMMITTEE_READING-_GB_139_-_Student_Government_Statutes_Modernization_Act_-_Student_Senate_Pro_Tempore",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-20T00:55:27.942Z"
+      },
+      {
+        "id": "10UowReHaAoe_YvTH6acQK2qISFpmZ2gdpJzavUMcuE8",
+        "name": "FIRST_READING-_GB_139_-_Student_Government_Statutes_Modernization_Act_-_Student_Senate_Pro_Tempore",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-19T00:33:47.797Z"
+      }
+    ],
+    "folders": {}
+  },
+  "GB_140": {
+    "files": [
+      {
+        "id": "1OrLPcacDPaDxd0TxYgnm1D_hkJ3Gz5YU9fUp63OPTxM",
+        "name": "OFFICIATED_-_GB_140_-_Election_Oversight_and_Statutes_Update_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-31T16:32:40.988Z"
+      },
+      {
+        "id": "1VMT7UEBhfxkXly7v9NVrtZT7wVO5whYjhJAcmnFBSuE",
+        "name": "SECOND_READING-_GB_140_-_Election_Oversight_and_Statutes_Update_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-20T22:42:33.579Z"
+      },
+      {
+        "id": "1GC90IoZZyRIwLVvEjU2mIHvyB-puuh-16MkR7lKLPY0",
+        "name": "FIRST_READING-_GB_141_-_Election_Oversight_and_Statutes_Update_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-19T20:52:57.960Z"
+      }
+    ],
+    "folders": {}
+  },
+  "R_138": {
+    "files": [
+      {
+        "id": "1lXK5w3mUnPuD-i1xx-JP9LSPRNwYw7PUq8NPsA02xmI",
+        "name": "OFFICIATED_-_R_138_-_The_Women's_Resource_Center_Protection_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-28T01:12:02.570Z"
+      },
+      {
+        "id": "1GI1zT2f33v7TS5WtPBAog7D9RVIFHnAqGbG2ASaZRKw",
+        "name": "SECOND_READING_-_R_138_-_The_Women's_Resource_Center_Protection_Act_-_Chloe_Webster",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-19T00:42:28.451Z"
+      },
+      {
+        "id": "1f8fYVK8RMX-j89bpxM6AapNa9sXqlWZano-zTdO64PM",
+        "name": "COMMITTEE_-_R_138_-_The_Women's_Resource_Center_Protection_Act_-_Chloe_Webster",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-19T00:42:18.147Z"
+      },
+      {
+        "id": "1plo6--depDG7HSLteY7lSh3cHnE8vBS5wHPjUcPNpBs",
+        "name": "FIRST_READING_-_R_138_-_The_Women's_Resource_Center_Protection_Act_-_Chloe_Webster",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-18T21:29:40.546Z"
+      }
+    ],
+    "folders": {}
+  },
+  "R_137": {
+    "files": [
+      {
+        "id": "1ErQgNZtzEEH5sxbSCatsvraYYu5cyX6kM_ziN8X25zg",
+        "name": "OFFICIATED_-_R_137_-_Curriculum_Autonomy_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-28T01:11:12.258Z"
+      },
+      {
+        "id": "1DF0w3sBifh90d_8fQQ9UgLeKQSWZJ_ccBTMo12k0-U4",
+        "name": "COMMITTEE_-_R_137_-_Curriculum_Autonomy_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-18T23:51:13.451Z"
+      },
+      {
+        "id": "1XZl-5caX2vD8xxji3niGbKRnaTF-DbV6CDvgCUhpwFg",
+        "name": "FIRST_READING_-_R_137_-_Curriculum_Autonomy_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-18T23:51:05.853Z"
+      }
+    ],
+    "folders": {}
+  },
+  "SB_135": {
+    "files": [
+      {
+        "id": "1yUZ-iWjIo3lpfo10nvt9gQOy_01oVmUemL2DMllnUHc",
+        "name": "OFFICIATED_-_GB_135_-_Minimum_Committee_Membership_Act_-_Lalith_Nandula",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-21T04:23:55.729Z"
+      },
+      {
+        "id": "1-U94JD-gnDR1oziHkKquK_mtcbDIvKeVKzt-zwAhqTo",
+        "name": "COMMITTEE_-_SB_135_-_Minimum_Committee_Membership_Act_-_Lalith_Nandula",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-20T21:52:21.680Z"
+      },
+      {
+        "id": "1ovfcxbXBYyeaKJfA9JwmixeiGIz6NSGHJC2-tZIGCuc",
+        "name": "FIRST_READING_-_SB_135_-_Minimum_Committee_Membership_Act_-_Lalith_Nandula",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-18T21:21:28.559Z"
+      }
+    ],
+    "folders": {}
+  },
+  "R_133": {
+    "files": [
+      {
+        "id": "1eN2dkJqhAIaKjd2EpHV9ICSTWoG6KMyL9L9VSFEMiOw",
+        "name": "OFFICIATED_-_R_133_-_The_LGBT_Resource_Center_Protection_Act_-_Bonnie_Taylor",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-28T01:01:27.970Z"
+      },
+      {
+        "id": "1iVHmSLXM4mj3cYAHKdAeYgUUw3tSD_CcFQFfOhME_CM",
+        "name": "SECOND_READING_-_R_133_-_The_LGBT_Resource_Center_Protection_Act_-_Bonnie_Taylor",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-20T22:01:48.927Z"
+      },
+      {
+        "id": "10slPXRjdSxj9rTt91cwpsM890aZbz4SvNeGWnXs_SNc",
+        "name": "COMMITTEE_-_R_133_-_The_LGBT_Resource_Center_Protection_Act_-_Bonnie_Taylor",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-19T00:39:46.326Z"
+      },
+      {
+        "id": "1lH8DBe3ezD9ZpI0QDtDpU3MPE1Oga8waUzG4Rj9jPTs",
+        "name": "FIRST_READING_-_R_133_-_The_LGBT_Resource_Center_Protection_Act_-_Bonnie_Taylor",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-18T23:31:07.416Z"
+      }
+    ],
+    "folders": {}
+  },
+  "GB_134": {
+    "files": [
+      {
+        "id": "15LejxwWbDajueNVqwBZEODUFcXKcpogLRzf2-2u_Ua4",
+        "name": "OFFICIATED_-_GB_134_-_International_Affairs_Department_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-28T01:06:55.020Z"
+      },
+      {
+        "id": "1CXT2hUkMR_bIpTGUA8a2t5QQMaY_C3mrlDei29YmVv4",
+        "name": "SECOND_READING_-_GB_134_-_International_Affairs_Department_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-20T22:31:45.712Z"
+      },
+      {
+        "id": "14wqAIlUgAtfMkEtnfnzfCwolwNLOLUDduE1G5T1BT0o",
+        "name": "FIRST_READING_-_GB_134_-_International_Affairs_Department_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-18T20:23:56.047Z"
+      },
+      {
+        "id": "1LGYb40j_Z7MVQ0s4u4yI4Uw0GKpDe_8KOiBJvqeQCZo",
+        "name": "GB_133_-_Permanent_International_Affairs_Department_Act_-_Shatha_Boaj_Boaj",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-03T21:38:38.513Z"
+      }
+    ],
+    "folders": {}
+  },
+  "FB_136": {
+    "files": [
+      {
+        "id": "1Ua12tUlTZlUXQtejEV6B2tVdJF2ZTaldFIg0_2Mfqu8",
+        "name": "OFFICIATED_-_FB_136_-_Esports_Club_at_NC_State_Funding_Act_-_Student_Senate_Finance_at_NC_State",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-28T01:23:16.998Z"
+      },
+      {
+        "id": "1-TBNL2qkXFntcQ15uXWuvRpvAHqah824jcnkiLvjnlc",
+        "name": "FIRST_READING_-_FB_136_-_Esports_Club_at_NC_State_Funding_Act_-_Student_Senate_Finance_at_NC_State",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-18T20:50:55.891Z"
+      }
+    ],
+    "folders": {}
+  },
+  "R_131": {
+    "files": [
+      {
+        "id": "1N6Db4mL32v_I9xkdMQunxzgd0dReDDDesFb49_gqYLc",
+        "name": "OFFICIATED_-_R_131_-_The_NC_State_Forward_Together_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-04-25T15:03:36.526Z"
+      },
+      {
+        "id": "1T4jrzMekIKV8gB9Rb41jGk7OnWf_WLlJp-n8HRZ3kkc",
+        "name": "SECOND_READING_-_R_131_-_The_NC_State_Forward_Together_Act_-_Student_Senate_Pro_Tempore",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-20T22:16:16.861Z"
+      },
+      {
+        "id": "1jWDVuFrclXFUumLoDQX-tjXve6r9barV5N_-Gaq5-vc",
+        "name": "COMMITTEE_-_R_131-_The_NC_State_Forward_Together_Act_-_Student_Senate_Pro_Tempore",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-20T14:04:36.455Z"
+      },
+      {
+        "id": "110JZqmbUUGok_0E9r_n6a5S5N2wZr98SKpgKT0KPGtg",
+        "name": "FIRST_READING_-_R_131-_The_NC_State_Forward_Together_Act_-_Student_Senate_Pro_Tempore",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-03T21:10:21.475Z"
+      }
+    ],
+    "folders": {}
+  },
+  "BB_132": {
+    "files": [
+      {
+        "id": "1PZO1yv0S4dVYbfQsxMNUITDRSQZiYNIBionVOUDS7VY",
+        "name": "OFFICIATED_-_BB_132_-_Fiscal_Year_2026_Student_Government_Budget_Bill_",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-27T23:00:14.697Z"
+      },
+      {
+        "id": "1O6wnkNxY2van0AJdgU0-jBf2juDiKav4FCAvm2Cgmwo",
+        "name": "FIRST_READING_-_BB_132_-_Fiscal_Year_2026_Student_Government_Budget_Bill_",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-17T16:27:55.273Z"
+      }
+    ],
+    "folders": {}
+  },
+  "SB_130": {
+    "files": [
+      {
+        "id": "1zwaubBIaAzQf9L6BltR-FYH1iwUMIPQGbwf9x83lf4Y",
+        "name": "OFFICIATED_-_SB_130_-_Delegation_Heads_Meeting_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-31T17:16:34.339Z"
+      },
+      {
+        "id": "19cPVBwuBEWUPibNOFV2FX0C_J-BBy1iXbn5SL_zUPHc",
+        "name": "SECOND_READING_-_SB_130_-_Delegation_Heads_Meeting_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-27T23:00:49.080Z"
+      },
+      {
+        "id": "1ohFjTu3I3EXnxIB5ZHO7-I9NbdrXh_nPu2MxLEomYa0",
+        "name": "COMMITTEE_-_SB_130_-_Delegation_Heads_Meeting_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-06T03:16:52.619Z"
+      },
+      {
+        "id": "1d7RoVZyZOHcCnNLMPigkgWx7P5hdOuxml1lcLXlrtEI",
+        "name": "FIRST_READING-_SB_130_-_Delegation_Heads_Meeting_Act_-_Bella_Echiburu",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-06T03:12:44.770Z"
+      }
+    ],
+    "folders": {}
+  },
+  "SB_129": {
+    "files": [
+      {
+        "id": "1Ew2nS58Qb3JptoOpl6e-ZkBA_v34Uj0IzhPPS_EUpVo",
+        "name": "OFFICIATED_-_SB_129_-_The_Senate_Legislative_Process_Update_Act_-_Student_Senate_Finance_at_NC_State",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-31T17:15:59.564Z"
+      },
+      {
+        "id": "1R2HiLnDOXGrr1NRzG8xeoNL0rOhHrCtwcRP2qrE2Fjo",
+        "name": "FIRST_READING-_SB_129_-_The_Senate_Legislative_Process_Update_Act_-_Student_Senate_Finance_at_NC_State",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-27T22:56:35.071Z"
+      }
+    ],
+    "folders": {}
+  },
+  "FB_128": {
+    "files": [
+      {
+        "id": "1mTnEavy7QI7kLJTY8pxhV6Ba48z2IFbQzNu2sZmegcA",
+        "name": "OFFICIATED_-_FB_128_-_Vietnamese_Student_Association_Funding_Act_-_Student_Senate_Finance_at_NC_State",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-31T15:59:04.254Z"
+      },
+      {
+        "id": "1uJEbUApcx_jkYyV-zFGrGstLASvF-3A_8q8On5RgdvU",
+        "name": "FIRST_READING-_FB_128-_Vietnamese_Student_Association_Funding_Act_-_Student_Senate_Finance_at_NC_State",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-02-18T02:36:28.029Z"
+      }
+    ],
+    "folders": {}
+  },
+  "FB_127": {
+    "files": [
+      {
+        "id": "1NzMEgi4vqZ9E3XNA_ycdEyQiE7qbH7C_asFnjl2X30s",
+        "name": "OFFICIATED_-_FB_127-_Alpha_Epsilon_Delta_Funding_Act_-_Student_Senate_Finance_at_NC_State",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-31T15:58:30.555Z"
+      },
+      {
+        "id": "1OupHwR2XrVJY07Rn3PcFDiLDOCwWHZ-NQxxLRFT75l0",
+        "name": "FIRST_READING-_FB_127-_Alpha_Epsilon_Delta_Funding_Act_-_Student_Senate_Finance_at_NC_State",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-02-18T02:35:11.561Z"
+      }
+    ],
+    "folders": {}
+  },
+  "FB_126": {
+    "files": [
+      {
+        "id": "1yI80DmtvNFR555-TH_IuRSLET1Z9iEXBFPoBdv0llKo",
+        "name": "OFFICIATED_-_FB_126-_Badminton_Club_Funding_Act_-_Student_Senate_Finance_at_NC_State",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-31T15:57:45.602Z"
+      },
+      {
+        "id": "1fRC8Gu0uVYuPUWYmyzJ88ppiEaF1yvd4BoSiF0Kt3jI",
+        "name": "FIRST_READING-_FB_126-_Badminton_Club_Funding_Act_-_Student_Senate_Finance_at_NC_State",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-02-18T02:34:29.183Z"
+      }
+    ],
+    "folders": {}
+  },
+  "GB_125": {
+    "files": [
+      {
+        "id": "1loz0ga269GfpGqQ7-ZPx3B2O4rSkfcMEnrBcBCj73kg",
+        "name": "OFFICIATED_-_GB_125_-_Election_Statutes_Amendment_Act_-_Chloe_Webster",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-27T22:35:08.283Z"
+      },
+      {
+        "id": "1bP9OPeGvbRCEtEJPG_qvZgshHSnnjXm6v5fk1DXDv9I",
+        "name": "SECOND_READING-_GB_125_-_Election_Statutes_Amendment_Act_-_Chloe_Webster",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-18T23:32:06.409Z"
+      },
+      {
+        "id": "14DI5wMu7ntMlW9FZoeYzxjEOsmV-Do124f1DgQrFZns",
+        "name": "FIRST_READING-_GB_125_-_Election_Statutes_Amendment_Act_-_Chloe_Webster",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-06T03:25:28.715Z"
+      }
+    ],
+    "folders": {}
+  },
+  "R_124": {
+    "files": [
+      {
+        "id": "1zx9OThcLhTah9TaOSsJCGTMjRIeJx-dNN81JFVHyEUE",
+        "name": "FIRST_READING-_R_124-_Agriculture_Week_Act_-_Preston_Spencer",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-06T02:06:12.086Z"
+      }
+    ],
+    "folders": {}
+  },
+  "R_123": {
+    "files": [
+      {
+        "id": "1vNjzwDCO2rfn9Wtg4olDKSKXUrUsV1QWIIPGjWSqWs8",
+        "name": "OFFICIATED_-_R_123_-_Our_Three_Winners_Remembrance_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-31T14:44:39.362Z"
+      },
+      {
+        "id": "1iOvJp_ZPKtwMFtKsyDjJbJtHo9I4puk6",
+        "name": "OFFICIATED_-_R_123_-_Our_Three_Winners_Remembrance_Act.pdf",
+        "mimeType": "application/pdf",
+        "modifiedTime": "2025-02-26T16:16:49.000Z"
+      },
+      {
+        "id": "1Nk9lq56uc0O94RreGI-wQBty3mt8tx0GORwJPs59-7c",
+        "name": "FIRST_READING-_R_123_-_Our_Three_Winners_Remembrance_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-02-25T22:19:38.470Z"
+      }
+    ],
+    "folders": {}
+  },
+  "GB_122": {
+    "files": [
+      {
+        "id": "1CG5cS0hBpQc0dHGHqUwCM4OLuih0_muSqrNop_JbgNE",
+        "name": "FIRST_READING-_GB_122_-_Justice_Department_Overhaul_Act_-_Student_Senate_Pro_Tempore",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-03T02:28:13.221Z"
+      }
+    ],
+    "folders": {}
+  },
+  "GB_121": {
+    "files": [
+      {
+        "id": "1qLGQIOg4NHWPl1jzT_tdbDAmdkPlMh_QygyTxGcsYwg",
+        "name": "OFFICIATED_-_GB_121_-_80_Seat_Apportionment_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-27T22:55:43.169Z"
+      },
+      {
+        "id": "1OkIn-oYgKPDOzNz5EVOj7Gl8MSr0IIJvaVLxjtuzIa8",
+        "name": "SECOND_READING_-_GB_121_-_80_Seat_Apportionment_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-18T23:28:16.317Z"
+      },
+      {
+        "id": "1-9ANF_mi4rtq6ezHdDS4oS8EgIwHfgMLpJXW3VJSDI0",
+        "name": "FIRST_READING-_GB_121_-_80_Seat_Apportionment_Act_-_Chloe_Webster",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-02-17T21:23:15.141Z"
+      }
+    ],
+    "folders": {}
+  },
+  "R_120": {
+    "files": [
+      {
+        "id": "1IcvFUlMZ4sQoxr1jb1R5ASLnYHkmVDup9pOVmCmg02Q",
+        "name": "OFFICIATED_-_R_120_-_Streamlining_The_Printing_Process_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-31T16:54:11.434Z"
+      },
+      {
+        "id": "1znke34uC-b4ay2VUPFHoP9iu3D9KqfXg",
+        "name": "OFFICIATED_-_R_120_-_Streamlining_The_Printing_Process_Act.pdf",
+        "mimeType": "application/pdf",
+        "modifiedTime": "2025-02-26T15:51:37.000Z"
+      },
+      {
+        "id": "1YeHrzMy0iS08080LHExhc_aJmWzAOg_upyrYF9m6rTA",
+        "name": "FIRST_READING_-_R_120_-_Streamlining_The_Printing_Process_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-02-06T19:09:57.268Z"
+      }
+    ],
+    "folders": {
+      "R_1??": {
+        "id": "1xu30U4gtWEJCJm5_ObXw7DJatsKj6LDj",
+        "path": "R_120/R_1??"
+      }
+    }
+  },
+  "R_120/R_1??": {
+    "files": [
+      {
+        "id": "1F7UD-66TVJwbIi-zVjvBY4DacjdfCKMl7Q_paDNVzy0",
+        "name": "FIRST_READING_-_R_122_-_Student_Printing_Quota_Act_-_Paul_Lewis",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-31T16:56:29.002Z"
+      }
+    ],
+    "folders": {}
+  },
+  "GB_118": {
+    "files": [
+      {
+        "id": "1K0kYaBwYNV-Fxob9z5pX4QaQ59ICI8sYeLSHjNNKo-c",
+        "name": "OFFICIATED_-_GB_118_-_SBO_Review_Establishment_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-31T16:36:55.242Z"
+      },
+      {
+        "id": "1fPAfivowNaTPBDMhDFm2b2463qzqskqrURCOtAqE8OA",
+        "name": "SECOND_READING_-_GB_118_-_SBO_Review_Establishment_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-02-25T22:22:12.512Z"
+      },
+      {
+        "id": "1HqGjHGUpUf3Ir8GDAaucu_PzwGny_0vY0BNyhXNZ9x4",
+        "name": "FIRST_READING_-_GB_118_-_SBO_Review_Establishment_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-02-14T00:19:49.820Z"
+      }
+    ],
+    "folders": {}
+  },
+  "GB_117": {
+    "files": [
+      {
+        "id": "1kZQ4qF6Re2USZn4z02h3vKx2BVCKgURJgo1UhXNYYPU",
+        "name": "OFFICIATED_-_GB_117-_Special_Review_Committee_Composition_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-31T16:25:06.691Z"
+      },
+      {
+        "id": "1FPCaaomcC_vyliMqrmw7DSz_NHZR6Ufz",
+        "name": "OFFICIATED_-_GB_117-_Special_Review_Committee_Composition_Act.pdf",
+        "mimeType": "application/pdf",
+        "modifiedTime": "2025-02-26T16:22:38.000Z"
+      },
+      {
+        "id": "16pUQy5tKFTfRAJF2RtY2Hh-lFJLeLknXS_pzAcl-dJI",
+        "name": "FIRST_READING_-_GB_117-_Special_Review_Committee_Composition_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-02-04T02:35:05.761Z"
+      }
+    ],
+    "folders": {}
+  },
+  "R_116": {
+    "files": [
+      {
+        "id": "1zMWTtW1dOu3sqweofK0l2eTgTjg_N7W7nXrYQD9CPpw",
+        "name": "OFFICIATED_-_R_116_-_The_Academic_Provisions_Standardization_Act_-_Student_Senate_Pro_Tempore",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-28T18:19:00.466Z"
+      },
+      {
+        "id": "1_qYxwBHZWneWYgSBjTLPq-34_v7uJ2rZHYl4JM5uXCQ",
+        "name": "SECOND_READING_-_R_116_-_The_Academic_Provisions_Standardization_Act_-_Student_Senate_Pro_Tempore",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-06T02:35:10.347Z"
+      },
+      {
+        "id": "1jRrlP7qSYh1tbuqQBX1HbwPnQevQF-Djd3NM8utxSaU",
+        "name": "FIRST_READING_-_R_116_-_The_Academic_Provisions_Standardization_Act_-_Student_Senate_Pro_Tempore",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-02-18T22:58:35.681Z"
+      },
+      {
+        "id": "1LYv4bDIeY6IZPCwJJazrYMJoEwZ_IYrke4ea7ThgX-A",
+        "name": "COMMITTEE_-_R_116_-_The_Academic_Provisions_Standardization_Act_-_Student_Senate_Pro_Tempore",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-02-18T22:57:51.733Z"
+      },
+      {
+        "id": "1NHleQ_54r-5tWoq_3Ge15if7c5VlExa0PmVfpkCOVwk",
+        "name": "SECOND_READING_-_R_116_-_The_Academic_Provisions_Standardization_Act_-_Student_Senate_Pro_Tempore",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-02-18T22:49:29.835Z"
+      },
+      {
+        "id": "1lIiM1b1-qyDqquVYUbVIr-TsgTNQNEkobc067rCQnBU",
+        "name": "COMMITTEE_READING_-_R_116_-_The_Academic_Provisions_Standardization_Act_-_Student_Senate_Pro_Tempore",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-02-13T00:52:10.006Z"
+      }
+    ],
+    "folders": {}
+  },
+  "FB_115": {
+    "files": [
+      {
+        "id": "1BL6NTD-VaR3TCupHmCpNYp4LeVo0PYsFlr1Ajn5WrVQ",
+        "name": "OFFICIATED_-_FB_115_-_Sky_At_NC_State_Reimbursement_Act_-_Student_Senate_Finance_at_NC_State",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-31T15:57:05.441Z"
+      },
+      {
+        "id": "1e52bw747S-4yBPGTjoohzJeINLJ1kCmfwNesA8gvaBU",
+        "name": "FIRST_READING_-_FB_115_-_Sky_At_NC_State_Reimbursement_Act_-_Student_Senate_Finance_at_NC_State",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-02-05T22:19:56.597Z"
+      }
+    ],
+    "folders": {}
+  },
+  "AB_110": {
+    "files": [
+      {
+        "id": "1nwdNT71htd-6K8PK1jb592m2S7KYNGt1",
+        "name": "OFFICIATED_-_AB_110_-_Spring_Break_2025_-_Fall_Break_2025_Appropriations_Bill.pdf",
+        "mimeType": "application/pdf",
+        "modifiedTime": "2025-02-21T17:48:08.000Z"
+      },
+      {
+        "id": "1l7Vzhm5Gqse03xENRC_loCX1n9OSuCSncXPHHAjRsT4",
+        "name": "OFFICIATED_-_AB_110_-_Spring_Break_2025_-_Fall_Break_2025_Appropriations_Bill",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-02-21T17:48:01.362Z"
+      },
+      {
+        "id": "1W8haEtbH3oN2Hcba5Y3Gw5UZiNByBOO3c4NjIV3AgWc",
+        "name": "SECOND_READING_-_AB_110_-_Spring_Break_2025_-_Fall_Break_2025_Appropriations_Bill",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-02-19T20:56:42.207Z"
+      },
+      {
+        "id": "1D5Fb8OwEKE-4mR12wS8Ku5FB8i_BRdeES8ylI_9CKX0",
+        "name": "COMMITTEE_-_AB_110_-_Spring_Break_2025_-_Fall_Break_2025_Appropriations_Bill",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-02-19T20:50:24.120Z"
+      },
+      {
+        "id": "1ndEzYyDnX0RKgZZHLxYGTb0eJShFGLLDmrz_LI6c3So",
+        "name": "FIRST_READING_-_AB_110_-_Spring_Break_2025_-_Fall_Break_2025_Appropriations_Bill",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-02-13T02:03:06.321Z"
+      }
+    ],
+    "folders": {}
+  },
+  "FB_114": {
+    "files": [
+      {
+        "id": "1atMdwgGlwPH4AqB3HCj0QqtGjuNcQGEpK5DW4tXPpAw",
+        "name": "OFFICIATED_-_FB_114-_CrossFit_Club_Reimbursement_Act_-_Student_Senate_Finance_at_NC_State",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-31T15:56:26.579Z"
+      },
+      {
+        "id": "1PvF8wFDZLUxDFxlG7MagBoXxmMebSj0f",
+        "name": "OFFICIATED_-_FB_114-_CrossFit_Club_Reimbursement_Act_-_Student_Senate_Finance_at_NC_State.pdf",
+        "mimeType": "application/pdf",
+        "modifiedTime": "2025-02-11T21:48:54.000Z"
+      },
+      {
+        "id": "1JifuwepxZChcbGsecHS2ZTUgkGUy7DinNVJPM3pzbh0",
+        "name": "FIRST_READING_-_FB_114-_CrossFit_Club_Reimbursement_Act_-_Student_Senate_Finance_at_NC_State",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-02-06T19:02:23.192Z"
+      }
+    ],
+    "folders": {}
+  },
+  "SR-A_113": {
+    "files": [
+      {
+        "id": "15MfubTTKrNu3Jw4y5j5I9Z6N3StG6K4K4Lj-pTlgCPI",
+        "name": "OFFICIATED_-_SR-A_113_-_C._Carter_Co-Director_of_the_Department_of_Sustainability_Confirmation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-31T17:32:43.553Z"
+      },
+      {
+        "id": "1rFNX08-uTcB9BzC49uwsdp4CuD20FU-Nd_s5ZHBV8e8",
+        "name": "SR-A_113_-_C._Carter_Co-Director_of_the_Department_of_Sustainability_Confirmation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-02-04T02:17:15.377Z"
+      }
+    ],
+    "folders": {}
+  },
+  "SR-A_112": {
+    "files": [],
+    "folders": {}
+  },
+  "R_111": {
+    "files": [
+      {
+        "id": "16J7nxjLLGhMkZbHJzaCY0Q1Af1PGphrisIHt4efhk7U",
+        "name": "OFFICIATED_-_R_111-_The_Teaching_Fellows_Expansion_Act_",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-31T16:53:05.032Z"
+      },
+      {
+        "id": "112v8J331VaYF4XsZdxw6gF9t8oY1X9cV",
+        "name": "OFFICIATED_-_R_111-_The_Teaching_Fellows_Expansion_Act_.pdf",
+        "mimeType": "application/pdf",
+        "modifiedTime": "2025-02-26T15:45:10.000Z"
+      },
+      {
+        "id": "1JXpzNAndhkjjetChQgTCuQBeIlkfqbH5z3K79c0krfU",
+        "name": "SECOND_READING-_R_111-_The_Teaching_Fellows_Expansion_Act_",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-02-25T22:18:40.568Z"
+      },
+      {
+        "id": "1GZ_ApeGd0RfphkPg4ef_sMHpoG3EZiNwVni-hwb6YCo",
+        "name": "FIRST_READING-_R_111-_The_Teaching_Fellows_Expansion_Act_",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-02-04T02:07:04.979Z"
+      }
+    ],
+    "folders": {}
+  },
+  "SR-A_109": {
+    "files": [
+      {
+        "id": "142htlI4LoWcS9dZ9_m33iB_HjcpOuxIv-D7zb8EwORM",
+        "name": "OFFICIATED_-_SR-A_109_-_Mahler_Legislative_Assistant_Confirmation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-31T17:32:48.503Z"
+      },
+      {
+        "id": "1pTMvri1tLixFHP-Yh5qLi7iLd05qBtmQkGoBEmv8t_c",
+        "name": "SR-A_109_-_Mahler_Legislative_Assistant_Confirmation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-01-30T23:01:40.895Z"
+      }
+    ],
+    "folders": {}
+  },
+  "SR-A_88": {
+    "files": [
+      {
+        "id": "15v7S4ZVfpeXH39EfZsS1S7JQjqPjRS9ph7xrXoEpxSU",
+        "name": "OFFICIATED_-_SR-A_88_-_Furr_Board_of_Elections_Commissioner_Confirmation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-31T17:32:23.127Z"
+      },
+      {
+        "id": "10dyPG_qolk_BZubvYCCwNcU8d7otxAtyDQRKkeTfiZ0",
+        "name": "SR-A_88_-_Furr_Board_of_Elections_Commissioner_Confirmation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-10-31T19:23:29.429Z"
+      }
+    ],
+    "folders": {}
+  },
+  "SR-A_87": {
+    "files": [
+      {
+        "id": "1WJOpKgd-sM7Jhm7abGIc1vmbzE6vBrWszvsnXPqqFio",
+        "name": "OFFICIATED_-_SR-A_87_-_Reed_Board_of_Elections_Commissioner_Confirmation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-31T17:32:16.817Z"
+      },
+      {
+        "id": "1Dnezbzj0OiQM83zQ3wvVOJxJ0I96kpaZTDEUr9E2G_M",
+        "name": "SR-A_87_-_Reed_Board_of_Elections_Commissioner_Confirmation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-10-31T19:22:58.338Z"
+      }
+    ],
+    "folders": {}
+  },
+  "SR-A_84": {
+    "files": [
+      {
+        "id": "1-2rVVOv47PjWkoKnui8-yPCpsuJUoMRQ0geiXFJYmik",
+        "name": "OFFICIATED_-_SR-A_84_-_Doan_Board_of_Elections_Commissioner_Confirmation_Act_",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-31T17:38:31.695Z"
+      }
+    ],
+    "folders": {
+      "SR-A_84": {
+        "id": "1JM6ARagJQDQelQGrVgs2020OEID809LX",
+        "path": "SR-A_84/SR-A_84"
+      }
+    }
+  },
+  "SR-A_84/SR-A_84": {
+    "files": [
+      {
+        "id": "1mfS0vY5q010oAhABeWHLzFnIO5MwpQ3Jnti-hlh0YoM",
+        "name": "SR-A_84_-_Doan_Board_of_Elections_Commissioner_Confirmation_Act_",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-10-31T19:18:21.423Z"
+      }
+    ],
+    "folders": {}
+  },
+  "SR-A_85": {
+    "files": [
+      {
+        "id": "1CZoMYiIaZa7WscEPvGE90XHnx3lOZoRJ-B8UsfiR8iU",
+        "name": "OFFICIATED_-_SR-A_85_-_Harmening_Board_of_Elections_Commissioner_Confirmation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-31T17:38:13.663Z"
+      }
+    ],
+    "folders": {
+      "SR-A_85": {
+        "id": "1Sg3CS6H1ClY5BvY_XwzYVkI3pcRzu9ka",
+        "path": "SR-A_85/SR-A_85"
+      }
+    }
+  },
+  "SR-A_85/SR-A_85": {
+    "files": [
+      {
+        "id": "1-dHb2dz_AwNFIGpNSn_cPcO414Nn-TCdd4C-btWz5Uc",
+        "name": "SR-A_85_-_Harmening_Board_of_Elections_Commissioner_Confirmation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-10-31T19:21:08.976Z"
+      }
+    ],
+    "folders": {}
+  },
+  "SR-A_80": {
+    "files": [
+      {
+        "id": "1Jvgn5RrdRigw_3jAfpp4hbbvgDPvI-KFLy63FnLkvkw",
+        "name": "OFFICIATED_-_SR-A_80_-_Whitehead_Legislative_Assistant_Confirmation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-31T17:44:42.082Z"
+      },
+      {
+        "id": "1tnWqBp9ck4OQgj01C3W17719BJXGUP5kg_2r8eFstv4",
+        "name": "SR-A_80_-_Whitehead_Legislative_Assistant_Confirmation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-01-26T02:30:27.370Z"
+      }
+    ],
+    "folders": {
+      "SR-A_80": {
+        "id": "1XBCarB86iXZ81YL_GoMw2z46Us_8XvZJ",
+        "path": "SR-A_80/SR-A_80"
+      }
+    }
+  },
+  "SR-A_80/SR-A_80": {
+    "files": [
+      {
+        "id": "19-mvJ37A5AVQlabfuDl6viKZXxZO6axLcMZx_-fstmI",
+        "name": "SR-A_80_-_Whitehead_Legislative_Assistant_Confirmation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-10-31T19:05:38.883Z"
+      }
+    ],
+    "folders": {}
+  },
+  "SR-A_79": {
+    "files": [
+      {
+        "id": "1D7c_kM2DBUOdkWftz99J91WLGmgTBso0Arj4T9RqjNU",
+        "name": "OFFICIATED_-_SR-A_79_-_Ngina_Legislative_Assistant_Confirmation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-31T17:45:18.724Z"
+      },
+      {
+        "id": "1Bnb-z6K_L-tPPpqavfXAHv0mUOK2OTbJV8-cpDq7V70",
+        "name": "SR-A_79_-_Ngina_Legislative_Assistant_Confirmation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-01-26T02:29:21.759Z"
+      }
+    ],
+    "folders": {
+      "SR-A_79": {
+        "id": "16Uu4vy27lyJ02ufwnivKHBPM-3t23XOs",
+        "path": "SR-A_79/SR-A_79"
+      }
+    }
+  },
+  "SR-A_79/SR-A_79": {
+    "files": [
+      {
+        "id": "1FnIYDACPtFuw9rhRT4EM9yZTqqvWTUq3bjhcuK7vcdw",
+        "name": "SR-A_79_-_Ngina_Legislative_Assistant_Confirmation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-10-31T19:05:07.823Z"
+      }
+    ],
+    "folders": {}
+  },
+  "SR-A_78": {
+    "files": [
+      {
+        "id": "1wFycwfDexzTbq-oD_Rg-zZIWcK_YWiEs1Vg8qN-hyB4",
+        "name": "OFFICIATED_-_SR-A_78_-_Lowery_Legislative_Assistant_Confirmation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-31T17:45:58.395Z"
+      },
+      {
+        "id": "1f_CSkCupgm6D3bVcFXh53VHq757uI2HNLZXCQuz-hi8",
+        "name": "SR-A_78_-_Lowery_Legislative_Assistant_Confirmation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-01-26T02:27:17.584Z"
+      }
+    ],
+    "folders": {
+      "SR-A_78": {
+        "id": "1ZIxFPPxNZ0MiTEPGKU2ZtBjFqxTMXYDI",
+        "path": "SR-A_78/SR-A_78"
+      }
+    }
+  },
+  "SR-A_78/SR-A_78": {
+    "files": [
+      {
+        "id": "1s8BBDDcgXQhbvOBtNlSUTzgoDcRpWPnAwqNkjxaLJSY",
+        "name": "SR-A_78_-_Lowery_Legislative_Assistant_Confirmation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-10-31T19:04:23.936Z"
+      }
+    ],
+    "folders": {}
+  },
+  "FB_104": {
+    "files": [
+      {
+        "id": "1BMMEuEzIaRSho014Zihr7926hKAtVivR",
+        "name": "OFFICIATED_-_FB_104-_Oak_City_Revolution_Funding_Act_-_Student_Senate_Finance_at_NC_State.pdf",
+        "mimeType": "application/pdf",
+        "modifiedTime": "2025-01-26T02:22:50.000Z"
+      },
+      {
+        "id": "13H6kFwldXnLeO7UtXz0KQm9ac6wjA_VeaAdkEmhvQEI",
+        "name": "OFFICIATED_-_FB_104-_Oak_City_Revolution_Funding_Act_-_Student_Senate_Finance_at_NC_State",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-01-26T02:22:44.562Z"
+      },
+      {
+        "id": "1HToHoE7ZpqAdge01x-7aYGZsKr-V4jsii0ge3uX5qy4",
+        "name": "FIRST_READING-_FB_104-_Oak_City_Revolution_Funding_Act_-_Student_Senate_Finance_at_NC_State",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-01-24T02:14:27.469Z"
+      }
+    ],
+    "folders": {}
+  },
+  "R_108": {
+    "files": [
+      {
+        "id": "1iLwns7PnKdkInLxrSp7q92s8VyeaF-s-u36HZPaCFWE",
+        "name": "OFFICIATED_-_R_108_-_Endorsement_of_‘DEI_Within_the_UNC_System_Research_Report’_Act_-_Naila_Din",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-31T16:52:03.909Z"
+      },
+      {
+        "id": "1vyqWn70LoFSmuS4RW9rGtn3-HgVwJXDY",
+        "name": "OFFICIATED_-_R_108_-_Endorsement_of_‘DEI_Within_the_UNC_System_Research_Report’_Act_-_Naila_Din.pdf",
+        "mimeType": "application/pdf",
+        "modifiedTime": "2025-02-26T15:38:15.000Z"
+      },
+      {
+        "id": "1n5nK51EiFRHbIEK52pRVuBwUU7yB38JIF2aj96PHxbk",
+        "name": "COMMITTEE_-_R_108_-_Endorsement_of_‘DEI_Within_the_UNC_System_Research_Report’_Act_-_Naila_Din",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-02-06T02:53:44.935Z"
+      },
+      {
+        "id": "1VkDR7aVoUw-po3zn71DQWfxbeNGDmSIn1pC0j7OU12U",
+        "name": "FIRST_READING-_R_108_-_Endorsement_of_‘DEI_Within_the_UNC_System_Research_Report’_Act_-_Naila_Din",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-01-21T02:28:03.798Z"
+      }
+    ],
+    "folders": {}
+  },
+  "R_107": {
+    "files": [
+      {
+        "id": "1bUaR3ojx8WFA4dgbKyOMhqce3h7ua6xYbP_BpSzcLZE",
+        "name": "OFFICIATED_-_R_107-_National_FFA_Week_and_Agricultural_Education_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-31T16:51:29.222Z"
+      },
+      {
+        "id": "1Wficoy3i8dtW5lL4oJ3Gu12AFj5OSb0D",
+        "name": "OFFICIATED_-_R_107-_National_FFA_Week_and_Agricultural_Education_Act.pdf",
+        "mimeType": "application/pdf",
+        "modifiedTime": "2025-02-11T21:51:19.000Z"
+      },
+      {
+        "id": "1YxbQFI99IoiKWSUD5Wtbj65oxfxLd7E6p16FcjH_1f8",
+        "name": "SECOND_READING-_R_107-_National_FFA_Week_and_Agricultural_Education_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-02-06T01:57:13.753Z"
+      },
+      {
+        "id": "1ato6mDFz9B6hg4D5mmE1hDCU3J83uNidp2J3ibzTGxQ",
+        "name": "FIRST_READING-_R_107-_National_FFA_Week_and_Agricultural_Education_Act-_Preston_Spencer",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-02-06T00:28:31.608Z"
+      },
+      {
+        "id": "16kmNfciV-sReJ4WCG_FPmG5vo1fK_bqJWH16O0xIxJo",
+        "name": "COMMITTEE_-_R_107-_National_FFA_Week_and_Agricultural_Education_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-01-30T01:51:33.519Z"
+      }
+    ],
+    "folders": {}
+  },
+  "SR_106": {
+    "files": [
+      {
+        "id": "10sO7u8DuloIZ2AuZ6Yr-NNwzXSkQ_0XZCJLb8QHI4o4",
+        "name": "COMMITTEE_-_SR_106_-_Promote_the_First_Amendment_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-01-30T01:16:50.695Z"
+      },
+      {
+        "id": "17DbZYZdmccDi9_0IDcFAQ2j3JmpL0YcKmWlRkX_mvgU",
+        "name": "FIRST_READING-_SR_106-_Promote_the_First_Amendment_Act_-_George_Whatley",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-01-21T02:12:59.620Z"
+      }
+    ],
+    "folders": {}
+  },
+  "R_105": {
+    "files": [
+      {
+        "id": "1VPmC29Jfl-DWMVLR2uMCMhqF9N6GbS8IZtdYX3HSmEI",
+        "name": "OFFICIATED_-_R_105_-_Creating_an_ASL_Program_at_NCSU_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-31T16:50:33.995Z"
+      },
+      {
+        "id": "1_ble5P-UNRHgiGFsD_Ojt8UlsURv5yvx",
+        "name": "OFFICIATED_-_R_105_-_Creating_an_ASL_Program_at_NCSU_Act.pdf",
+        "mimeType": "application/pdf",
+        "modifiedTime": "2025-02-26T15:49:01.000Z"
+      },
+      {
+        "id": "1kbWz6N8Zq8a_LyVRFCTR67iUkdK15f31cmLcR0r_Qg0",
+        "name": "COMMITTEE_-_R_105_-_Creating_an_ASL_Program_at_NCSU_Act-_Vanessa_Dixon",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-02-06T03:33:15.527Z"
+      },
+      {
+        "id": "1YbqzxzR73X04BksyeSRXLUY2qJpzs5IrmGfL1bUMnl0",
+        "name": "FIRST_READING_-_R_105_-_Creating_an_ASL_Program_at_NCSU_Act-_Vanessa_Dixon",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-01-21T01:58:33.940Z"
+      }
+    ],
+    "folders": {}
+  },
+  "FB_103": {
+    "files": [
+      {
+        "id": "1qd28QXtCtQp-qmmHQsxeEhaWwVxrTx2G",
+        "name": "OFFICIATED_-_FB_103_-_Pakistani_Student_Organization_Funding_Act.pdf",
+        "mimeType": "application/pdf",
+        "modifiedTime": "2025-01-26T02:22:03.000Z"
+      },
+      {
+        "id": "18RPWshnJHIisp4_gce68VC9_M3PSWk8LJMoI9tzBqng",
+        "name": "OFFICIATED_-_FB_103_-_Pakistani_Student_Organization_Funding_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-01-26T02:21:49.698Z"
+      },
+      {
+        "id": "1DzQ2HZ51SC7FSEQ5bwnk9vcM0p_LLeY8-Zc0TYBjOqA",
+        "name": "FIRST_READING-_FB_103-_Pakistani_Student_Organization_Funding_Act_-_Student_Senate_Finance_at_NC_State",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-01-21T01:32:33.172Z"
+      }
+    ],
+    "folders": {}
+  },
+  "FB_102": {
+    "files": [
+      {
+        "id": "1iEf-YrONLt74xhsSEHiAtiESQ6pcAMc-VEamX1Ekbzc",
+        "name": "OFFICIATED_-_FB_102_-_Cycling_Club_Funding_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-31T15:54:43.011Z"
+      },
+      {
+        "id": "1HeNolgecM_MCv1levQUjJH0NH7b2ZICt",
+        "name": "OFFICIATED_-_FB_102_-_Cycling_Club_Funding_Act.pdf",
+        "mimeType": "application/pdf",
+        "modifiedTime": "2025-01-26T02:21:06.000Z"
+      },
+      {
+        "id": "1ILLQyOPIwV-2n8f5SImxGn_z2S87vYUuiIfVnuxquD4",
+        "name": "FIRST_READING-_FB_102-_Cycling_Club_Funding_Act_-_Student_Senate_Finance_at_NC_State",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-01-21T02:35:32.181Z"
+      }
+    ],
+    "folders": {}
+  },
+  "FB_101": {
+    "files": [
+      {
+        "id": "1qKW44j8AgPNI2mlQU-y9ppvb7rQd4L3gfs2QYEgjZ94",
+        "name": "OFFICIATED_-_FB_101_-_Iranian_Student_Organization_Reimbursement_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-31T15:54:19.394Z"
+      },
+      {
+        "id": "1fdQq68tQmlZdjsws3hjWv_OwQ1kIRsSW",
+        "name": "OFFICIATED_-_FB_101_-_Iranian_Student_Organization_Reimbursement_Act.pdf",
+        "mimeType": "application/pdf",
+        "modifiedTime": "2025-01-26T02:19:40.000Z"
+      },
+      {
+        "id": "1TuMmkia5gbr7E-MSNCuCQWPUZMtVDt7-OssqINovdrw",
+        "name": "FIRST_READING-_FB_101-_Iranian_Student_Organization_Reimbursement_Act_-_Student_Senate_Finance_at_NC_State",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-01-21T01:32:48.335Z"
+      }
+    ],
+    "folders": {}
+  },
+  "GB_100": {
+    "files": [
+      {
+        "id": "1jePdv4O_5_F0nCEfW3PE2veEEIPzE7Go_9oCGDN6eA8",
+        "name": "OFFICIATED_-_GB_100_-_Senate_Awards_Timeline_Flexibility_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-31T16:23:54.899Z"
+      },
+      {
+        "id": "1MdNos0_B99dzuPnfvsxZnQjzO3E3fKpKHk9TDj2WnEU",
+        "name": "FIRST_READING_-_GB_100_-_Senate_Awards_Timeline_Flexibility_Act_-_Victoria_Barrett",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-01-08T17:25:06.103Z"
+      }
+    ],
+    "folders": {}
+  },
+  "R_99": {
+    "files": [
+      {
+        "id": "1UtMrD8fN_-u4-M8JTAp_qdjCoLqg7qorx9kUNzDm2Jw",
+        "name": "OFFICIATED_-_R_99_-_Remember_Ripken_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-31T16:49:46.065Z"
+      },
+      {
+        "id": "12PcjiEzjQtFpk4nQvpuHfa5FX9zm9lDy",
+        "name": "OFFICIATED_-_R_99_-_Remember_Ripken_Act.pdf",
+        "mimeType": "application/pdf",
+        "modifiedTime": "2025-01-15T00:03:23.000Z"
+      },
+      {
+        "id": "1-Q8dwn_ivhdBmzgS0uDsmvQH1PEoontWtNqtiNywvIc",
+        "name": "ENGROSSED_-_R_99_-_Remember_Ripken_Act_-_Justin_Pittman",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-01-15T00:00:46.906Z"
+      },
+      {
+        "id": "1vWGuZe8FLe4_8Az5X5D8ZGqw-GkU1Ihx9YsC9FzW1H4",
+        "name": "FIRST_READING-_R_99_-_Remember_Ripken_Act_-_Justin_Pittman",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-01-10T20:20:32.271Z"
+      }
+    ],
+    "folders": {}
+  },
+  "SR_98": {
+    "files": [
+      {
+        "id": "1XyrbKALjssH13i6iiQZbwhJrAJINJO7m",
+        "name": "OFFICIATED_-_SR_98_-_Senate_Membership_Referendum_Act_-_Naila_Din.pdf",
+        "mimeType": "application/pdf",
+        "modifiedTime": "2025-01-09T21:59:52.000Z"
+      },
+      {
+        "id": "1UfGG7NS3y_f98ujlA1T8XTCFqy20VUpczctUyJ2phBE",
+        "name": "OFFICIATED_-_SR_98_-_Senate_Membership_Referendum_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-01-09T21:59:41.108Z"
+      },
+      {
+        "id": "1nK2i7KbB6evTfpE9D09-vMeCCVIhjSJ9dJSGDVjqGD0",
+        "name": "FIRST_READING-_SR_98_-_Senate_Membership_Referendum_Act_-_Naila_Din",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-01-09T21:55:14.568Z"
+      }
+    ],
+    "folders": {}
+  },
+  "R_97": {
+    "files": [
+      {
+        "id": "18vg5IczNPZff1mhcEs4UHy2dznjrJGYr",
+        "name": "OFFICIATED_-_R_97_-_Student_Organizing_&_Protest_Protection_Act.pdf",
+        "mimeType": "application/pdf",
+        "modifiedTime": "2025-01-26T02:17:13.000Z"
+      },
+      {
+        "id": "1aRJRNiF10OSXC_XHdC4u5qkD9Ee2S7ZuYD0NRq9w4c8",
+        "name": "OFFICIATED_-_R_97_-_Student_Organizing_&_Protest_Protection_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-01-26T02:17:05.310Z"
+      },
+      {
+        "id": "1pjFBUompBGG76pNnsBuGwM7oiyJs6Xd2OLZg91p0eGs",
+        "name": "COMMITTEE_-_R_97_-_Student_Organizing_&_Protest_Protection_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-01-23T01:45:17.318Z"
+      },
+      {
+        "id": "1vvHwfGchsSJrFRFT-1UlNUUcUziGoH5LueMbPZqQkzM",
+        "name": "FIRST_READING_-_R_97_-_Student_Organizing_&_Protest_Protection_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-01-21T17:33:17.172Z"
+      }
+    ],
+    "folders": {}
+  },
+  "GB_96": {
+    "files": [
+      {
+        "id": "1hkgECb4Pmxh6L14fPR9qp8_-nPTS3sZDKeXLhxan87Y",
+        "name": "COMMITTEE_-_GB_96_-_Reapportionment_2025_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-01-26T03:18:10.678Z"
+      },
+      {
+        "id": "1IG79JNyFT8aYvXgP4pMyrE4UXckB2W1TuBhLt0NjaFU",
+        "name": "OFFICIATED_-_GB_96_-_Reapportionment_2025_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-01-26T03:06:18.106Z"
+      },
+      {
+        "id": "1truQc8096bprCBuvHgyDMES3OMXQTN_P",
+        "name": "OFFICIATED_-_GB_96_-_Reapportionment_2025_Act.pdf",
+        "mimeType": "application/pdf",
+        "modifiedTime": "2025-01-26T02:16:18.000Z"
+      },
+      {
+        "id": "1QD2pmpDKf95VGHXT3XssPl4oV2oG8zy9B7SCqRvgYv0",
+        "name": "FIRST_READING_-_GB_96_-_Reapportionment_2025_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-01-21T17:42:40.686Z"
+      }
+    ],
+    "folders": {}
+  },
+  "SR_95": {
+    "files": [
+      {
+        "id": "1pOV2NPhGgE2kBJzvO6pUzNSiileH71W7",
+        "name": "OFFICIATED_-_SR_95_-_OIT_Revised_Policy_Endorsement.pdf",
+        "mimeType": "application/pdf",
+        "modifiedTime": "2024-11-18T03:01:20.000Z"
+      },
+      {
+        "id": "1QR6lpjrZ0A4mUnGvZjNHt8YeQhlEXgCpooOl8urxcYo",
+        "name": "OFFICIATED_-_SR_95_-_OIT_Revised_Policy_Endorsement",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-11-18T03:01:12.187Z"
+      },
+      {
+        "id": "1dgAGJ-7L8YCfuzpm2_eq8Orba0zguiATEKdhZ3NbeJE",
+        "name": "FIRST_READING_-_SR_95_-_OIT_Revised_Policy_Endorsement",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-11-18T02:59:20.021Z"
+      }
+    ],
+    "folders": {}
+  },
+  "R_94": {
+    "files": [
+      {
+        "id": "1J6B9swmbQgSfGoyBLaTp2aucspz7J-h3YbVlx8JxlCk",
+        "name": "OFFICIATED_-_R_94_-_The_Campus_Environmental_Health_and_Safety_Act_",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-31T19:06:10.990Z"
+      },
+      {
+        "id": "1NElKUr-SHZBTfd42VNdowzwlEXS7fnbYKbWz8nz2PL0",
+        "name": "COMMITTEE_-_R_94_-_The_Campus_Environmental_Health_and_Safety_Act_",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-02-06T03:02:23.299Z"
+      },
+      {
+        "id": "1TMO4dPSlkQvAcHxgLpwcIn8RPRRal4YmIGaxTp8NoOQ",
+        "name": "Amended_FIRST_READING-_R_94_-_The_Campus_Environmental_Health_and_Safety_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-11-21T00:21:23.039Z"
+      },
+      {
+        "id": "1Kr-V5IIQm1Pyzd2X_MuoS83g1OZsN2OM6htZgAseLf0",
+        "name": "FIRST_READING-_R_94_-_The_Campus_Environmental_Health_and_Safety_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-11-21T00:16:58.562Z"
+      }
+    ],
+    "folders": {}
+  },
+  "R_93": {
+    "files": [
+      {
+        "id": "1oLlPeeegQVnv0SbUrRolphHGMl_C0bhW",
+        "name": "OFFICIATED_-_R_93_-_The_NC_State_Greek_Life_Support_and_Advocacy_Act.pdf",
+        "mimeType": "application/pdf",
+        "modifiedTime": "2025-02-26T16:10:55.000Z"
+      },
+      {
+        "id": "12iobg-RVucI8IEzz4ZvY5dE_n5yOoktNDMQa87I75Fg",
+        "name": "OFFICIATED_-_R_93_-_The_NC_State_Greek_Life_Support_and_Advocacy_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-02-26T16:10:43.819Z"
+      },
+      {
+        "id": "1DbhX_kYRpJFwt24Ar9AwDftI6reSKVOMikuK6InmSnI",
+        "name": "SECOND_READING_-_R_93_-_The_NC_State_Greek_Life_Support_and_Advocacy_Act_-_Student_Senate_Pro_Tempore",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-02-20T03:30:46.498Z"
+      },
+      {
+        "id": "16M5BlO7uboonNHQN9CZcrGdQYw1QGRYCm_13QTDN9vo",
+        "name": "FIRST_READING-_R_93_-_The_NC_State_Greek_Life_Support_and_Advocacy_Act_-_Student_Senate_Pro_Tempore",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-02-13T00:18:05.566Z"
+      }
+    ],
+    "folders": {}
+  },
+  "R_92": {
+    "files": [
+      {
+        "id": "1q8o18Pa8dze3yJlBEb33emB5Ln6jXEierj0mBks_zoc",
+        "name": "OFFICIATED_-_R_92_-_The_Student-Athlete_Appreciation_and_Advocacy_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-27T22:52:00.888Z"
+      },
+      {
+        "id": "12FT8MlFgIE6y-OZPP1aUxRjuMXUUeBszRHnvT2WfKVo",
+        "name": "COMMITTEE_READING-_R_92_-_The_Student-Athlete_Appreciation_and_Advocacy_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-20T00:54:13.514Z"
+      },
+      {
+        "id": "1bKmq0Y-892iQSWx-7Z9HxCHGxTB92blk3_Xqgq8W9Dg",
+        "name": "FIRST_READING-_R_92_-_The_Student-Athlete_Appreciation_and_Advocacy_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-01-27T00:32:32.251Z"
+      }
+    ],
+    "folders": {}
+  },
+  "FB_91": {
+    "files": [
+      {
+        "id": "1zzycLlfforZZlx08rJ5PEMqEMbPokZ8f9pMxNM0FRxQ",
+        "name": "OFFICIATED_-_FB_91_-_Chordination_A_Capella_Reimbursement_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-31T15:53:32.349Z"
+      },
+      {
+        "id": "1Cl2zYLcEfzsc70MN9XLUiXG1USc1bDRU",
+        "name": "OFFICIATED_-_FB_91_-_Chordination_A_Capella_Reimbursement_Act.pdf",
+        "mimeType": "application/pdf",
+        "modifiedTime": "2024-11-20T22:13:22.311Z"
+      },
+      {
+        "id": "1tS6TWDbu6D9TVnX224ImKL1T6aBziKemk1U0nCkD0ns",
+        "name": "FIRST_READING_-_FB_91_-_Chordination_A_Capella_Reimbursement_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-11-14T23:07:56.267Z"
+      }
+    ],
+    "folders": {}
+  },
+  "SR_90": {
+    "files": [
+      {
+        "id": "18LnYS9DwmBdNWwldpfsROiCBX1Md2n9O",
+        "name": "OFFICIATED_-_SR_90_-_Jahzar_Fields_Recognition_and_Appreciation_Act.pdf",
+        "mimeType": "application/pdf",
+        "modifiedTime": "2024-11-18T03:09:31.000Z"
+      },
+      {
+        "id": "1obi86_Z8p4rzAVzisXNmhYBzEISxqEqggn6ECHFYi3A",
+        "name": "OFFICIATED_-_SR_90_-_Jahzar_Fields_Recognition_and_Appreciation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-11-18T03:09:22.592Z"
+      },
+      {
+        "id": "1fuIBEJu2N0DmZ-nG3_rd4YX7OpTKbCgBYlssIqWds4I",
+        "name": "FIRST_READING_-_SR_90_-_Jahzar_Fields_Recognition_and_Appreciation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-11-14T02:56:51.526Z"
+      }
+    ],
+    "folders": {}
+  },
+  "R_89": {
+    "files": [
+      {
+        "id": "1uqKLkTlt8brwu12efnCM6ielUj6WuyydPNlYGeRXdJ4",
+        "name": "OFFICIATED_-_R_89_-_NC_Military_and_Veterans_Appreciation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-31T16:46:39.113Z"
+      },
+      {
+        "id": "1XVaHn0qfij88Ed6NSHwAh6D9whXzOyIq",
+        "name": "OFFICIATED_-_R_89_-_NC_Military_and_Veterans_Appreciation_Act.pdf",
+        "mimeType": "application/pdf",
+        "modifiedTime": "2024-11-20T22:16:47.479Z"
+      },
+      {
+        "id": "1--4AyQJowajcYiu_nLwgkQdzEW5xUeteQYPO7_YKVeg",
+        "name": "FIRST_READING_-_R_89_-_NC_Military_and_Veterans_Appreciation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-11-14T02:43:45.839Z"
+      }
+    ],
+    "folders": {}
+  },
+  "SR-A_86": {
+    "files": [
+      {
+        "id": "1GoLOQ55-y37Wvs7JDdyn4qwLfjtU6sKj_vnY0EBmGXE",
+        "name": "OFFICIATED_-_SR-A_86_-_Preslar_Board_of_Elections_Commissioner_Confirmation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-31T17:36:32.103Z"
+      },
+      {
+        "id": "1PSPjXLnAJqEpLy_0sPkYmeekEdB32-ZAEKTqs8L9X2M",
+        "name": "SR-A_86_-_Preslar_Board_of_Elections_Commissioner_Confirmation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-10-31T19:22:37.025Z"
+      }
+    ],
+    "folders": {}
+  },
+  "SR-A_83": {
+    "files": [
+      {
+        "id": "1zMI-APQSSJ6K64PVv88Q4QZKKOvo1FlYs1_Nh25h4h4",
+        "name": "OFFICIATED_-_SR-A_83_-_Crocker_Board_of_Elections_Commissioner_Confirmation_Act_",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-31T17:40:32.923Z"
+      },
+      {
+        "id": "139szpjTPRk7sEtHrokqQiQKRRC1zeqa-pYV-eXpG7s8",
+        "name": "SR-A_83_-_Crocker_Board_of_Elections_Commissioner_Confirmation_Act_",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-10-31T19:11:04.611Z"
+      }
+    ],
+    "folders": {}
+  },
+  "SR-A_82": {
+    "files": [
+      {
+        "id": "1SbwP3CusDUTBxJ482DhP90NF3kb8Xr04cz_mAQdbKh4",
+        "name": "OFFICIATED_-_SR-A_82_-_Vaughn_Deputy_Chief_Justice_Confirmation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-31T17:41:58.837Z"
+      },
+      {
+        "id": "1UqeOrlcJ8HF3PsIXWOtFVIGym2kz4OB8UdhBoH3iI0s",
+        "name": "SR-A_82_-_Vaughn_Deputy_Chief_Justice_Confirmation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-10-31T18:59:36.777Z"
+      }
+    ],
+    "folders": {}
+  },
+  "SR-A_81": {
+    "files": [
+      {
+        "id": "1P0Q7_i9wsrvntHwmK1p1XXhpUficRGaYXVKUAoZsF-s",
+        "name": "OFFICIATED_-_SR-A_81_-_Weeks_Association_of_Student_Governments_Delegate-at-Large_Confirmation_Act_",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-31T17:43:02.937Z"
+      },
+      {
+        "id": "1vWwewptH-HsR-xLW9IiFJhewLMIvCjO2AfdSKd7DLLg",
+        "name": "SR-A_81_-_Weeks_Association_of_Student_Governments_Delegate-at-Large_Confirmation_Act_",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-01-26T02:32:29.627Z"
+      },
+      {
+        "id": "1UL3BMuTj5Ee5QAZIW26_Fc_6tWwtAE5VXfFfAMti5FU",
+        "name": "SR-A_81_-_Weeks_Association_of_Student_Governments_Delegate-at-Large_Confirmation_Act_",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-10-31T19:10:35.733Z"
+      }
+    ],
+    "folders": {}
+  },
+  "SR_70": {
+    "files": [
+      {
+        "id": "1-oiu2fj5bHVH6h4ThiwWi3UGff8qPeEDS7simBiJxw8",
+        "name": "FAILED_-_SR_70_-_Senate_Membership_Referendum_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-11-18T05:03:11.539Z"
+      },
+      {
+        "id": "1-JwE1JE5Q561gMp8exKp9RG9IcE7TAC9-tx5ZHt59lI",
+        "name": "FIRST_READING_-_SR_70_-_Senate_Membership_Referendum_Act_-_Naila_Din",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-11-18T04:59:18.920Z"
+      },
+      {
+        "id": "1YiVrlVnWnQth2CVmgXLYP4UQuLFBBJvA9BfM5--JSIY",
+        "name": "Amendments_FIRST_READING_-_SR_70_-_Senate_Membership_Referendum_Act_-_Naila_Din",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-11-14T03:40:14.344Z"
+      }
+    ],
+    "folders": {}
+  },
+  "GB_69": {
+    "files": [
+      {
+        "id": "1I6uqTGzJXC9ZGSt0TqwcaUjWFL5XjRhmIDKk8k07WFw",
+        "name": "FIRST_READING_-_GB_69-_Student_Government_Ethics_Emendation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-04-12T15:59:25.620Z"
+      },
+      {
+        "id": "1zqM0_E3R45T8I7nAEI8Oy-X96tJCdMIXgM4LTRDAFPI",
+        "name": "OFFICIATED_-_GB_69-_Student_Government_Ethics_Emendation_Act_-_Student_Senate_Pro_Tempore",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-31T16:19:25.887Z"
+      },
+      {
+        "id": "1QactlXcmbxATzK_7J38rkUgRuY6HmLgG4DfhKcwO8_U",
+        "name": "ENGROSSED_-_GB_69-_Student_Government_Ethics_Emendation_Act_-_Student_Senate_Pro_Tempore",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-18T21:00:11.449Z"
+      },
+      {
+        "id": "1MM-LMStfd4MhiSguOgxAhElCdwOaSI9nSc264Jf4SK8",
+        "name": "COMMITTEE_-_GB_69-_Student_Government_Ethics_Emendation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-02-18T21:51:27.630Z"
+      },
+      {
+        "id": "1Z-72ngtx6uTS9gcryuZgNTSmAS0UbAqoOvj1C_WNDKE",
+        "name": "SECOND_READING_-_GB_69-_Student_Government_Ethics_Emendation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-02-18T21:51:22.812Z"
+      }
+    ],
+    "folders": {}
+  },
+  "FB_77": {
+    "files": [
+      {
+        "id": "1X-32jnap0qnmxnz3XI9EoYKq1t6nmEMH29ozfJJZIlI",
+        "name": "OFFICIATED_-_FB_77_-_Pride_Alliance_Funding_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-31T15:52:20.093Z"
+      },
+      {
+        "id": "1OGhqt1D9tLKrUwU8x0kYzJGNPcNytHH3",
+        "name": "OFFICIATED_-_FB_77_-_Pride_Alliance_Funding_Act_(1).pdf",
+        "mimeType": "application/pdf",
+        "modifiedTime": "2024-11-14T23:17:18.000Z"
+      },
+      {
+        "id": "1aYcvd7L-aoGb-TFtNi9lx92kYeLmf5qcqEJNQU5ZfA8",
+        "name": "FIRST_READING_-_FB_77_-_Pride_Alliance_Funding_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-11-04T22:57:31.456Z"
+      }
+    ],
+    "folders": {}
+  },
+  "FB_76": {
+    "files": [
+      {
+        "id": "1BZ3bR530v1S42YpomDQvZt6bfDibP3diZQPiMjmb2PE",
+        "name": "OFFICIATED_-_FB_76_-_Wolfgang_A_Cappella_Reimbursment_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-31T15:51:57.922Z"
+      },
+      {
+        "id": "1qKrDRzFCZ2jQHyP6gqvIbeJTiONI4PVZ",
+        "name": "OFFICIATED_-_FB_76_-_Wolfgang_A_Cappella_Reimbursment_Act_(1).pdf",
+        "mimeType": "application/pdf",
+        "modifiedTime": "2024-11-14T23:18:06.000Z"
+      },
+      {
+        "id": "1DGSkEFylJBHnKGTQa9EKIILDqNpvI_rpeKowViBuPhE",
+        "name": "FIRST_READING_-_FB_76_-_Wolfgang_A_Capella_Reimbursment_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-11-04T22:52:12.143Z"
+      }
+    ],
+    "folders": {}
+  },
+  "FB_75": {
+    "files": [
+      {
+        "id": "1-t8qcKPrEbwwk3urljjvYitv59cjc5As",
+        "name": "FAILED_-_FB_75_-_Krispy_Kreme_Challenge_Funding_Act.pdf",
+        "mimeType": "application/pdf",
+        "modifiedTime": "2024-11-04T22:59:39.000Z"
+      },
+      {
+        "id": "1BO6PaX6zPXNuytGhNPxtltuSKSrzZPtMv9IOjMH3lgs",
+        "name": "FAILED_-_FB_75_-_Krispy_Kreme_Challenge_Funding_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-11-04T22:49:10.430Z"
+      },
+      {
+        "id": "19tpypTBkd54vFLVB7xM0VS95NpwDvC4vVi7mKDl0Ods",
+        "name": "FIRST_READING_-_FB_75_-_Krispy_Kreme_Challenge_Funding_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-11-04T22:47:17.987Z"
+      }
+    ],
+    "folders": {}
+  },
+  "FB_74": {
+    "files": [
+      {
+        "id": "1BnSeHyezeaypbqWxfUZ_AB5OCamz2JQz8kwp-bCdffw",
+        "name": "OFFICIATED_-_FB_74_-_EKTAA_REIMBURSMENT_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-31T15:51:24.172Z"
+      },
+      {
+        "id": "1LucX4s893jpQmjrTlP60mnU7_wjHobwW",
+        "name": "OFFICIATED_-_FB_74_-_EKTAA_REIMBURSMENT_Act_(1).pdf",
+        "mimeType": "application/pdf",
+        "modifiedTime": "2024-11-14T23:18:42.000Z"
+      },
+      {
+        "id": "1CP5ON8A4FeBmLPBWN9gFsCa_I1_yfe_7Fmw46V0Z8VY",
+        "name": "FIRST_READING_-_FB_74_-_EKTAA_REIMBURSMENT_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-11-04T22:42:31.168Z"
+      }
+    ],
+    "folders": {}
+  },
+  "FB_73": {
+    "files": [
+      {
+        "id": "1ZptbTpvQkU4YNFATXWstkoao_ZFuM4-bO1LSVN2W_S8",
+        "name": "OFFICIATED_-_FB_73_-_Technology_and_Engineering_Education_Collegiate_Association_Reimbursement_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-31T15:51:03.363Z"
+      },
+      {
+        "id": "1EQqP14FrrFoQvNg_s_TjTy2uibtzMd_stbJFkXK6KvQ",
+        "name": "FIRST_READING_-_FB_73_-_Technology_and_Engineering_Education_Collegiate_Association_Reimbursement_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-11-04T22:35:18.150Z"
+      }
+    ],
+    "folders": {}
+  },
+  "R_72": {
+    "files": [
+      {
+        "id": "1JoFV_5QIiNyNXRNW-AVahI25_5KgNYQRGDrvmEcI_UY",
+        "name": "OFFICIATED_-_R_72_-_NC_Farmers_Appreciate_Day_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-31T16:45:34.177Z"
+      },
+      {
+        "id": "1wz6jOOVQ43t0HcYQ9TlLh3mG42MJtqHi",
+        "name": "OFFICIATED_-_R_72_-_NC_Farmers_Appreciate_Day_Act.pdf",
+        "mimeType": "application/pdf",
+        "modifiedTime": "2024-11-14T22:48:33.000Z"
+      },
+      {
+        "id": "1Dl31q8DSHBa4rM8MeCkrvglnCYfCM5xgZhuAJFuCl2s",
+        "name": "ENGROSSED_-_R_72_-_NC_Farmers_Appreciate_Day_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-11-04T23:33:46.494Z"
+      },
+      {
+        "id": "1Xr3JDVj8HG22BSJ5ZPDdfgOREM0yAyFrfljdBwik2EI",
+        "name": "SECOND_READING_-_R_72_-_NC_Farmers_Appreciate_Day_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-11-04T23:32:58.534Z"
+      }
+    ],
+    "folders": {}
+  },
+  "SB_71": {
+    "files": [
+      {
+        "id": "1tE_mcu-ZjqzAoao1_si7cjJf0HqIptHMM4ZPGod06Xs",
+        "name": "OFFICIATED_-_SB_71_-_Senate_Standing_Committee_Chair_Appointment_and_Removal_Reformation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-31T17:14:51.652Z"
+      },
+      {
+        "id": "1v3Tv5W12lxSaTi0B55X8JPWhCkua0AJYci5cv33mvxE",
+        "name": "FIRST_READING_-_SB_71_-_Senate_Standing_Committee_Chair_Selection_and_Removal_Reformation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-21T03:54:17.015Z"
+      },
+      {
+        "id": "18EMfHVM67Nlsx0lYJ4-_CUW8AafjrArlLNKyl5cQHLQ",
+        "name": "COMMITTEE_-_SB_71_-_Senate_Standing_Committee_Chair_Appointment_and_Removal_Reformation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-02-19T18:25:52.113Z"
+      },
+      {
+        "id": "1V8RNUTTYsYuk_xjL7o1Hos_OhYYVljUz0BklhK6L8Hs",
+        "name": "SECOND_READING_-_SB_71_-_Senate_Standing_Committee_Chair_Appointment_and_Removal_Reformation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-02-06T02:08:35.176Z"
+      },
+      {
+        "id": "1cDNxs8BEL4XLzMt_7GIxBm6HwMaVQ_dkDMU9tsnWeIo",
+        "name": "Copy_of_SB_71_Senate_Standing_Committee_Chair_Selection_and_Removal_Reformation_Act_-_Justin_Pittman",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-11-08T00:58:04.235Z"
+      }
+    ],
+    "folders": {}
+  },
+  "FB_58": {
+    "files": [
+      {
+        "id": "1ZwB5RULZij-gKVT7sRIAiOnX4xs0FzQAj0c-A76tw9U",
+        "name": "OFFICIATED_-_FB_58_Cross_Country/Track_&_Field_Funding_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-31T15:47:49.374Z"
+      },
+      {
+        "id": "1MJ4-lIkABjDv61Tce000XRRODQO0c06Uq1eJVkwNw4E",
+        "name": "FB_58_Cross_Country/Track_&_Field_Funding_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-10-23T21:59:27.285Z"
+      }
+    ],
+    "folders": {}
+  },
+  "FB_64": {
+    "files": [
+      {
+        "id": "1itmPScYolW5meU2C-MvarZIxA-zOGDvnkmzg0H1DC6Y",
+        "name": "OFFICIATED_-_FB_64_Alpha_Gamma_Rho_Funding_Act_",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-31T15:50:01.723Z"
+      },
+      {
+        "id": "1S_Th4QUJOQVNBbGXWWL40YCRnU9nBzMS",
+        "name": "OFFICIATED_-_FB_64_Alpha_Gamma_Rho_Funding_Act_(1).pdf",
+        "mimeType": "application/pdf",
+        "modifiedTime": "2024-11-14T23:14:52.000Z"
+      },
+      {
+        "id": "1S0rPTm3ofgm1tPpjGAfAWBMNI5bvFGvaBVaw7O6Rsp0",
+        "name": "FB_64_Alpha_Gamma_Rho_Funding_Act_",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-10-23T22:08:51.292Z"
+      }
+    ],
+    "folders": {}
+  },
+  "SB_68": {
+    "files": [
+      {
+        "id": "1kVy3pg78BBYPZsBhXQ8LXYVtkBkUFNzqfPuqqsHAZOU",
+        "name": "OFFICIATED_-_SB_68_-_Senate_Chair_Vacation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-31T17:13:51.067Z"
+      },
+      {
+        "id": "1TNuPhEmd0gpjZ9wrngFmhvUm836311ma",
+        "name": "OFFICIATED_-_SB_68_-_Senate_Chair_Vacation_Act.pdf",
+        "mimeType": "application/pdf",
+        "modifiedTime": "2025-01-26T02:14:19.000Z"
+      },
+      {
+        "id": "1-tWsgOkEaoD24L2HvY1qjfKBVPaiyGVAUvLGLIJszWQ",
+        "name": "FIRST_READING_-_SB_68_-_Senate_Chair_Vacation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-01-09T01:52:53.128Z"
+      },
+      {
+        "id": "1R42ZwR77RpCMVcDW4HwgXAJrn1p3uJHcyUJuXRHzb0E",
+        "name": "SECOND_READING_-_SB_68_-_Senate_Chair_Vacation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-10-23T21:18:27.408Z"
+      }
+    ],
+    "folders": {}
+  },
+  "SB_67": {
+    "files": [
+      {
+        "id": "17sd6T_U7626jtAP6G7cAdlz4x8Nr7vo9AEyEX2K5dgE",
+        "name": "OFFICIATED_-_SB_67_-_The_Senate_Excused_Absence_Policy_Establishment_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-31T17:12:35.368Z"
+      },
+      {
+        "id": "1tD2fLLyUO9IUoWOKGXbkGKhP12Ff4tqFOhPXu98auNM",
+        "name": "OFFICIATED_-_SB_67_-_The_Senate_Excused_Absence_Policy_Establishment_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-11-18T05:09:43.119Z"
+      },
+      {
+        "id": "1yc_wF2APxpLfnhYlrraeHyZ-GgHp9bz6PVhj2Cw2OXQ",
+        "name": "FIRST_READING_-_SB_67_-_The_Senate_Excused_Absence_Policy_Establishment_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-11-14T04:52:23.118Z"
+      }
+    ],
+    "folders": {}
+  },
+  "GB_66": {
+    "files": [
+      {
+        "id": "18X9cKx4Rk7sce-P2uglkgQkC4mVvE66CdmzZZMohcLo",
+        "name": "OFFICIATED_-_GB_66_-_The_Arbitration_Adaptation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-31T16:19:42.289Z"
+      },
+      {
+        "id": "1X057HLd3LtAkoEi5v4_SVTAT8VlBe7TFoMn1fzf6H0w",
+        "name": "ENGROSSED_-_GB_66_-_The_Arbitration_Adaptation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-11-20T22:21:40.467Z"
+      },
+      {
+        "id": "1CrveXsdgPriBSo88izMui7Jh7OiVrOWG",
+        "name": "OFFICIATED_-_GB_66_-_The_Arbitration_Adaptation_Act.pdf",
+        "mimeType": "application/pdf",
+        "modifiedTime": "2024-11-20T22:11:25.498Z"
+      },
+      {
+        "id": "1JHTD5z7ms2lTJX7tba8pU7WKF4cge9HJBEvXR5ll0CY",
+        "name": "FIRST_READING_-_GB_66_-_The_Arbitration_Adaptation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-11-14T04:33:38.061Z"
+      }
+    ],
+    "folders": {}
+  },
+  "FB_65": {
+    "files": [
+      {
+        "id": "1bFzTI717Ee5J4Pho6ShxVvB6JL_5qHUnJ40fQqgXpZo",
+        "name": "OFFICIATED_-_FB_65_Sustainable_Entrepreneurship_Club_Funding_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-31T15:50:22.767Z"
+      },
+      {
+        "id": "1GRA8UZk6ZLjyQJ1fIH-xX26zC7cceRw1RkGv6ViZwC0",
+        "name": "FB_65_Sustainable_Entrepreneurship_Club_Funding_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-10-23T22:09:59.460Z"
+      }
+    ],
+    "folders": {}
+  },
+  "FB_63": {
+    "files": [
+      {
+        "id": "10GNDtWevwq63LMYAHUwOkK8mXPPP-SpSGGSkdDLiz_s",
+        "name": "OFFICIATED_-_FB_63_Consult_Your_Community_Funding_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-31T15:49:43.165Z"
+      },
+      {
+        "id": "18-ZBgpOaw1z-4wvK8-OCv34G5vTbU3L2HplooZUMq2c",
+        "name": "FB_63_Consult_Your_Community_Funding_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-10-23T22:07:13.268Z"
+      }
+    ],
+    "folders": {}
+  },
+  "FB_62": {
+    "files": [
+      {
+        "id": "1rnHYWgC5E2mBrrrYs5InHkr8hbZPJg9ZGb1NI4vVg2I",
+        "name": "OFFICIATED_-_FB_62_-_Rowing_Club_at_NC_State_Funding_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-31T15:48:43.548Z"
+      },
+      {
+        "id": "17JHg1Yeqq3zFedXaYTaS372V6aJ--Y5Qx93Hv-hb44Y",
+        "name": "FB_62_Rowing_Club_at_NC_State_Funding_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-10-23T22:05:22.249Z"
+      }
+    ],
+    "folders": {}
+  },
+  "FB_61": {
+    "files": [
+      {
+        "id": "1_rYaVd0m1EP1aETei9kBsGmXCa7oZowJnhKZtm7csN0",
+        "name": "OFFICIATED_-_FB_61_Animal_Companion_Club_Funding_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-31T15:48:21.926Z"
+      },
+      {
+        "id": "1EjMjsjBPaEAwwcK-mhi-hNx5qPKeleeHIcHJnEkbNjU",
+        "name": "FB_61_Animal_Companion_Club_Funding_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-10-23T22:04:28.631Z"
+      }
+    ],
+    "folders": {}
+  },
+  "FB_57": {
+    "files": [
+      {
+        "id": "1O-gkBIu44THUy1ADS6dZ6LIgBGYaFseDo4O51WXSo3g",
+        "name": "OFFICIATED_-_FB_57_-_InsprENGR_Funding_Act_",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-31T15:47:31.055Z"
+      },
+      {
+        "id": "1J6CwaUchnQPZjjfDMkgHF7GGfqAfnCUB",
+        "name": "OFFICIATED_-_FB_57_-_InsprENGR_Funding_Act_(1).pdf",
+        "mimeType": "application/pdf",
+        "modifiedTime": "2024-11-14T23:08:46.000Z"
+      },
+      {
+        "id": "1woVI1NykKHWmqVKSlmAneN5YhsjZUcFkgfHXauej6SY",
+        "name": "FB_57_InsprENGR_Funding_Act_",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-10-24T01:43:37.496Z"
+      }
+    ],
+    "folders": {}
+  },
+  "R_59": {
+    "files": [
+      {
+        "id": "1eQo3XVJgg8kWJcNrDHHgTRx50CKUjYDiOUkaJ3sJx6U",
+        "name": "OFFICIATED_-_R_59_-_Western_North_Carolina_Solidarity_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-31T16:44:51.816Z"
+      },
+      {
+        "id": "1wTW7r9G0ZSfF4_ggmmWviiGfUSovYMkF",
+        "name": "OFFICIATED_-_R_59_-_Western_North_Carolina_Solidarity_Act.pdf",
+        "mimeType": "application/pdf",
+        "modifiedTime": "2024-11-14T22:36:17.000Z"
+      },
+      {
+        "id": "1i62H1nH2Pp2Ff-k9QetkIg99dwIzKet2",
+        "name": "ENGROSSED_-_R_59_Western_North_Carolina_Solidarity_Act_(1).pdf",
+        "mimeType": "application/pdf",
+        "modifiedTime": "2024-10-24T04:04:25.000Z"
+      },
+      {
+        "id": "1KMRUi1n2qeE5ttjVwYNQeSSn53kWdHdFDfwGRyDtL3U",
+        "name": "R_59_Western_North_Carolina_Solidarity_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-10-03T03:44:33.924Z"
+      }
+    ],
+    "folders": {}
+  },
+  "GB_56": {
+    "files": [
+      {
+        "id": "1OYKWhMP_QOn9XNPOMQQKs-ofskF5A6Afy_JcXV0IjsM",
+        "name": "OFFICIATED_-_GB_56_-_Delegation_of_the_Year_Award_",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-31T16:17:51.698Z"
+      },
+      {
+        "id": "1cqmnt0HVEpBUXQ_t8oxdPu_V5jDRXRIF",
+        "name": "OFFICIATED_-_GB_56_-_Delegation_of_the_Year_Award_.pdf",
+        "mimeType": "application/pdf",
+        "modifiedTime": "2024-11-05T00:10:59.000Z"
+      },
+      {
+        "id": "1OPo3GtbE7MTj_06OwZmBHcHbHPyCHq2d",
+        "name": "ENGROSSED_-_GB_56_Delegation_of_the_Year_Award_.pdf",
+        "mimeType": "application/pdf",
+        "modifiedTime": "2024-10-24T04:06:37.000Z"
+      },
+      {
+        "id": "1gclBvqPXTVtkTgUeY4Ok5wtIbczZK7LcGiBSv3uenwo",
+        "name": "GB_56_Delegation_of_the_Year_Award_",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-10-24T04:04:50.951Z"
+      }
+    ],
+    "folders": {}
+  },
+  "SB_55": {
+    "files": [
+      {
+        "id": "1i9hcO6aaFgnz7lPZlx37ZsGwsdnbiF6W8v-MOo2UGUA",
+        "name": "OFFICIATED_-_SB_55_-_Veto_Statement_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-31T17:10:34.191Z"
+      },
+      {
+        "id": "1ZCkHTWZS73euj7D_Bevm61u675FQwND3eQl1RF6NTAQ",
+        "name": "SB_55_Veto_Statement_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-11-25T20:01:26.257Z"
+      }
+    ],
+    "folders": {}
+  },
+  "SB_54": {
+    "files": [
+      {
+        "id": "1kx3wS7cBixM6umC2Bh8PD8DoM3r6uwOHCcxCa_XJGpU",
+        "name": "SB_54_Committee_Announcements_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-11-14T23:21:47.850Z"
+      }
+    ],
+    "folders": {}
+  },
+  "SR_53": {
+    "files": [
+      {
+        "id": "1sFtNmgYEFZuoeRVConOCUI-tODDE9NBD",
+        "name": "OFFICIATED_-_SR_53_-_Computer_Science_Department_Premium_Tuition_Increase_Act.pdf",
+        "mimeType": "application/pdf",
+        "modifiedTime": "2024-10-23T21:12:18.000Z"
+      },
+      {
+        "id": "17JakrMz2LY2ix5Wt9WPIIPqlyav3GAfXU7oipXrRphc",
+        "name": "OFFICIATED_-_SR_53_-_Computer_Science_Department_Premium_Tuition_Increase_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-10-22T15:44:58.448Z"
+      },
+      {
+        "id": "17kz-6Lfhc6m4as0YbfhE11reVM9o-jNjbUctgUhM4qw",
+        "name": "SECOND_READING_-_SR_53_-_Computer_Science_Department_Premium_Tuition_Increase_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-10-03T02:57:01.298Z"
+      },
+      {
+        "id": "1klfaAzT6ihJCdHbfzZiq1nfwIGBWu5pPmU4PuzC2w8k",
+        "name": "FIRST_READING_-_SR_53_-_College_of_Engineering_Program_Enhancement_Fee_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-09-17T03:46:28.698Z"
+      }
+    ],
+    "folders": {}
+  },
+  "SR_52": {
+    "files": [
+      {
+        "id": "1VVBRyp6NwFW24Ybyehkd4J1xZhAVtjNz",
+        "name": "OFFICIATED_-_SR_52-_Student_Health_Services_Fee_Act.pdf",
+        "mimeType": "application/pdf",
+        "modifiedTime": "2024-10-23T21:11:22.000Z"
+      },
+      {
+        "id": "1IWeg6aqpAlOABzfGNQSZlHnftv-0VYNI0g2qyFTK6h0",
+        "name": "OFFICIATED_-_SR_52-_Student_Health_Services_Fee_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-10-22T15:43:18.672Z"
+      },
+      {
+        "id": "1OI3C6hBkeWxFD4UkIPX7Fh06otfgiqE0BO4TAv8ir5Q",
+        "name": "SECOND_READING_-_SR_52-_Student_Health_Services_Fee_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-10-03T02:50:52.364Z"
+      },
+      {
+        "id": "1JwMsUQ-KCUD9B2HB43Bvp0Y_IMuX4fjBee119-rZPSU",
+        "name": "FIRST_READING_-_SR_52-_Student_Health_Services_Fee_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-09-17T03:44:53.818Z"
+      }
+    ],
+    "folders": {}
+  },
+  "SR_51": {
+    "files": [
+      {
+        "id": "18Z7J-KSIdAabP5NSywBN3Qu1rH1yyrgPQdp4fJ21w1I",
+        "name": "FIRST_READING-_SR_51-_Student_Media_Fee_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-02-12T17:25:41.964Z"
+      }
+    ],
+    "folders": {}
+  },
+  "SR_50": {
+    "files": [
+      {
+        "id": "1gTiyGel58zXFndWTQ59Co_xcECeNi_VRMIDw5d62YJE",
+        "name": "SECOND_READING-_SR_50-_Student_Center_Repair_and_Renovations_Fee_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-10-22T15:46:32.583Z"
+      },
+      {
+        "id": "10L1-KbIPGG8L-jciDeT_fbxCEUev6KT9KClhnE3zr8U",
+        "name": "OFFICIATED_-_SR_50-_Student_Center_Repair_and_Renovations_Fee_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-10-22T15:45:53.983Z"
+      },
+      {
+        "id": "1wd6Ap_RJFv30ooyPfo_G49bW3SqaOtP46uHV-feTggY",
+        "name": "FIRST_READING-_SR_50-_Student_Center_Repair_and_Renovations_Fee_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-09-17T02:35:17.933Z"
+      }
+    ],
+    "folders": {}
+  },
+  "SR_49": {
+    "files": [
+      {
+        "id": "1UKtTnC0EyYhlhWn4g6r7CXndQh4d7UVi_IjRupQ4lUg",
+        "name": "OFFICIATED_-_SR_49_-_Student_Center_Operations_Fee_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-31T17:22:35.950Z"
+      },
+      {
+        "id": "14hicjFFePaba4reuVqCYuCC3chdmoDqIexDyAgZCeco",
+        "name": "OFFICIATED_-_SR_49_-_Student_Center_Operations_Fee_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-10-22T15:45:41.668Z"
+      },
+      {
+        "id": "1xVpAYPdBVzXjaep20CeJWKgGrihudUg4r1eW4yyq2Og",
+        "name": "SECOND_READING_-_SR_49_-_Student_Center_Operations_Fee_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-10-22T15:39:26.054Z"
+      },
+      {
+        "id": "1HP2YzCoiDGeIjnWv7U6f3edJshy6CtN0",
+        "name": "OFFICIATED_-_SR_49_-_Student_Center_Operations_Fee_Act.pdf",
+        "mimeType": "application/pdf",
+        "modifiedTime": "2024-10-17T23:17:51.000Z"
+      },
+      {
+        "id": "1dKzd9Bt8QGUU2rqjFWVIwl2dvcQJmh2RZ1WWDkLdgW0",
+        "name": "FIRST_READING_-_SR_49_-_Student_Center_Operations_Fee_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-09-27T20:27:59.844Z"
+      }
+    ],
+    "folders": {}
+  },
+  "GB_48": {
+    "files": [
+      {
+        "id": "1kgZ6eJTgy64HtpzQM_Ccr6Q6_cfsNlKz",
+        "name": "OFFICIATED_-_GB_48_-_ASG_Delegation_Statutes_Rectification_Act.pdf",
+        "mimeType": "application/pdf",
+        "modifiedTime": "2024-11-04T23:44:14.000Z"
+      },
+      {
+        "id": "1TIX8lrEe86jJGsbqREV_UR52zuPc_UT19Kj3ug5l1U0",
+        "name": "OFFICIATED_-_GB_48_-_ASG_Delegation_Statutes_Rectification_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-11-04T23:44:01.102Z"
+      },
+      {
+        "id": "1AL2RtlBBU9-00lt0Hc-m_oUmNzAJvU3w_qXT_YLHkKM",
+        "name": "FIRST_READING_-_GB_48_-_ASG_Delegation_Statutes_Rectification_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-11-04T23:42:57.853Z"
+      },
+      {
+        "id": "128rGG_lnHTs0mUUo-aXRdbtn533WLm6G",
+        "name": "ENGROSSED_-_GB_48_-_ASG_Delegation_Statutes_Rectification_Act.pdf",
+        "mimeType": "application/pdf",
+        "modifiedTime": "2024-10-24T04:02:17.000Z"
+      },
+      {
+        "id": "1IRTFLDXwNvAmSLb-q4P_HcygoiiI0cTpoP5V3luegJQ",
+        "name": "SECOND_READING_-_GB_48_-_ASG_Delegation_Statutes_Rectification_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-10-23T21:48:57.038Z"
+      }
+    ],
+    "folders": {}
+  },
+  "R_47": {
+    "files": [
+      {
+        "id": "1lIDMkrCEgSJP7H-fvlJbikfY2vuA-hF1",
+        "name": "OFFICIATED_-_R_47_-_Academic_Printing_Accessibility_Act.pdf",
+        "mimeType": "application/pdf",
+        "modifiedTime": "2025-02-26T16:08:05.000Z"
+      },
+      {
+        "id": "17CVGFTDehSf5KOesaxwb9lYUzsqbLvwlA-Zjs9WUmJY",
+        "name": "OFFICIATED_-_R_47_-_Academic_Printing_Accessibility_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-02-26T16:07:28.402Z"
+      },
+      {
+        "id": "1x6OapcDqQ_rE17cUFBLfdtkvoFiKgH-V9lV7TY0_Y_k",
+        "name": "COMMITTEE_-_R_47_-_Academic_Printing_Accessibility_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-02-06T03:57:56.786Z"
+      },
+      {
+        "id": "1gYAlXVRQhbeILNZmhILBAhvQK8nAdAFr1hStQLkOUOQ",
+        "name": "Amended_SECOND_READING_-_R_47_-_Free_Academic_Printing_and_Streamlined_Access_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-01-30T00:27:08.142Z"
+      },
+      {
+        "id": "1IjBgcc6FERlIJiCCbrCNvVGVT-3niW7pLYCOc2rUSC4",
+        "name": "SECOND_READING_-_R_47_-_Free_Academic_Printing_and_Streamlined_Access_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-01-16T00:07:16.822Z"
+      },
+      {
+        "id": "1DogU-vmIEoD9PHL-4thaUNaqQLk3KY3QxHa5Oi0vvIM",
+        "name": "Amendments_SECOND_READING_-_R_47_-_Free_Academic_Printing_and_Streamlined_Access_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-11-14T02:39:25.571Z"
+      },
+      {
+        "id": "1hR1RxxOQfsrb1hZ2fzPzMpXWP9pdPB6nwQmeyq0mNOM",
+        "name": "FIRST_READING-_R_47_-_Student_Printing_Quota_Act_-_Paul_Lewis",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-09-26T00:15:04.939Z"
+      }
+    ],
+    "folders": {}
+  },
+  "SR_46": {
+    "files": [
+      {
+        "id": "1u5_sc_EuVBlSGc0OmyzQPGtzrnknWxQlBB45atXuEQc",
+        "name": "FAILED_-_SR_46_-_OIT_Policy_Endorsement_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-11-15T00:00:30.550Z"
+      },
+      {
+        "id": "12nkQU3nZIrYgNYYjy1L7ZFoat6B5rKEiNoQ9wrh5LEk",
+        "name": "FIRST_READING_-_SR_46_-_OIT_Policy_Endorsement_-_Student_Senate_Pro_Tempore",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-11-14T23:57:59.719Z"
+      }
+    ],
+    "folders": {}
+  },
+  "GB_45": {
+    "files": [
+      {
+        "id": "11jjLk2vzqWqzAj9L_M_q0exxLqa5QBIBWJ8qjQf5WXs",
+        "name": "OFFICIATED_-_GB_45_-_All_Chairs_Expansion,_Empowerment,_and_Reformation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-11-05T00:17:53.909Z"
+      },
+      {
+        "id": "1DSy-O4O7Bk6IqSASHnh-69kokLtnhl4-",
+        "name": "ENGROSSED_-_GB_45_-_All_Chairs_Expansion,_Empowerment,_and_Reformation_Act.pdf",
+        "mimeType": "application/pdf",
+        "modifiedTime": "2024-09-19T19:37:38.026Z"
+      },
+      {
+        "id": "1BcnAZdQsgYm0jnkEcQ6_ZREiIsgavRu0",
+        "name": "OFFICIATED_-_GB_45_-_All_Chairs_Expansion,_Empowerment,_and_Reformation_Act.pdf",
+        "mimeType": "application/pdf",
+        "modifiedTime": "2024-09-19T19:37:21.962Z"
+      },
+      {
+        "id": "1Ts4UtTmpEwKAGoAVuDxqQx0Ec-Kk6_aH_6bfGwEsUS4",
+        "name": "FIRST_READING_-_GB_45_-_All_Chairs_Expansion,_Empowerment,_and_Reformation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-09-19T17:40:29.810Z"
+      },
+      {
+        "id": "1zdk8nUNePzfQJtc7WS4U_hzp-L8DTVwYquqMXQDu4Wc",
+        "name": "SECOND_READING_-_GB_45_-_All_Chairs_Expansion,_Empowerment,_and_Reformation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-09-19T17:39:38.113Z"
+      }
+    ],
+    "folders": {}
+  },
+  "R_44": {
+    "files": [
+      {
+        "id": "1yZ0OIG_DWfVGlkTXjz3LUObC0_AFWOj6WpXkQebhNJE",
+        "name": "OFFICIATED_-_R_44_-_The_Solidification_of_DEI_Affirmation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-31T16:40:56.558Z"
+      },
+      {
+        "id": "1B5ofnoutTV7JJTLFTBWzNwburqUpYbzf",
+        "name": "OFFICIATED_-_R_44_-_The_Solidification_of_DEI_Affirmation_Act.pdf",
+        "mimeType": "application/pdf",
+        "modifiedTime": "2024-11-14T22:46:38.000Z"
+      },
+      {
+        "id": "1AFRRCkp6xTVNZL_ySf6jtO13_Lq0hA7K",
+        "name": "ENGROSSED_-_R_44_-_The_Solidification_of_DEI_Affirmation_Act.pdf",
+        "mimeType": "application/pdf",
+        "modifiedTime": "2024-10-24T03:59:43.000Z"
+      },
+      {
+        "id": "13wguM_giemKFCa4K0qaPM0bKT51JKGjPtWlSuncT4os",
+        "name": "SECOND_READING_-_R_44_-_The_Solidification_of_DEI_Affirmation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-10-23T21:52:44.465Z"
+      },
+      {
+        "id": "18IYk8qoWiiR-GulDq5IPjm1nSCgL5-7tDTLh2aK7A2A",
+        "name": "FIRST_READING_-_R_44_-_The_Solidification_of_DEI_Affirmation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-09-04T16:58:41.791Z"
+      }
+    ],
+    "folders": {}
+  },
+  "SB_43": {
+    "files": [
+      {
+        "id": "1G1xE-hiw0NPHgofkKJ5RRxOx7SpgiD2A",
+        "name": "RULED_OUT_OF_ORDER_-_SB_43_-_All_Chairs_Expansion,_Empowerment,_and_Reformation_Act.pdf",
+        "mimeType": "application/pdf",
+        "modifiedTime": "2024-09-04T00:02:29.000Z"
+      },
+      {
+        "id": "1evli9VKsfaA7H9aQ6XhudN2gRGFvGlYLp7z2AhCM0jA",
+        "name": "RULED_OUT_OF_ORDER_-_SB_43_-_All_Chairs_Expansion,_Empowerment,_and_Reformation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-09-03T23:47:21.726Z"
+      },
+      {
+        "id": "1t_iQmkVwv_LbMw96NflpYq2dP8eYsNiauRSUwFZ-dPE",
+        "name": "FIRST_READING_-_SB_43_-_All_Chairs_Expansion,_Empowerment,_and_Reformation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-09-03T22:20:53.601Z"
+      }
+    ],
+    "folders": {}
+  },
+  "SB_42": {
+    "files": [
+      {
+        "id": "1mNYHe4Q2aHz3SaHDJYwyEX1zJg4vDx6DZA9dCeN-4lk",
+        "name": "OFFICIATED_-_SB_42_-_Permanent_Rules_of_Decorum_Codification_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-31T17:07:57.760Z"
+      },
+      {
+        "id": "1_fWVylcD2q3mRxJMQW6mv2gAoRD3HMx4qmviAScoztY",
+        "name": "FIRST_READING_-_SB_42_-_Permanent_Rules_of_Decorum_Codification_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-10-25T03:37:30.481Z"
+      },
+      {
+        "id": "10mTM7XxfX9_SdImpISAXe_KDsz9wNaAOkGeYSFzgAxo",
+        "name": "SECOND_READING_-_SB_42_-_Permanent_Rules_of_Decorum_Codification_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-09-18T23:48:40.870Z"
+      }
+    ],
+    "folders": {}
+  },
+  "SB_41": {
+    "files": [
+      {
+        "id": "1if42B-q5l7hdxOK8_vfpVwCOGT2JmEdtlYzj-JP20Ik",
+        "name": "OFFICIATED_-_SB_41_-_Proxy_System_Redefinition_and_Overhaul_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-31T17:06:33.926Z"
+      },
+      {
+        "id": "1UiNm8uNQDiAHwm-KBM1BY7PniNyBm8dQkCNtoglO29k",
+        "name": "SECOND_READING_-_SB_41_-_Proxy_System_Redefinition_and_Overhaul_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-09-19T03:16:43.426Z"
+      },
+      {
+        "id": "1cfBH55E_6auXy2G8xEuQbp9P2rI54JRyhFoYFvqJzCw",
+        "name": "FIRST_READING_-_SB_41_-_Proxy_System_Redefinition_and_Overhaul_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-09-12T23:43:18.651Z"
+      }
+    ],
+    "folders": {}
+  },
+  "SR-A_40": {
+    "files": [
+      {
+        "id": "1U_lrpgdM3Af4bjwpzNjsaCNanPMamY-bA8PUiz7kJfc",
+        "name": "OFFICIATED_-_SR-A_40_-_Chamberlain_Treasury_Official_Confirmation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-11-25T19:58:06.632Z"
+      },
+      {
+        "id": "1zyfSOlt9vQPyJobh-NzPhXCp0naJVkQaVXatFF1SYeo",
+        "name": "FIRST_READING_-_SR-A_40_-_Chamberlain_Treasury_Official_Confirmation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-11-25T19:57:50.189Z"
+      }
+    ],
+    "folders": {}
+  },
+  "AB_39": {
+    "files": [
+      {
+        "id": "1zRj-T6P8pLwyhE7dMloOWvFLVyKNo-y5",
+        "name": "OFFICIATED_-_AB_39_-_Fall_Break_2024_-_Spring_Break_2025_Appropriations_Bill.pdf",
+        "mimeType": "application/pdf",
+        "modifiedTime": "2025-04-08T13:51:16.701Z"
+      },
+      {
+        "id": "14L1IElTfBNEWjqYSPzHmnOS0epY2CX94ZdbVm2wTTxI",
+        "name": "OFFICIATED_-_AB_39_-_Fall_Break_2024_-_Spring_Break_2025_Appropriations_Bill",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-31T15:45:44.616Z"
+      },
+      {
+        "id": "1cjkQQEvlhMFuCo-1pMkFsWcWCrTd5RQ38cm48dbHm1o",
+        "name": "FIRST_READING_-_AB_39_-_Fall_Break_2024_-_Spring_Break_2025_Appropriations_Bill",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-01-29T01:13:58.554Z"
+      },
+      {
+        "id": "1DcFdsGSeL_POV00eMv0OPJ8Q1TwACknA0x_kG5FJ_vM",
+        "name": "Fall_2024_Appropriations_Documentation_Packet_",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-09-30T22:48:09.161Z"
+      },
+      {
+        "id": "1cy3X2JuHzt-BaOKBBA3fdjZPstfzs7YxIq09D5ABmv0",
+        "name": "SECOND_READING_-_AB_39_-_Fall_Break_2024_-_Spring_Break_2025_Appropriations_Bill",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-09-20T18:15:21.527Z"
+      }
+    ],
+    "folders": {}
+  },
+  "SR-A_38": {
+    "files": [
+      {
+        "id": "1Lgzg4ycDiaL13SQFHNviThVrBZruxvWuTXg2ndFkz0U",
+        "name": "OFFICIATED_-_SR-A_38_-_Best_Treasury_Official_Confirmation_Act_",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-31T19:24:23.436Z"
+      }
+    ],
+    "folders": {}
+  },
+  "SR-A_37": {
+    "files": [
+      {
+        "id": "1dz9BcVFLsLRZASzSFf7QfJmSGQg6Y0bxle8NT8v_yrw",
+        "name": "OFFICIATED_-_SR-A_37_-_Theard_Treasury_Official_Confirmation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-31T19:24:08.446Z"
+      },
+      {
+        "id": "1cjcfBazy9K5Dg6ewV-GidyBydida6zMAKoTCqziA8fg",
+        "name": "FIRST_READING_-_SR-A_37_-_Theard_Treasury_Official_Confirmation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-11-25T19:56:42.325Z"
+      }
+    ],
+    "folders": {}
+  },
+  "R_36": {
+    "files": [
+      {
+        "id": "1WMQfz4QqbT_ax6pXEsR4X3rzj7-KjWgY",
+        "name": "VETO_-_R_36_-_Institutional_Support_for_Students_Affected_by_Global_Conflict_Act.pdf",
+        "mimeType": "application/pdf",
+        "modifiedTime": "2024-11-14T23:56:05.000Z"
+      },
+      {
+        "id": "1jb2wrDMkwYrbhBR6m3GkyrzebOFdgAkG",
+        "name": "Veto_Notice:_R36",
+        "mimeType": "application/vnd.google-apps.shortcut",
+        "modifiedTime": "2024-11-14T23:55:54.349Z"
+      },
+      {
+        "id": "1QttrVH60p8vYRguSyVIo6Y8WwTJoi4RXqsTU3X7lErU",
+        "name": "VETO_-_R_36_-_Institutional_Support_for_Students_Affected_by_Global_Conflict_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-11-14T23:55:24.952Z"
+      },
+      {
+        "id": "1NwZ62Idm8hXmH4NkSn80x3QGdtX3AFvAXMuOCNsM014",
+        "name": "ENGROSSED_-_R_36_-_Institutional_Support_for_Students_Affected_by_Global_Conflict_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-11-14T23:54:35.004Z"
+      },
+      {
+        "id": "1duXdkPI-8qOmLYvevL2zmMKCyVN27Iz4482pSHBkoT8",
+        "name": "SECOND_READING_-_R_36_-_Institutional_Support_for_Students_Affected_by_Global_Conflict_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-09-05T03:53:46.806Z"
+      },
+      {
+        "id": "1sbg9dCDjE3xdru6s4yJXZv62I2qKYINSZLdPjOGcRog",
+        "name": "FIRST_READING_-_R_36_-_Institutional_Support_for_Students_Affected_by_Global_Conflict_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-09-03T19:11:19.098Z"
+      }
+    ],
+    "folders": {}
+  },
+  "SB_35": {
+    "files": [
+      {
+        "id": "1zJK1CfBfs6-fOSPpZuqsMJL-m_OL903y47vlOQRtHlU",
+        "name": "OFFICIATED_-_SB_35_-_Fast-Track_Motion_Overhaul_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-31T17:06:40.360Z"
+      },
+      {
+        "id": "1eR-2PyQW8Ba1MMotF14aWMpbujbFy5RK",
+        "name": "OFFICIATED_-_SB_35_-_Fast-Track_Motion_Overhaul_Act.pdf",
+        "mimeType": "application/pdf",
+        "modifiedTime": "2024-09-03T23:19:26.000Z"
+      },
+      {
+        "id": "1fbZGBQgchUd5toVWPRL1JKoAG3K9_ERlY9DatK0Q9yc",
+        "name": "FIRST_READING_-_SB_35_-_Fast-Track_Motion_Overhaul_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-08-20T17:54:06.158Z"
+      }
+    ],
+    "folders": {}
+  },
+  "SR-A_34": {
+    "files": [
+      {
+        "id": "1RlgTI8Zhag-uGHjZgZSPVn5FJfvU5iVQmTcnj954EGI",
+        "name": "OFFICIATED_-_SR-A_34_-_Johnson_Allocation_Official_Confirmation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-11-25T19:55:44.560Z"
+      },
+      {
+        "id": "1OWbPSJvzJYYB4cjSNwX7eWBRTskJp8-UElynhpJ7XG8",
+        "name": "SR-A_34_-_Johnson_Allocation_Official_Confirmation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-11-25T19:55:25.643Z"
+      }
+    ],
+    "folders": {}
+  },
+  "SR-A_26": {
+    "files": [
+      {
+        "id": "1yOINF7J8dFPH64EuNt4ek9PijIIH6YaaAvwdRJL_FtY",
+        "name": "OFFICIATED_-_SR-A_26_-_Liu_Allocation_Official_Confirmation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-11-25T19:54:57.108Z"
+      },
+      {
+        "id": "1vDHusURKOCl0QpYyFkqX9GgVkugw6LS6JdE-EWtD2l8",
+        "name": "SR-A_26_-_Liu_Allocation_Official_Confirmation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-04-17T18:54:19.219Z"
+      }
+    ],
+    "folders": {}
+  },
+  "SR-A_25": {
+    "files": [
+      {
+        "id": "1ZOfvTDhApFmus-YlijHUM8qG-rVyefTKI-lyMxqi8J8",
+        "name": "OFFICIATED_-_SR-A_25_-_Chen_Allocation_Official_Confirmation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-11-25T19:54:32.552Z"
+      },
+      {
+        "id": "1XbIzgJ3fVLK0YX6MklUhWTa_p1WWQYuxjUHG_pGtg7A",
+        "name": "OFFICIATED_-_SR-A_25_-_Chen_Allocation_Official_Confirmation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-11-14T22:40:59.131Z"
+      },
+      {
+        "id": "1dmYufBPIaYEjwC0z3TykBOlX_LVyi0wz_q1Ss9Dfph4",
+        "name": "SR-A_25_-_Chen_Allocation_Official_Confirmation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-04-16T22:52:26.864Z"
+      }
+    ],
+    "folders": {}
+  },
+  "SR-A_24": {
+    "files": [
+      {
+        "id": "1WWabGxMZ7qPPdrKVtk_RtxbAodnjat7OACrWmFV0Oho",
+        "name": "OFFICIATED_-_SR-A_24_-_Diep_Treasury_Official_Confirmation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-11-25T19:53:57.696Z"
+      },
+      {
+        "id": "1EwnYT2o1IHtHH1wFsSUOiTGcSAn3Pp2JfYjUpyoMxKs",
+        "name": "SR-A_24_-_Diep_Treasury_Official_Confirmation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-04-16T22:58:51.882Z"
+      }
+    ],
+    "folders": {}
+  },
+  "SR-A_23": {
+    "files": [
+      {
+        "id": "1EyMGb9obVsBiJdnMiTn_TnGsiTm91v7jDw34xtAA6IM",
+        "name": "SR-A_23_-_Mock_Treasury_Official_Confirmation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-20T23:29:23.226Z"
+      },
+      {
+        "id": "1BLK_oGmDGia59ayG6q7Eld3wAz6MsXHQ3yG-uF81ZrE",
+        "name": "OFFICIATED_-_SR-A_23_-_Mock_Treasury_Official_Confirmation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-11-25T19:53:26.563Z"
+      }
+    ],
+    "folders": {}
+  },
+  "SR-A_22": {
+    "files": [
+      {
+        "id": "1EIp1r_DPddWrEjFrFWX3tP1RvjklJ92_Smp4gQ7QEW4",
+        "name": "OFFICIATED_-_SR-A_22_-_Johnson_Assistant_Treasurer_for_Public_Relations_Confirmation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-11-25T19:51:49.726Z"
+      },
+      {
+        "id": "15nC7kIdDoeMBVZ1M8fCktohAH3M9e6i6By1Qe6__3Zc",
+        "name": "SR-A_22_-_Johnson_Assistant_Treasurer_for_Public_Relations_Confirmation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-04-16T22:59:31.894Z"
+      }
+    ],
+    "folders": {}
+  },
+  "SR-A_21": {
+    "files": [
+      {
+        "id": "1e3kRaqNjwYvmJGkBdy3xxEUB472BMX65kIm-tfFOMP4",
+        "name": "OFFICIATED_-_SR-A_21-_Skolfield_Assistant_Treasurer_for_Financial_Literacy_Confirmation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-10-17T23:26:12.478Z"
+      },
+      {
+        "id": "19mR4KhJRWILmnRg69zGc4pAZAHajuYAU5DC4ux2JZY4",
+        "name": "SR-A_21-_Skolfield_Assistant_Treasurer_for_Financial_Literacy_Confirmation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-04-16T22:58:58.945Z"
+      }
+    ],
+    "folders": {}
+  },
+  "SR-A_20": {
+    "files": [
+      {
+        "id": "1YHFQt-iYAwDgY8Gw8Nqz7zJjaskaKUn0ffdcD8jeSg4",
+        "name": "OFFICIATED_-_SR-A_20_-_Attanucci_Assistant_Treasurer_for_Fiscal_Services_Confirmation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-10-17T23:23:53.311Z"
+      },
+      {
+        "id": "13ZBtnTvKsyx_NqD6ApHfgHxdoB8v4nWdaCB6qYrsl8w",
+        "name": "SR-A_20_-_Attanucci_Assistant_Treasurer_for_Fiscal_Services_Confirmation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-10-17T23:23:27.480Z"
+      }
+    ],
+    "folders": {}
+  },
+  "SR-A_19": {
+    "files": [
+      {
+        "id": "1kp_Tsgn3YwBP3PlyXG973y23ryV_XRZuc_m-VL_a8hE",
+        "name": "OFFICIATED_-_SR-A_19_-_Rowan_Deputy_Treasurer_Confirmation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-08-28T17:08:16.876Z"
+      },
+      {
+        "id": "1APhYA9aI-x7SuEtiBGEzpHJRwSEmbLo5gfTeuZRz_LI",
+        "name": "SR-A_19_-_Rowan_Deputy_Treasurer_Confirmation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-04-16T22:57:58.364Z"
+      }
+    ],
+    "folders": {}
+  },
+  "SR-A_18": {
+    "files": [
+      {
+        "id": "1cIHGDptNB53LdVHqqg2W9oJDfEkoLOXwzVR-bSr7UwA",
+        "name": "OFFICIATED_-_SR-A_18-_Womble_Director_of_Campus_Services_Confirmation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-08-28T17:07:28.413Z"
+      },
+      {
+        "id": "1jRCchonKv4xZFlQOSaiShSQGK2q8zn5WwMcMO6Gl2R0",
+        "name": "SR-A_18-_Womble_Director_of_Campus_Services_Confirmation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-04-16T22:57:27.408Z"
+      }
+    ],
+    "folders": {}
+  },
+  "SR-A_17": {
+    "files": [
+      {
+        "id": "1DS9u-14QY0lu56STC8o8g0u-O8QEBCRaHE3DLMnyuSw",
+        "name": "SR-A_17-_Parker_Director_of_Engagement_and_Outreach_Confirmation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-08-28T17:00:54.557Z"
+      },
+      {
+        "id": "16QOgABIIxEiHPT0ty5iCzljam2Kg63Nraua9kiRNx08",
+        "name": "OFFICIATED_-_SR-A_17-_Parker_Director_of_Engagement_and_Outreach_Confirmation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-08-28T17:00:45.850Z"
+      }
+    ],
+    "folders": {}
+  },
+  "SR-A_16": {
+    "files": [
+      {
+        "id": "1N1GV1C4hEv6Zw1cl2Fe52L01IRcHa-OR",
+        "name": "OFFICIATED_-_SR-A_16-_Bakshi_Director_of_Wellness_Confirmation_Act.pdf",
+        "mimeType": "application/pdf",
+        "modifiedTime": "2024-10-17T23:22:43.000Z"
+      },
+      {
+        "id": "1UBgbbzSA-SUy8hhv5xjTNuGySI8Q-_EyeMPGwAmkzi4",
+        "name": "OFFICIATED_-_SR-A_16-_Bakshi_Director_of_Wellness_Confirmation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-10-17T23:22:28.342Z"
+      },
+      {
+        "id": "1mP944XYlpzXbdNhG576Zct6dRPZkuHEilJO-KyHHVw4",
+        "name": "SR-A_16-_Bakshi_Director_of_Wellness_Confirmation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-08-20T22:12:57.853Z"
+      }
+    ],
+    "folders": {}
+  },
+  "SR-A_15": {
+    "files": [
+      {
+        "id": "1lNOzqgjOnljvIo1f6JKMml8NlBjY9kY6naKmeAN8MAY",
+        "name": "OUT_OF_ORDER_-_SR-A_15-_[Last_Name]_Director_of_Graduate_Student_Relations_Confirmation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-11-14T23:44:20.509Z"
+      },
+      {
+        "id": "1Hv9QZC44I-bqUDZlLWo61BSu-qcYKJ1pAlrfdGEHi8M",
+        "name": "SR-A_15-_[Last_Name]_Director_of_Graduate_Student_Relations_Confirmation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-04-16T22:55:40.595Z"
+      }
+    ],
+    "folders": {}
+  },
+  "SR-A_14": {
+    "files": [
+      {
+        "id": "14DzywFQrrovJVjM4V16koH-2Uavx1kBDSnnshH_-Ees",
+        "name": "OFFICIATED_-_SR-A_14-_Garde_Director_of_Sustainability_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-08-28T16:58:40.721Z"
+      },
+      {
+        "id": "1EBOupn-tqZk0b5u5Et6dCxkp8dlJ5kNuMR7ZV8wAlWg",
+        "name": "SR-A_14-_Garde_Director_of_Sustainability_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-04-16T22:55:12.245Z"
+      }
+    ],
+    "folders": {}
+  },
+  "SR-A_13": {
+    "files": [
+      {
+        "id": "1z2jEhg59QQa4mT6ecUI696-43YHoeEa7FFi2MnJo5tI",
+        "name": "OFFICIATED_SR-A_13-_Fonceca-Roque_Director_of_Communications_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-08-28T16:57:49.250Z"
+      },
+      {
+        "id": "1isRzFZ7z0hSyfFimBmsTHi0YfOWXcyzpkjr4nDOR8js",
+        "name": "SR-A_13-_Fonceca-Roque_Director_of_Communications_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-04-16T22:54:18.236Z"
+      }
+    ],
+    "folders": {}
+  },
+  "SR-A_12": {
+    "files": [
+      {
+        "id": "1U5eoDARWZsjBJ6GmUphYFnwrbBt-zdOS2i50NsuMy3c",
+        "name": "OFFICIATED_-_SR-A_12-_Lusby_Director_of_Academic_Affairs_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-08-28T16:57:06.483Z"
+      },
+      {
+        "id": "17QTbciY2TlNiONulBA6zCP8ERkY4wcL_XgL6LvU-chA",
+        "name": "SR-A_12-_Lusby_Director_of_Academic_Affairs_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-04-16T06:11:52.107Z"
+      }
+    ],
+    "folders": {}
+  },
+  "SR-A_11": {
+    "files": [
+      {
+        "id": "1TarxesbuR1WXJRBxPZwzeQst83_EvPmc1P3eXZwA6go",
+        "name": "OFFICIATED_-_SR-A_11-_Fryer_Director_of_Government_Affairs_Confirmation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-08-28T16:56:01.957Z"
+      },
+      {
+        "id": "1u2jSGMMBzhL9L-OA5aVBdof2PkvuPDKt11AtjnYhJC4",
+        "name": "SR-A_11-_Fryer_Director_of_Government_Affairs_Confirmation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-04-16T22:53:03.551Z"
+      }
+    ],
+    "folders": {}
+  },
+  "SR-A_10": {
+    "files": [
+      {
+        "id": "1XYsvqddtGHVMcWURlFGSlvHsvx8bPNJIQrSTqY1D35Y",
+        "name": "OFFICIATED_-_SR-A_10-_Lauraine_Director_of_Equity_&_Accessibility_Confirmation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-04-19T06:49:47.913Z"
+      },
+      {
+        "id": "1JwTYpEcgTAOhDJj56eELmgBp_HdhfvRH6Gs-O4nAWTM",
+        "name": "SR-A_10-_Lauraine_Director_of_Equity_&_Accessibility_Confirmation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-04-16T22:52:33.487Z"
+      }
+    ],
+    "folders": {}
+  },
+  "SR-A_09": {
+    "files": [
+      {
+        "id": "1M2Dc3kgcxPelFcCPk-3XNvTzjUVTjFqfupOFSHRzKWQ",
+        "name": "OFFICIATED_-_SR-A_09_-_Coffey_Director_of_Athletics_Confirmation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-04-19T06:48:44.058Z"
+      },
+      {
+        "id": "1Is3wem6_toAEfzV0J7zE4PRlw_GGhxxEGz7VNj18Hek",
+        "name": "SR-A_09_-_Coffey_Director_of_Athletics_Confirmation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-04-16T22:52:02.270Z"
+      }
+    ],
+    "folders": {}
+  },
+  "SR-A_08": {
+    "files": [
+      {
+        "id": "1sPZLv_CpJSbO1QVczrMTP6z2c1GTFHFuO9uy2kZfMJU",
+        "name": "SR-A_08-_Student_Government_Website_Manager_Confirmation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-08-20T16:02:05.436Z"
+      }
+    ],
+    "folders": {}
+  },
+  "SR-A_07": {
+    "files": [
+      {
+        "id": "1Qtx-WRR5qxeqDRrg--BhRyHJvbbNJcHL",
+        "name": "OFFICIATED_-_SR-A_07_-_Lineberry_Deputy_Chief_of_Staff_Act.pdf",
+        "mimeType": "application/pdf",
+        "modifiedTime": "2024-10-17T23:21:34.000Z"
+      },
+      {
+        "id": "1YDUWwF-5SzvhCNXnOSkIRlGKxFGsW_4Hg1tl7u7WfPQ",
+        "name": "SR-A_07_-_Lineberry_Deputy_Chief_of_Staff_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-10-17T23:21:25.316Z"
+      },
+      {
+        "id": "1gy0eyBoS9Pe1YxQ2Q90VwNTxYiwlnbYHwCYf-UNqIu4",
+        "name": "OFFICIATED_-_SR-A_07_-_Lineberry_Deputy_Chief_of_Staff_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-10-17T23:21:22.101Z"
+      }
+    ],
+    "folders": {}
+  },
+  "SR-A_06": {
+    "files": [
+      {
+        "id": "1-Lrjk4l9ScRIrtyapppF_2L0xtnXJTMAkpPNtw4B6Cg",
+        "name": "OFFICIATED_-_SR-A_06_-_Gordon_Executive_Chief_of_Staff_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-04-19T06:44:27.676Z"
+      },
+      {
+        "id": "1yPf5m6FlgWF293QQYj56qzG053ACKxYIKeiM62sZ_Aw",
+        "name": "SR-A_06_-_Gordon_Executive_Chief_of_Staff_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-04-19T06:44:04.341Z"
+      }
+    ],
+    "folders": {}
+  },
+  "SR-A_05": {
+    "files": [
+      {
+        "id": "1BdwviDrNQK40WyiSQ3yr8ol1SOn16GS5KBCJk1qUmxE",
+        "name": "OFFICIATED_-_SR-A_05-_Arrington_Association_of_Student_Governments_Delegate_Confirmation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-04-19T06:27:28.723Z"
+      },
+      {
+        "id": "1fP-5lJI5JVyo9GtuB_Wu6cMuyMCvfEiJaHaiei2h0lI",
+        "name": "SR-A_05-_Arrington_Association_of_Student_Governments_Delegate_Confirmation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-04-16T22:49:13.529Z"
+      }
+    ],
+    "folders": {}
+  },
+  "SR-A_04": {
+    "files": [
+      {
+        "id": "1Q8wvJPPQMOgI59DexsIDvXs24_XPiFnYjWenSRvND7E",
+        "name": "SR-A_04_-_Diouf_Board_of_Elections_Commissioner_Confirmation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-04-19T06:14:45.219Z"
+      },
+      {
+        "id": "1_JuyaqP_0GX7zFwyI_GMHBCZA2tTJcaHQocEk1gqR5c",
+        "name": "OFFICIATED_-_SR-A_04_-_Diouf_Board_of_Elections_Commissioner_Confirmation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-04-19T06:12:51.633Z"
+      }
+    ],
+    "folders": {}
+  },
+  "SR-A_03": {
+    "files": [
+      {
+        "id": "1zLz_CD_XUrh0qpbBDI-Lppp0DWY124Cf-3KQf6nzKj4",
+        "name": "SR-A_03_-_Peete_Board_of_Elections_Commissioner_Confirmation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-04-19T06:16:49.245Z"
+      },
+      {
+        "id": "1VESh6q64YuEBpk6tc5tR3PH1_62Am5Sc84EqoHKINQ8",
+        "name": "OFFICIATED_-_SR-A_03_-_Peete_Board_of_Elections_Commissioner_Confirmation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-04-19T06:11:57.140Z"
+      }
+    ],
+    "folders": {}
+  },
+  "SR-A_02": {
+    "files": [
+      {
+        "id": "1E43jcr80frhyYYBpQ1SdfKFhB9pEd254YjKeyK1vESc",
+        "name": "OFFICIATED_-_SR-A_02_-_Eddinger_Chair_of_the_Board_of_Elections_Confirmation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-04-19T06:00:53.870Z"
+      },
+      {
+        "id": "1m38PWHcnL21PNAPpbAYNSiMbSkNPPoDh2Fa2b_TP5RE",
+        "name": "SR-A_02_-_Eddinger_Chair_of_the_Board_of_Elections_Confirmation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-04-16T06:12:29.797Z"
+      }
+    ],
+    "folders": {}
+  },
+  "SR-A_01": {
+    "files": [
+      {
+        "id": "1L4HPx42DkKPeM0WVBRpLa_ejKtW2uvb3QHxdjnBF9E8",
+        "name": "OFFICIATED_-_SR-A_01_-_Gadireddy_Chief_Justice_Confirmation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-04-19T05:58:49.771Z"
+      },
+      {
+        "id": "1pMGEXM1q1YQxWJmuiu57TRxt39wsX7Q7Ttz3s3z8KSg",
+        "name": "SR-A_01_-_Gadireddy_Chief_Justice_Confirmation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-04-19T05:58:22.139Z"
+      }
+    ],
+    "folders": {}
+  },
+  "R_33": {
+    "files": [
+      {
+        "id": "1LMzO_K8wFK8-RrITvWXpi1mvnh5DMW9S",
+        "name": "OFFICIATED_-_R_33_-_ACT_SAT_GRE_Test_Optional_Policy_Extension_and_Adoption_Act",
+        "mimeType": "application/pdf",
+        "modifiedTime": "2024-04-24T21:17:00.520Z"
+      },
+      {
+        "id": "1yYC9P6gDD3SN6tPdU4xHpy-KwxkuvOcyLJI--_3PWu0",
+        "name": "OFFICIATED_-_R_33_-_ACT/SAT/GRE_Test_Optional_Policy_Extension_and_Adoption_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-04-24T21:16:20.153Z"
+      },
+      {
+        "id": "14L8YQnXbvNLavJ0kLLadrHxNXkSDFwi8tB7IiUc3OfE",
+        "name": "SECOND_READING_-_R_33_-_ACT/SAT/GRE_Test_Optional_Policy_Extension_and_Adoption_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-04-19T08:27:37.659Z"
+      },
+      {
+        "id": "1BSnp7H28CC03z_dJm-fzYBeAXamTGobiA3CbEEud_yU",
+        "name": "FIRST_READING_-_R_33_-_ACT/SAT_Test_Optional_Policy_Extension_and_Adoption_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-04-18T04:36:29.495Z"
+      }
+    ],
+    "folders": {}
+  },
+  "GB_32": {
+    "files": [
+      {
+        "id": "1_iNWlGkONkAcjWAFkjFDxREagdnzDdFz5qLwcRGmiOY",
+        "name": "OFFICIATED_-_GB_32_-_Referenda_Filing_Deadline_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2025-03-31T16:15:17.034Z"
+      },
+      {
+        "id": "1CnQme7WkQXbZlT6mjJsedDZDPK-X-ys3",
+        "name": "OFFICIATED_-_GB_32_-_Referenda_Filing_Deadline_Act.pdf",
+        "mimeType": "application/pdf",
+        "modifiedTime": "2024-04-24T21:18:06.000Z"
+      },
+      {
+        "id": "17pTKQZKOjcNWSM2EUR8iCe0FBOV_U4S1VgLA3qyG76A",
+        "name": "FIRST_READING_-_GB_32_-_Referenda_Filing_Deadline_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-04-18T04:26:28.845Z"
+      }
+    ],
+    "folders": {}
+  },
+  "GB_31": {
+    "files": [
+      {
+        "id": "1E99OGVNf3HOxatXAgIaxLxtzZBKPePnz1cpYe6eU6Mw",
+        "name": "FIRST_READING_-_GB_31_-_Uncontested_Elections_Reimbursement_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-04-30T00:21:06.711Z"
+      },
+      {
+        "id": "1Y64fRhvUzww1GKYRqe-3FjCUg5VTXrwv",
+        "name": "OFFICIATED_-_GB_31_-_Uncontested_Elections_Reimbursement_Act.pdf",
+        "mimeType": "application/pdf",
+        "modifiedTime": "2024-04-24T21:19:54.000Z"
+      },
+      {
+        "id": "1bmYy2wQV8AbEQlZX5iAXGgYa2kv2VRWLmHK-pGVYbSM",
+        "name": "OFFICIATED_-_GB_31_-_Uncontested_Elections_Reimbursement_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-04-24T21:19:44.418Z"
+      }
+    ],
+    "folders": {}
+  },
+  "R_30": {
+    "files": [
+      {
+        "id": "1Nk3blOvC-t9A8pMG5S5y3EyzDxPavj0C",
+        "name": "OFFICIATED_-_R_30_-_Commitment_to_Freedom_of_Speech_Act.pdf",
+        "mimeType": "application/pdf",
+        "modifiedTime": "2024-04-24T21:13:43.000Z"
+      },
+      {
+        "id": "1Loc694MdwnB8cGfT7jwjFRD09cW4p2IM8PAZ75lY2Ck",
+        "name": "OFFICIATED_-_R_30_-_Commitment_to_Freedom_of_Speech_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-04-24T21:13:32.426Z"
+      },
+      {
+        "id": "14VJhQIGOgENK8v4_pQdQp9tuZMMWKgONTfmHkamk_bw",
+        "name": "SECOND_READING_-_R_30_-_Commitment_to_Freedom_of_Speech_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-04-24T18:34:29.225Z"
+      },
+      {
+        "id": "1nFb7EwOtw8S8tNG9mvPS-dM3md-ybkfUvHCOQ1eUB8k",
+        "name": "FIRST_READING_-_R_30_-_Commitment_to_Freedom_of_Speech_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-04-19T08:28:32.109Z"
+      }
+    ],
+    "folders": {}
+  },
+  "R_29": {
+    "files": [
+      {
+        "id": "11HUJM7X3k3j8ftZhU5FvISPpDJ8_6iufDxgov2S1krk",
+        "name": "VETO_-_R_29_-_Call_for_a_Permanent_Ceasefire_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-11-14T23:52:18.201Z"
+      },
+      {
+        "id": "1pVYqVh1spbOsu2P10UzqsDl7XcWfpjrx",
+        "name": "Veto_Notice:_R29",
+        "mimeType": "application/vnd.google-apps.shortcut",
+        "modifiedTime": "2024-11-14T23:52:05.912Z"
+      },
+      {
+        "id": "1ZoFmZeviF82vruNcslMxsilJLMFCHULS",
+        "name": "ENGROSSED_-_R_29_-_Call_for_a_Permanent_Ceasefire_Act.pdf",
+        "mimeType": "application/pdf",
+        "modifiedTime": "2024-11-14T23:47:30.433Z"
+      },
+      {
+        "id": "17Hgz752dMh-Hy4YK1g3uXVHyCrEofwaczHcgJPBgCok",
+        "name": "ENGROSSED_-_R_29_-_Call_for_a_Permanent_Ceasefire_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-11-14T23:47:15.935Z"
+      },
+      {
+        "id": "1fnr43Wzo5fAyOpCkEvfRpsi8aRlYcWVQZNkG3kL3aio",
+        "name": "SECOND_READING_-_R_29_-_Call_for_a_Permanent_Ceasefire_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-09-09T13:56:52.462Z"
+      },
+      {
+        "id": "14XCYsEv6tPkh-fbbsE5clSoZ16JACzeN5rJ5t-O18qg",
+        "name": "FIRST_READING_-_R_29_-_Call_for_a_Permanent_Ceasefire_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-09-03T19:07:11.890Z"
+      }
+    ],
+    "folders": {}
+  },
+  "R_28": {
+    "files": [
+      {
+        "id": "1AfwNlIYnVpTRMzXLMStpG6GnKp7FGQHU",
+        "name": "OFFICIATED_-_R_28_-_NCSU_Commitment_to_and_Affirmation_of_DEI_Act.pdf",
+        "mimeType": "application/pdf",
+        "modifiedTime": "2024-04-24T21:21:06.000Z"
+      },
+      {
+        "id": "1v2TpmDRMHiJKy_DJnO2H5zaHqpeVrVWl7YHUlSQsgoo",
+        "name": "OFFICIATED_-_R_28_-_NCSU_Commitment_to_and_Affirmation_of_DEI_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-04-24T21:20:49.184Z"
+      },
+      {
+        "id": "1IghKSJrvwQG0clw24iZnwxVebSbIOjYztD0gwYxrp1g",
+        "name": "FIRST_READING_-_R_28_-_NCSU_Commitment_to_and_Affirmation_of_DEI_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-04-18T01:47:18.803Z"
+      }
+    ],
+    "folders": {}
+  },
+  "GB_27": {
+    "files": [
+      {
+        "id": "121JacBcpr8pwqTIUc-M-JgcXQrbW5Tn7kruNEScWCYs",
+        "name": "FIRST_READING_-_GB_27_-_University_Affairs_Responsibility_Reallocation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-04-30T00:01:30.988Z"
+      },
+      {
+        "id": "1Gi7DIEjn_vSsIIECDf5LxJPSvp5IIDm8",
+        "name": "OFFICIATED_-_GB_27_-_University_Affairs_Responsibility_Reallocation_Act.pdf",
+        "mimeType": "application/pdf",
+        "modifiedTime": "2024-04-24T21:22:14.000Z"
+      },
+      {
+        "id": "1pVfu3EuNPvdXJw-bX4q-kqQAwPpFSZlOBwOqIgEcOpo",
+        "name": "OFFICIATED_-_GB_27_-_University_Affairs_Responsibility_Reallocation_Act",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2024-04-24T21:22:06.605Z"
+      }
+    ],
+    "folders": {}
+  }
+}

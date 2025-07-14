@@ -76,27 +76,41 @@ export const statusEnum = pgEnum("status", [
   "failed",
 ]);
 
-export const processing = pgTable("processing", {
-  id: text("id")
-    .primaryKey()
-    .default(sql`gen_random_uuid()`),
-  orgId: text("org_id").notNull(),
-  userId: text("user_id").notNull(),
-  status: statusEnum().notNull().default("uploaded"),
-  retries: integer().notNull().default(0),
+export const processing = pgTable(
+  "processing",
+  {
+    id: text("id")
+      .primaryKey()
+      .default(sql`gen_random_uuid()`),
+    orgId: text("org_id").notNull(),
+    userId: text("user_id").notNull(),
+    status: statusEnum().notNull().default("uploaded"),
+    retries: integer().notNull().default(0),
 
-  // document fields to incrementally add
-  title: text(),
-  sourceUrl: text("source_url"),
-  filePath: text("file_path"),
-  docType: text("doc_type"),
-  effectiveDate: timestamp("effective_date"),
-  lastUpdated: timestamp("last_updated"),
-  content: text(), // the actual content
-  documentMetadata: jsonb("document_metadata"), // separate from processing metadata
+    // document fields to incrementally add
+    title: text(),
+    sourceUrl: text("source_url"),
+    filePath: text("file_path"),
+    docType: text("doc_type"),
+    effectiveDate: timestamp("effective_date"),
+    lastUpdated: timestamp("last_updated"),
+    content: text(), // the actual content
+    documentMetadata: jsonb("document_metadata"), // separate from processing metadata
 
-  // processing metadata
-  metadata: jsonb("metadata"), // for processing-specific stuff
-  createdAt: timestamp("created_at").defaultNow().notNull(),
-  updatedAt: timestamp("updated_at").defaultNow().notNull(),
-});
+    // processing metadata
+    metadata: jsonb("metadata"), // for processing-specific stuff
+    createdAt: timestamp("created_at").defaultNow().notNull(),
+    updatedAt: timestamp("updated_at").defaultNow().notNull(),
+
+    // versioning
+    fileHash: text("file_hash").notNull(),
+    contentHash: text("content_hash"),
+    driveFileId: text("drive_file_id"),
+    driveModifiedTime: timestamp("drive_modified_time"),
+  },
+  (table) => [
+    index("idx_file_hash").on(table.fileHash),
+    index("idx_content_hash").on(table.contentHash),
+    index("idx_drive_file_id").on(table.driveFileId),
+  ],
+);
