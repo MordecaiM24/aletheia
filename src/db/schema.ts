@@ -34,6 +34,8 @@ export const documents = pgTable(
     effectiveDate: timestamp("effective_date").notNull(),
     lastUpdated: timestamp("last_updated").defaultNow().notNull(),
     metadata: jsonb().notNull(),
+    summary: text("summary"),
+    summaryEmbedding: vector("summary_embedding", { dimensions: 768 }),
 
     // versioning
     fileHash: text("file_hash").notNull(),
@@ -45,6 +47,10 @@ export const documents = pgTable(
     index("idx_file_hash").on(table.fileHash),
     index("idx_content_hash").on(table.contentHash),
     index("idx_drive_file_id").on(table.driveFileId),
+    index("idx_summary_embedding").using(
+      "hnsw",
+      table.summaryEmbedding.op("vector_cosine_ops"),
+    ),
   ],
 );
 
@@ -110,6 +116,8 @@ export const processing = pgTable("processing", {
   lastUpdated: timestamp("last_updated"),
   content: text(), // the actual content
   documentMetadata: jsonb("document_metadata"), // separate from processing metadata
+  summary: text("summary"),
+  summaryEmbedding: vector("summary_embedding", { dimensions: 768 }),
 
   // processing metadata
   metadata: jsonb("metadata"), // for processing-specific stuff
