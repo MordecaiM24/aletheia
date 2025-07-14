@@ -60,7 +60,9 @@ export const chunks = pgTable(
     id: text()
       .primaryKey()
       .default(sql`gen_random_uuid()`),
-    documentId: text("document_id").references(() => documents.id),
+    documentId: text("document_id").references(() => documents.id, {
+      onDelete: "cascade",
+    }),
     content: text().notNull(),
     metadata: jsonb().notNull(),
     embedding: vector("embedding", { dimensions: 768 }),

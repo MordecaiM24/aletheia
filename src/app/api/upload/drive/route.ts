@@ -1,7 +1,7 @@
 import { auth } from "@clerk/nextjs/server";
 import mapDriveFolder from "@/lib/drive-mapping";
 import { sha256 } from "js-sha256";
-import { db, processing } from "@/db/schema";
+import { db, documents, processing } from "@/db/schema";
 import { eq } from "drizzle-orm";
 
 type FolderData = {
@@ -21,9 +21,11 @@ export async function POST(req: Request) {
   }
 
   const { url } = await req.json();
+  console.log("[upload] user:", { userId, orgId });
+  console.log("[upload] received url:", url);
 
   const folderId = url.split("/").pop() == "" ? url : url.split("/").pop();
-  console.log(folderId);
+  console.log("[upload] parsed folderId:", folderId);
 
   if (!folderId) {
     return new Response("invalid url", { status: 400 });
@@ -45,58 +47,71 @@ export async function POST(req: Request) {
       }
     }
 
-    // for (const file of allFiles) {
-    //   try {
-    //     // create file hash from gdrive metadata
-    //     const fileHash = sha256(`${file.id}:${file.modifiedTime}`);
+    console.log("[upload] total files found:", allFiles.length);
 
-    //     // check if already processed
-    //     const existing = await db
-    //       .select()
-    //       .from(processing)
-    //       .where(eq(processing.fileHash, fileHash));
+    for (const file of allFiles) {
+      try {
+        // create file hash from gdrive metadata
+        const fileHash = sha256(`${file.id}:${file.modifiedTime}`);
 
-    //     if (existing.length > 0) {
-    //       results.push({ file: file.name, skipped: true, reason: "duplicate" });
-    //       continue;
-    //     }
+        console.log(`[upload] checking file: ${file.name}, hash: ${fileHash}`);
 
-    //     // call file endpoint with gdrive metadata
-    //     const response = await fetch(
-    //       `${process.env.NEXT_PUBLIC_API_URL}/api/upload/file`,
-    //       {
-    //         method: "POST",
-    //         headers: {
-    //           "Content-Type": "application/json",
-    //           cookie: req.headers.get("cookie") ?? "",
-    //         },
-    //         body: JSON.stringify({
-    //           driveFileId: file.id,
-    //           filename: file.name,
-    //           mimeType: file.mimeType,
-    //           modifiedTime: file.modifiedTime,
-    //           folderPath: file.folderPath,
-    //           fileHash,
-    //         }),
-    //       },
-    //     );
+        // check if already processed
+        const existing = await db
+          .select()
+          .from(documents)
+          .where(eq(documents.fileHash, fileHash));
 
-    //     if (response.ok) {
-    //       const result = await response.json();
-    //       results.push({ file: file.name, success: true, ...result });
-    //     } else {
-    //       errors.push({ file: file.name, error: await response.text() });
-    //     }
-    //   } catch (error) {
-    //     errors.push({
-    //       file: file.name,
-    //       error: error instanceof Error ? error.message : "unknown error",
-    //     });
-    //   }
-    // }
+        if (existing.length > 0) {
+          results.push({
+            file: file.name,
+            skipped: true,
+            reason: "duplicate",
+          });
+          continue;
+        }
 
-    // return Response.json({ results, errors });
-    return Response.json(allFiles);
+        console.log(`[upload] ${file.name} calling file endpoint`);
+
+        // call file endpoint with gdrive metadata
+        const response = await fetch(
+          `${process.env.NEXT_PUBLIC_API_URL || "http://localhost:3000"}/api/upload/file`,
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              cookie: req.headers.get("cookie") ?? "",
+            },
+            body: JSON.stringify({
+              driveFileId: file.id,
+              filename: file.name,
+              mimeType: file.mimeType,
+              modifiedTime: file.modifiedTime,
+              folderPath: file.folderPath,
+              fileHash,
+            }),
+          },
+        );
+        console.log(`[upload] ${file.name} response: ${response}`);
+
+        if (response.ok) {
+          console.log(`[upload] ${file.name} response ok`);
+          const result = await response.json();
+          console.log(`[upload] ${file.name} result: ${result}`);
+          results.push({ file: file.name, success: true, ...result });
+        } else {
+          console.log(`[upload] ${file.name} response not ok`);
+          errors.push({ file: file.name, error: await response.text() });
+        }
+      } catch (error) {
+        errors.push({
+          file: file.name,
+          error: error instanceof Error ? error.message : "unknown error",
+        });
+      }
+    }
+
+    return Response.json({ results, errors });
   } catch (error) {
     return new Response(`drive sync failed: ${error}`, { status: 500 });
   }

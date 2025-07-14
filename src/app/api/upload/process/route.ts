@@ -64,6 +64,10 @@ export async function POST(request: Request) {
       effectiveDate: processingEntry.effectiveDate || new Date(),
       lastUpdated: processingEntry.lastUpdated || new Date(),
       metadata: processingEntry.documentMetadata || {},
+      fileHash: processingEntry.fileHash,
+      contentHash: processingEntry.contentHash,
+      driveFileId: processingEntry.driveFileId,
+      driveModifiedTime: processingEntry.driveModifiedTime,
     });
 
     await db.insert(chunks).values({

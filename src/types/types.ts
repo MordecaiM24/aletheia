@@ -63,3 +63,28 @@ export type SearchResponse = {
   total: number;
   query: string;
 };
+
+export type DriveFileInput = {
+  driveFileId: string;
+  filename: string;
+  mimeType: string;
+  modifiedTime: string;
+  folderPath: string;
+  fileHash: string;
+};
+
+export type ProcessingData = {
+  title: string;
+  sourceUrl: string;
+  filePath: string;
+  docType: string;
+  effectiveDate: Date;
+  lastUpdated: Date;
+  content: string;
+  documentMetadata: Record<string, any>;
+  processingMetadata: Record<string, any>;
+  fileHash: string;
+  contentHash?: string;
+  driveFileId?: string;
+  driveModifiedTime?: Date;
+};
