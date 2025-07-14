@@ -1,7 +1,7 @@
 import { chunks, documents, processing } from "@/db/schema";
 import { google } from "@ai-sdk/google";
 import { auth } from "@clerk/nextjs/server";
-import { embed } from "ai";
+import { embed, generateText } from "ai";
 import { eq, sql } from "drizzle-orm";
 import { drizzle } from "drizzle-orm/neon-http";
 
@@ -25,13 +25,18 @@ export async function POST(request: Request) {
       return new Response("processing entry not found", { status: 404 });
     }
 
-    // TODO: add metadata extraction step here (llm-based)
-    // TODO: add content chunking strategy (semantic vs fixed-size)
+    console.log("[process] processing entry:", processingEntry.content);
 
-    await db
-      .update(processing)
-      .set({ status: "embedded", updatedAt: new Date() })
-      .where(eq(processing.id, processingId));
+    const summary = await generateText({
+      model: google("gemini-2.0-flash"),
+      prompt: `Summarize the following document: ${processingEntry.content}. Do not include any other text in your response.`,
+    });
+
+    console.log("[process] summary:", summary.text);
+
+    // TODO: add metadata extraction step here (llm-based)
+
+    // TODO: add content chunking strategy (semantic vs fixed-size)
 
     const model = google.textEmbeddingModel("text-embedding-004", {
       taskType: "RETRIEVAL_DOCUMENT",
@@ -39,10 +44,26 @@ export async function POST(request: Request) {
 
     const documentId = crypto.randomUUID();
 
-    const embedding = await embed({
-      model: model,
-      value: processingEntry.content || "",
-    });
+    const [embedding, summaryEmbedding] = await Promise.all([
+      embed({
+        model: model,
+        value: processingEntry.content,
+      }),
+      embed({
+        model: model,
+        value: summary.text,
+      }),
+    ]);
+
+    await db
+      .update(processing)
+      .set({
+        status: "embedded",
+        updatedAt: new Date(),
+        summary: summary.text,
+        summaryEmbedding: summaryEmbedding.embedding,
+      })
+      .where(eq(processing.id, processingId));
 
     // TODO: implement proper chunking strategy here
     // for now just using the full content as one chunk
@@ -82,7 +103,7 @@ export async function POST(request: Request) {
       .set({ status: "completed", updatedAt: new Date() })
       .where(eq(processing.id, processingId));
 
-    await db.delete(processing).where(eq(processing.id, processingId));
+    // await db.delete(processing).where(eq(processing.id, processingId));
 
     return Response.json({ success: true, documentId, processingId });
   } catch (error) {

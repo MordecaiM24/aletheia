@@ -4,36 +4,9 @@ import { eq, sql } from "drizzle-orm";
 import { drizzle } from "drizzle-orm/neon-http";
 import { sha256 } from "js-sha256";
 import { DriveFileInput, ProcessingData } from "@/types/types";
-import { drive } from "@/lib/drive-mapping";
-
-async function downloadDriveFile(
-  fileId: string,
-  mimeType: string,
-): Promise<string> {
-  try {
-    // for google docs, sheets, slides - export as plain text
-    if (mimeType.includes("google-apps")) {
-      const res = await drive.files.export({
-        fileId: fileId,
-        mimeType: "text/plain",
-      });
-      return res.data as string;
-    } else {
-      // for other files, download directly
-      const res = await drive.files.get({
-        fileId: fileId,
-        alt: "media",
-      });
-      return res.data as string;
-    }
-  } catch (error) {
-    throw new Error(`failed to download drive file: ${error}`);
-  }
-}
+import { exportDocxToMarkdown } from "@/lib/drive";
 
 export async function POST(request: Request) {
-  console.log("[file] request:", request);
-
   const db = drizzle(process.env.DATABASE_URL!);
   const { userId, orgId } = await auth();
 
@@ -52,6 +25,7 @@ export async function POST(request: Request) {
     // handle drive file input (JSON)
     if (contentType?.includes("application/json")) {
       const driveInput: DriveFileInput = await request.json();
+      console.log("[file] file name:", driveInput.filename);
 
       // check for duplicate by file hash first
       const existingDoc = await db
@@ -71,10 +45,7 @@ export async function POST(request: Request) {
       }
 
       // download content from drive
-      const fullContent = await downloadDriveFile(
-        driveInput.driveFileId,
-        driveInput.mimeType,
-      );
+      const fullContent = await exportDocxToMarkdown(driveInput.driveFileId);
       const contentHash = sha256(fullContent);
 
       // check for content duplicates

@@ -1,3 +1,5 @@
+// useful later for active drive sync. still gonna be a cron job at best
+
 import { google } from "googleapis";
 import path from "path";
 import creds from "../../credentials.json" with { type: "json" };
