@@ -2,6 +2,7 @@ import TurndownService from "turndown";
 import mammoth from "mammoth";
 import { google } from "googleapis";
 import creds from "../../credentials.json" with { type: "json" };
+import { uploadToS3 } from "./s3";
 
 const auth = new google.auth.GoogleAuth({
   credentials: creds,
@@ -24,18 +25,48 @@ async function convertToMD(buffer: Buffer) {
   return cleanMarkdown(md);
 }
 
-export async function exportDocxToMarkdown(fileId: string) {
+async function getDocxBuffer(fileId: string) {
+  const res = await drive.files.export(
+    {
+      fileId,
+      mimeType:
+        "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+    },
+    { responseType: "arraybuffer" },
+  );
+  return Buffer.from(res.data as string);
+}
+
+async function getPdfBuffer(fileId: string): Promise<Buffer> {
+  const res = await drive.files.export(
+    {
+      fileId,
+      mimeType: "application/pdf",
+    },
+    { responseType: "arraybuffer" },
+  );
+  return Buffer.from(res.data as string);
+}
+
+export async function exportDocxToMarkdown(fileId: string, orgId: string) {
   try {
-    const res = await drive.files.export(
-      {
-        fileId,
-        mimeType:
-          "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
-      },
-      { responseType: "arraybuffer" },
-    );
-    const buffer = Buffer.from(res.data as string);
-    return await convertToMD(buffer);
+    const [docxBuffer, pdfBuffer] = await Promise.all([
+      getDocxBuffer(fileId),
+      getPdfBuffer(fileId),
+    ]);
+
+    const s3Prefix = `${orgId}/${fileId}`;
+
+    const markdown = await convertToMD(docxBuffer);
+
+    const [markdownUrl, pdfUrl] = await Promise.all([
+      uploadToS3(`${s3Prefix}.md`, markdown, "text/markdown"),
+      uploadToS3(`${s3Prefix}.pdf`, pdfBuffer, "application/pdf"),
+    ]);
+
+    console.log(`[upload] ${fileId} markdown: ${markdownUrl} pdf: ${pdfUrl}`);
+
+    return markdown;
   } catch (err) {
     throw new Error(`failed to export & convert docx: ${err}`);
   }

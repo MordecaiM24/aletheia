@@ -21,7 +21,7 @@ export async function POST(request: Request) {
   try {
     let processingData: ProcessingData;
     const contentType = request.headers.get("content-type");
-
+    let fullContent: string;
     // handle drive file input (JSON)
     if (contentType?.includes("application/json")) {
       const driveInput: DriveFileInput = await request.json();
@@ -45,7 +45,15 @@ export async function POST(request: Request) {
       }
 
       // download content from drive
-      const fullContent = await exportDocxToMarkdown(driveInput.driveFileId);
+      try {
+        fullContent = await exportDocxToMarkdown(driveInput.driveFileId, orgId); // TODO: make this more modular. export shouldn't be handling file uploads.
+      } catch (error) {
+        return new Response("failed to export docx to markdown", {
+          status: 500,
+        });
+      }
+
+      // check for duplicates
       const contentHash = sha256(fullContent);
 
       // check for content duplicates

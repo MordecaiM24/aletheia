@@ -88,7 +88,7 @@ export async function POST(request: Request) {
 
     console.log("# of embeddings", embeddings.length);
 
-    const documentId = crypto.randomUUID();
+    const documentId = processingEntry.id;
 
     const summaryEmbedding = await embed({
       model: model,
