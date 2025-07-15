@@ -15,6 +15,13 @@ export default async function SearchPage(props: SearchPageProps) {
   const searchParams = await props.searchParams;
   const query = searchParams?.query || "";
 
+  const results = await fetch(
+    `${process.env.NEXT_PUBLIC_API_URL || "http://localhost:3000"}/api/search?query=${query}`,
+  );
+  const data = await results.json();
+  console.log(data?.results?.length);
+  console.log(data?.results?.map((r: any) => r.metadata.title));
+
   const recentSearches = [
     "gdpr data breach notification timeline",
     "sox section 404 internal controls",
@@ -172,6 +179,8 @@ export default async function SearchPage(props: SearchPageProps) {
           </Card>
         </div>
       )}
+
+      {query && <div className="mx-auto max-w-4xl space-y-8 p-6">{query}</div>}
     </SidebarInset>
   );
 }
