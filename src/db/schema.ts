@@ -35,8 +35,10 @@ export const documents = pgTable(
     effectiveDate: timestamp("effective_date").notNull(),
     lastUpdated: timestamp("last_updated").defaultNow().notNull(),
     metadata: jsonb().notNull(),
-    summary: text("summary"),
-    summaryEmbedding: vector("summary_embedding", { dimensions: 768 }),
+    summary: text("summary").notNull(),
+    summaryEmbedding: vector("summary_embedding", {
+      dimensions: 768,
+    }).notNull(),
 
     // versioning
     fileHash: text("file_hash").notNull(),

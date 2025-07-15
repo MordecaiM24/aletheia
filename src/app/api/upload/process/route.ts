@@ -119,6 +119,8 @@ export async function POST(request: Request) {
       effectiveDate: processingEntry.effectiveDate || new Date(),
       lastUpdated: lastUpdated || new Date(),
       metadata: dbMetadata,
+      summary: summary,
+      summaryEmbedding: summaryEmbedding.embedding,
       fileHash: processingEntry.fileHash,
       contentHash: processingEntry.contentHash,
       driveFileId: processingEntry.driveFileId,
