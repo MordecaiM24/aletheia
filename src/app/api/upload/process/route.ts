@@ -1,12 +1,22 @@
 import { chunks, documents, processing } from "@/db/schema";
 import { google } from "@ai-sdk/google";
 import { auth } from "@clerk/nextjs/server";
-import { embed, generateText } from "ai";
+import { embed, generateObject, generateText } from "ai";
 import { eq, sql } from "drizzle-orm";
 import { drizzle } from "drizzle-orm/neon-http";
 import { getChunksWithPositions } from "@/lib/chunking";
+import { z } from "zod";
 
 type Chunk = typeof chunks.$inferInsert;
+const initialMetadataSchema = z.object({
+  type: z.string(),
+  title: z.string(),
+  longTitle: z.string(),
+  lastUpdated: z.string(),
+  keyEntities: z.array(z.string()),
+  subjects: z.array(z.string()),
+  confidence: z.number(),
+});
 
 export async function POST(request: Request) {
   const db = drizzle(process.env.DATABASE_URL!);
@@ -43,7 +53,21 @@ export async function POST(request: Request) {
 
     console.log("[process] summary:", summary.text);
 
-    // TODO: add metadata extraction step here (llm-based)
+    const metadata = await generateObject({
+      model: google("gemini-2.0-flash"),
+      schema: initialMetadataSchema,
+      prompt: `Extract metadata from the following document: ${processingEntry.content}.`,
+    });
+
+    let lastUpdated: Date;
+    try {
+      lastUpdated = new Date(metadata.object.lastUpdated);
+    } catch (error) {
+      console.error("error parsing lastUpdated:", error);
+      lastUpdated = new Date();
+    }
+
+    console.log("[process] metadata:", metadata.object);
 
     console.log("[process] content length:", processingEntry.content.length);
 
@@ -95,8 +119,8 @@ export async function POST(request: Request) {
       filePath: processingEntry.filePath || "",
       docType: processingEntry.docType || "unknown",
       effectiveDate: processingEntry.effectiveDate || new Date(),
-      lastUpdated: processingEntry.lastUpdated || new Date(),
-      metadata: processingEntry.documentMetadata || {},
+      lastUpdated: lastUpdated || new Date(),
+      metadata: metadata.object,
       fileHash: processingEntry.fileHash,
       contentHash: processingEntry.contentHash,
       driveFileId: processingEntry.driveFileId,
