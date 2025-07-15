@@ -1,7 +1,7 @@
 import { chunks, documents, processing } from "@/db/schema";
 import { google } from "@ai-sdk/google";
 import { auth } from "@clerk/nextjs/server";
-import { embed, generateObject, generateText } from "ai";
+import { embed, generateObject } from "ai";
 import { eq, sql } from "drizzle-orm";
 import { drizzle } from "drizzle-orm/neon-http";
 import { getChunksWithPositions } from "@/lib/chunking";
@@ -9,6 +9,7 @@ import { z } from "zod";
 
 type Chunk = typeof chunks.$inferInsert;
 const initialMetadataSchema = z.object({
+  summary: z.string(),
   type: z.string(),
   title: z.string(),
   longTitle: z.string(),
@@ -46,18 +47,13 @@ export async function POST(request: Request) {
 
     console.log("[process] processing entry:", processingEntry.title);
 
-    const summary = await generateText({
-      model: google("gemini-2.0-flash"),
-      prompt: `Summarize the following document: ${processingEntry.content}. Do not include any other text in your response.`,
-    });
-
-    console.log("[process] summary:", summary.text);
-
     const metadata = await generateObject({
       model: google("gemini-2.0-flash"),
       schema: initialMetadataSchema,
       prompt: `Extract metadata from the following document: ${processingEntry.content}.`,
     });
+
+    const summary = metadata.object.summary;
 
     let lastUpdated: Date;
     try {
@@ -96,7 +92,7 @@ export async function POST(request: Request) {
 
     const summaryEmbedding = await embed({
       model: model,
-      value: summary.text,
+      value: summary,
     });
 
     await db
@@ -104,10 +100,12 @@ export async function POST(request: Request) {
       .set({
         status: "embedded",
         updatedAt: new Date(),
-        summary: summary.text,
+        summary: summary,
         summaryEmbedding: summaryEmbedding.embedding,
       })
       .where(eq(processing.id, processingId));
+
+    const { summary: _, ...dbMetadata } = metadata.object; // remove summary from metadata.
 
     // move to documents table
     await db.insert(documents).values({
@@ -120,7 +118,7 @@ export async function POST(request: Request) {
       docType: processingEntry.docType || "unknown",
       effectiveDate: processingEntry.effectiveDate || new Date(),
       lastUpdated: lastUpdated || new Date(),
-      metadata: metadata.object,
+      metadata: dbMetadata,
       fileHash: processingEntry.fileHash,
       contentHash: processingEntry.contentHash,
       driveFileId: processingEntry.driveFileId,
