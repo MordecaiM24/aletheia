@@ -53,6 +53,5 @@ export async function getChunksWithPositions(
     return { content: chunk, startChar, endChar, chunkIndex: index };
   });
 
-  console.log(chunksWithPositions.length);
   return chunksWithPositions;
 }

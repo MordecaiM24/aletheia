@@ -263,7 +263,9 @@ function URLUploadForm({ setOpen }: { setOpen: (open: boolean) => void }) {
         body: JSON.stringify({ url: values.url }),
       });
 
-      console.log(response);
+      const data = await response.json();
+
+      console.log(data);
 
       if (!response.ok) {
         throw new Error("link upload failed");

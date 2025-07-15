@@ -45,8 +45,6 @@ export async function POST(request: Request) {
       });
     }
 
-    console.log("[process] processing entry:", processingEntry.title);
-
     const metadata = await generateObject({
       model: google("gemini-2.0-flash"),
       schema: initialMetadataSchema,
@@ -63,15 +61,9 @@ export async function POST(request: Request) {
       lastUpdated = new Date();
     }
 
-    console.log("[process] metadata:", metadata.object);
-
-    console.log("[process] content length:", processingEntry.content.length);
-
     const chunksWithPositions = await getChunksWithPositions(
       processingEntry.content,
     );
-
-    console.log("# of chunksWithPositions", chunksWithPositions.length);
 
     const model = google.textEmbeddingModel("text-embedding-004", {
       taskType: "RETRIEVAL_DOCUMENT",
@@ -85,8 +77,6 @@ export async function POST(request: Request) {
         }),
       ),
     );
-
-    console.log("# of embeddings", embeddings.length);
 
     const documentId = processingEntry.id;
 
@@ -153,8 +143,6 @@ export async function POST(request: Request) {
       .update(processing)
       .set({ status: "completed", updatedAt: new Date() })
       .where(eq(processing.id, processingId));
-
-    // await db.delete(processing).where(eq(processing.id, processingId));
 
     return Response.json({ success: true, documentId, processingId });
   } catch (error) {

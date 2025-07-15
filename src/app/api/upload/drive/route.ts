@@ -21,11 +21,8 @@ export async function POST(req: Request) {
   }
 
   const { url } = await req.json();
-  console.log("[upload] user:", { userId, orgId });
-  console.log("[upload] received url:", url);
 
   const folderId = url.split("/").pop() == "" ? url : url.split("/").pop();
-  console.log("[upload] parsed folderId:", folderId);
 
   if (!folderId) {
     return new Response("invalid url", { status: 400 });
@@ -47,14 +44,10 @@ export async function POST(req: Request) {
       }
     }
 
-    console.log("[upload] total files found:", allFiles.length);
-
     for (const file of allFiles) {
       try {
         // create file hash from gdrive metadata
         const fileHash = sha256(`${file.id}:${file.modifiedTime}`);
-
-        console.log(`[upload] checking file: ${file.name}, hash: ${fileHash}`);
 
         // check if already processed
         const existing = await db
@@ -70,8 +63,6 @@ export async function POST(req: Request) {
           });
           continue;
         }
-
-        console.log(`[upload] ${file.name} calling file endpoint`);
 
         // call file endpoint with gdrive metadata
         const response = await fetch(
@@ -92,15 +83,11 @@ export async function POST(req: Request) {
             }),
           },
         );
-        console.log(`[upload] ${file.name} response: ${response}`);
 
         if (response.ok) {
-          console.log(`[upload] ${file.name} response ok`);
           const result = await response.json();
-          console.log(`[upload] ${file.name} result: ${result}`);
           results.push({ file: file.name, success: true, ...result });
         } else {
-          console.log(`[upload] ${file.name} response not ok`);
           errors.push({ file: file.name, error: await response.text() });
         }
       } catch (error) {

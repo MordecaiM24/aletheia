@@ -64,8 +64,6 @@ export async function exportDocxToMarkdown(fileId: string, orgId: string) {
       uploadToS3(`${s3Prefix}.pdf`, pdfBuffer, "application/pdf"),
     ]);
 
-    console.log(`[upload] ${fileId} markdown: ${markdownUrl} pdf: ${pdfUrl}`);
-
     return markdown;
   } catch (err) {
     throw new Error(`failed to export & convert docx: ${err}`);

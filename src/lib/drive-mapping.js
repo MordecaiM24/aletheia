@@ -35,14 +35,10 @@ export default async function mapDriveFolder(
   folderPath = "",
   mapping = {},
 ) {
-  console.log(`mapping folder ${folderId} at ${folderPath}`);
   mapping[folderPath] = { files: [], folders: {} };
   const items = await listFilesInFolder(folderId);
 
   for (const f of items) {
-    console.log(
-      `mapping file ${f.name} with ${items.length} items at ${folderPath}`,
-    );
     const safeName = f.name.replace(/\s+/g, "_");
     if (f.mimeType === "application/vnd.google-apps.folder") {
       const subPath = path.posix.join(folderPath, safeName);

@@ -8,7 +8,6 @@ import { Doc } from "@/types/types";
 export async function GET(request: NextRequest) {
   const searchParams = request.nextUrl.searchParams;
   const query = searchParams.get("query");
-  console.log("query", query);
   if (!query) {
     return NextResponse.json({ error: "query is required" }, { status: 400 });
   }
@@ -18,7 +17,6 @@ export async function GET(request: NextRequest) {
   let results: Doc[] = [];
 
   if (type === "semantic") {
-    console.log("semantic searching with query: ", query);
     results = await summarySemanticSearch(query);
 
     await keywordSearch(query);
@@ -93,8 +91,6 @@ async function keywordSearch(query: string) {
     })
     .from(documents)
     .where(inArray(documents.id, uniqueDocIds));
-
-  console.log("keyword results", results);
 }
 
 async function semanticChunkSearch(query: string) {
@@ -124,6 +120,4 @@ async function semanticChunkSearch(query: string) {
     .innerJoin(documents, eq(chunks.documentId, documents.id))
     .orderBy((t) => desc(t.similarity))
     .limit(5);
-
-  console.log("semantic chunk results", results);
 }

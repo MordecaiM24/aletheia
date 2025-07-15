@@ -10,8 +10,6 @@ export async function POST(request: Request) {
   const db = drizzle(process.env.DATABASE_URL!);
   const { userId, orgId } = await auth();
 
-  console.log("[file] user:", { userId, orgId });
-
   if (!userId || !orgId) {
     return new Response("unauthorized", { status: 401 });
   }
@@ -25,7 +23,6 @@ export async function POST(request: Request) {
     // handle drive file input (JSON)
     if (contentType?.includes("application/json")) {
       const driveInput: DriveFileInput = await request.json();
-      console.log("[file] file name:", driveInput.filename);
 
       // check for duplicate by file hash first
       const existingDoc = await db
@@ -35,7 +32,6 @@ export async function POST(request: Request) {
         .limit(1);
 
       if (existingDoc.length > 0) {
-        console.log("[file] duplicate file hash:", driveInput.fileHash);
         return Response.json({
           success: true,
           skipped: true,
@@ -64,7 +60,6 @@ export async function POST(request: Request) {
         .limit(1);
 
       if (existingContent.length > 0) {
-        console.log("[file] duplicate content:", contentHash);
         return Response.json({
           success: true,
           skipped: true,
@@ -126,7 +121,6 @@ export async function POST(request: Request) {
         .limit(1);
 
       if (existingDoc.length > 0) {
-        console.log("[file] duplicate file:", fileHash);
         return Response.json({
           success: true,
           skipped: true,
@@ -208,8 +202,6 @@ export async function POST(request: Request) {
       message: "file processed successfully",
     });
   } catch (error) {
-    console.error("file upload error:", error);
-
     try {
       await db
         .update(processing)
