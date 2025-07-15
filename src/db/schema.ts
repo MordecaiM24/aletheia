@@ -2,6 +2,7 @@ import { config } from "dotenv";
 import { SQL, sql } from "drizzle-orm";
 import { drizzle } from "drizzle-orm/neon-http";
 import {
+  boolean,
   customType,
   index,
   integer,
@@ -139,3 +140,70 @@ export const processing = pgTable("processing", {
   driveFileId: text("drive_file_id"),
   driveModifiedTime: timestamp("drive_modified_time"),
 });
+
+export const searches = pgTable(
+  "searches",
+  {
+    id: text()
+      .primaryKey()
+      .default(sql`gen_random_uuid()`),
+    userId: text("user_id").notNull(),
+    orgId: text("org_id").notNull(),
+    query: text().notNull(),
+    resultsCount: integer("results_count").notNull(),
+    searchType: text("search_type"), // "semantic", "keyword", "hybrid"
+    filters: jsonb(), // {docType: "resolution", dateRange: {...}}
+    createdAt: timestamp("created_at").defaultNow().notNull(),
+  },
+  (searches) => [
+    index("idx_user_searches").on(searches.userId, searches.createdAt),
+  ],
+);
+
+export const chats = pgTable(
+  "chats",
+  {
+    id: text()
+      .primaryKey()
+      .default(sql`gen_random_uuid()`),
+    userId: text("user_id").notNull(),
+    orgId: text("org_id").notNull(),
+    title: text().notNull(), // auto-generated from first message
+    isPinned: boolean("is_pinned").default(false),
+    lastMessageAt: timestamp("last_message_at").defaultNow().notNull(),
+    createdAt: timestamp("created_at").defaultNow().notNull(),
+  },
+  (chats) => [
+    index("idx_user_chats").on(chats.userId, chats.lastMessageAt),
+    index("idx_pinned_chats").on(chats.userId, chats.isPinned),
+  ],
+);
+
+export const chatMessages = pgTable(
+  "chat_messages",
+  {
+    id: text()
+      .primaryKey()
+      .default(sql`gen_random_uuid()`),
+    chatId: text("chat_id").references(() => chats.id),
+    role: text().notNull(), // "user" | "assistant"
+    content: text().notNull(),
+    citedDocuments: jsonb("cited_documents"), // array of doc ids
+    createdAt: timestamp("created_at").defaultNow().notNull(),
+  },
+  (chatMessages) => [index("idx_chat_messages").on(chatMessages.chatId)],
+);
+
+export const bookmarks = pgTable(
+  "bookmarks",
+  {
+    id: text()
+      .primaryKey()
+      .default(sql`gen_random_uuid()`),
+    userId: text("user_id").notNull(),
+    documentId: text("document_id").references(() => documents.id),
+    notes: text(),
+    createdAt: timestamp("created_at").defaultNow().notNull(),
+  },
+  (bookmarks) => [index("idx_user_bookmarks").on(bookmarks.userId)],
+);
