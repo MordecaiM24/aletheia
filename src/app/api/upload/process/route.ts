@@ -2,12 +2,19 @@ import { chunks, documents, processing } from "@/db/schema";
 import { google } from "@ai-sdk/google";
 import { auth } from "@clerk/nextjs/server";
 import { embed, generateObject } from "ai";
-import { eq, sql } from "drizzle-orm";
-import { drizzle } from "drizzle-orm/neon-http";
+import { eq } from "drizzle-orm";
 import { getChunksWithPositions } from "@/lib/chunking";
 import { z } from "zod";
+import { db } from "@/db/schema";
+import {
+  ApiError,
+  updateProcessingStatus,
+  successResponse,
+  CHUNK_CONFIG,
+} from "@/lib/upload-helpers";
 
 type Chunk = typeof chunks.$inferInsert;
+
 const initialMetadataSchema = z.object({
   summary: z.string(),
   type: z.string(),
@@ -19,146 +26,177 @@ const initialMetadataSchema = z.object({
   confidence: z.number(),
 });
 
+const embeddingModel = google.textEmbeddingModel("text-embedding-004", {
+  taskType: "RETRIEVAL_DOCUMENT",
+});
+
 export async function POST(request: Request) {
-  const db = drizzle(process.env.DATABASE_URL!);
   const { userId, orgId } = await auth();
 
   if (!userId || !orgId) {
-    return new Response("unauthorized", { status: 401 });
+    return ApiError.unauthorized();
   }
 
   const { processingId }: { processingId: string } = await request.json();
 
-  try {
-    const [processingEntry] = await db
-      .select()
-      .from(processing)
-      .where(eq(processing.id, processingId));
+  if (!processingId) {
+    return ApiError.badRequest("processingId required");
+  }
 
+  try {
+    const processingEntry = await getProcessingEntry(processingId);
     if (!processingEntry) {
-      return new Response("processing entry not found", { status: 404 });
+      return ApiError.notFound("processing entry not found");
     }
 
     if (!processingEntry.content) {
-      return new Response("processing entry content not found", {
-        status: 404,
-      });
+      return ApiError.notFound("processing entry content not found");
     }
 
-    const metadata = await generateObject({
-      model: google("gemini-2.0-flash"),
-      schema: initialMetadataSchema,
-      prompt: `Extract metadata from the following document: ${processingEntry.content}.`,
-    });
-
-    const summary = metadata.object.summary;
-
-    let lastUpdated: Date;
-    try {
-      lastUpdated = new Date(metadata.object.lastUpdated);
-    } catch (error) {
-      console.error("error parsing lastUpdated:", error);
-      lastUpdated = new Date();
-    }
-
-    const chunksWithPositions = await getChunksWithPositions(
+    const { metadata, summary, summaryEmbedding } = await generateMetadata(
       processingEntry.content,
     );
 
-    const model = google.textEmbeddingModel("text-embedding-004", {
-      taskType: "RETRIEVAL_DOCUMENT",
+    await updateProcessingStatus(processingId, "embedded", null, {
+      summary,
+      summaryEmbedding: summaryEmbedding.embedding,
     });
 
-    const embeddings = await Promise.all(
-      chunksWithPositions.map((chunk) =>
-        embed({
-          model: model,
-          value: chunk.content,
-        }),
-      ),
+    const documentId = processingId;
+    const documentData = prepareDocumentData(
+      processingEntry,
+      metadata,
+      summary,
+      summaryEmbedding.embedding,
     );
 
-    const documentId = processingEntry.id;
+    await db.insert(documents).values(documentData);
 
-    const summaryEmbedding = await embed({
-      model: model,
-      value: summary,
-    });
+    await updateProcessingStatus(processingId, "indexed");
 
-    await db
-      .update(processing)
-      .set({
-        status: "embedded",
-        updatedAt: new Date(),
-        summary: summary,
-        summaryEmbedding: summaryEmbedding.embedding,
-      })
-      .where(eq(processing.id, processingId));
-
-    const { summary: _, ...dbMetadata } = metadata.object; // remove summary from metadata.
-
-    // move to documents table
-    await db.insert(documents).values({
-      id: documentId,
-      orgId: processingEntry.orgId,
-      userId: processingEntry.userId,
-      title: processingEntry.title || "untitled",
-      sourceUrl: processingEntry.sourceUrl || "",
-      filePath: processingEntry.filePath || "",
-      docType: processingEntry.docType || "unknown",
-      effectiveDate: processingEntry.effectiveDate || new Date(),
-      lastUpdated: lastUpdated || new Date(),
-      metadata: dbMetadata,
-      summary: summary,
-      summaryEmbedding: summaryEmbedding.embedding,
-      fileHash: processingEntry.fileHash,
-      contentHash: processingEntry.contentHash,
-      driveFileId: processingEntry.driveFileId,
-      driveModifiedTime: processingEntry.driveModifiedTime,
-    });
-
-    await db
-      .update(processing)
-      .set({ status: "indexed", updatedAt: new Date() })
-      .where(eq(processing.id, processingId));
-
-    const chunkValues: Chunk[] = chunksWithPositions.map((chunk, index) => ({
-      id: crypto.randomUUID(),
-      documentId: documentId,
-      userId: userId,
-      orgId: orgId,
-      content: chunk.content,
+    const chunkIds = await processChunks(processingEntry.content, {
+      documentId,
+      userId,
+      orgId,
       metadata: processingEntry.documentMetadata || {},
-      embedding: embeddings[index].embedding,
-      chunkIndex: chunk.chunkIndex,
-      chunkSize: 1000, // TODO: magic numbers rn. fix later.
-      chunkOverlap: 100, // TODO: magic numbers rn. fix later.
-      startChar: chunk.startChar,
-      endChar: chunk.endChar,
-    }));
+    });
 
-    await db.insert(chunks).values(chunkValues);
+    await updateProcessingStatus(processingId, "completed");
 
-    await db
-      .update(processing)
-      .set({ status: "completed", updatedAt: new Date() })
-      .where(eq(processing.id, processingId));
+    const result = { documentId, chunkCount: chunkIds.length };
 
-    return Response.json({ success: true, documentId, processingId });
+    return successResponse({
+      documentId: result.documentId,
+      processingId,
+      chunksCreated: result.chunkCount,
+    });
   } catch (error) {
     console.error("processing error:", error);
 
-    // mark as failed and increment retries
-    await db
-      .update(processing)
-      .set({
-        status: "failed",
-        retries: sql`retries + 1`,
-        updatedAt: new Date(),
-        metadata: sql`jsonb_set(COALESCE(metadata, '{}'), '{error}', '"${error}"')`,
-      })
-      .where(eq(processing.id, processingId));
+    await updateProcessingStatus(processingId, "failed", error);
 
-    return new Response("processing failed", { status: 500 });
+    return ApiError.serverError("processing failed");
   }
+}
+
+async function getProcessingEntry(processingId: string) {
+  const [entry] = await db
+    .select()
+    .from(processing)
+    .where(eq(processing.id, processingId));
+
+  return entry;
+}
+
+async function generateMetadata(content: string) {
+  const metadata = await generateObject({
+    model: google("gemini-2.0-flash"),
+    schema: initialMetadataSchema,
+    prompt: `Extract metadata from the following document: ${content}.`,
+  });
+
+  const summary = metadata.object.summary;
+
+  const summaryEmbedding = await embed({
+    model: embeddingModel,
+    value: summary,
+  });
+
+  const { summary: _, ...dbMetadata } = metadata.object;
+
+  return { metadata: dbMetadata, summary, summaryEmbedding };
+}
+
+function prepareDocumentData(
+  processingEntry: any,
+  metadata: any,
+  summary: string,
+  summaryEmbedding: number[],
+) {
+  let lastUpdated: Date;
+  try {
+    lastUpdated = new Date(metadata.lastUpdated);
+  } catch (error) {
+    console.error("error parsing lastUpdated:", error);
+    lastUpdated = new Date();
+  }
+
+  return {
+    id: processingEntry.id,
+    orgId: processingEntry.orgId,
+    userId: processingEntry.userId,
+    title: processingEntry.title || "untitled",
+    sourceUrl: processingEntry.sourceUrl || "",
+    filePath: processingEntry.filePath || "",
+    docType: processingEntry.docType || "unknown",
+    effectiveDate: processingEntry.effectiveDate || new Date(),
+    lastUpdated: lastUpdated,
+    metadata: metadata,
+    summary: summary,
+    summaryEmbedding: summaryEmbedding,
+    fileHash: processingEntry.fileHash,
+    contentHash: processingEntry.contentHash,
+    driveFileId: processingEntry.driveFileId,
+    driveModifiedTime: processingEntry.driveModifiedTime,
+  };
+}
+
+async function processChunks(
+  content: string,
+  context: {
+    documentId: string;
+    userId: string;
+    orgId: string;
+    metadata: any;
+  },
+) {
+  const chunksWithPositions = await getChunksWithPositions(content);
+
+  const embeddings = await Promise.all(
+    chunksWithPositions.map((chunk) =>
+      embed({
+        model: embeddingModel,
+        value: chunk.content,
+      }),
+    ),
+  );
+
+  const chunkValues: Chunk[] = chunksWithPositions.map((chunk, index) => ({
+    id: crypto.randomUUID(),
+    documentId: context.documentId,
+    userId: context.userId,
+    orgId: context.orgId,
+    content: chunk.content,
+    metadata: context.metadata,
+    embedding: embeddings[index].embedding,
+    chunkIndex: chunk.chunkIndex,
+    chunkSize: CHUNK_CONFIG.size,
+    chunkOverlap: CHUNK_CONFIG.overlap,
+    startChar: chunk.startChar,
+    endChar: chunk.endChar,
+  }));
+
+  await db.insert(chunks).values(chunkValues);
+
+  return chunkValues.map((c) => c.id);
 }

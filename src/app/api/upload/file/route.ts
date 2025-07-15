@@ -1,221 +1,212 @@
-import { processing, documents } from "@/db/schema";
+import { processing } from "@/db/schema";
 import { auth } from "@clerk/nextjs/server";
-import { eq, sql } from "drizzle-orm";
-import { drizzle } from "drizzle-orm/neon-http";
 import { sha256 } from "js-sha256";
 import { DriveFileInput, ProcessingData } from "@/types/types";
 import { exportDocxToMarkdown } from "@/lib/drive";
+import { db } from "@/db/schema";
+import {
+  ApiError,
+  checkDuplicates,
+  createProcessingData,
+  callInternalApi,
+  updateProcessingStatus,
+  successResponse,
+  duplicateResponse,
+} from "@/lib/upload-helpers";
 
 export async function POST(request: Request) {
-  const db = drizzle(process.env.DATABASE_URL!);
   const { userId, orgId } = await auth();
 
   if (!userId || !orgId) {
-    return new Response("unauthorized", { status: 401 });
+    return ApiError.unauthorized();
   }
 
   const processingId = crypto.randomUUID();
 
   try {
-    let processingData: ProcessingData;
-    const contentType = request.headers.get("content-type");
-    let fullContent: string;
-    // handle drive file input (JSON)
-    if (contentType?.includes("application/json")) {
-      const driveInput: DriveFileInput = await request.json();
+    const processingData = await prepareProcessingData(request, orgId);
 
-      // check for duplicate by file hash first
-      const existingDoc = await db
-        .select()
-        .from(documents)
-        .where(eq(documents.fileHash, driveInput.fileHash))
-        .limit(1);
-
-      if (existingDoc.length > 0) {
-        return Response.json({
-          success: true,
-          skipped: true,
-          reason: "duplicate file hash",
-          documentId: existingDoc[0].id,
-        });
-      }
-
-      // download content from drive
-      try {
-        fullContent = await exportDocxToMarkdown(driveInput.driveFileId, orgId); // TODO: make this more modular. export shouldn't be handling file uploads.
-      } catch (error) {
-        return new Response("failed to export docx to markdown", {
-          status: 500,
-        });
-      }
-
-      // check for duplicates
-      const contentHash = sha256(fullContent);
-
-      // check for content duplicates
-      const existingContent = await db
-        .select()
-        .from(documents)
-        .where(eq(documents.contentHash, contentHash))
-        .limit(1);
-
-      if (existingContent.length > 0) {
-        return Response.json({
-          success: true,
-          skipped: true,
-          reason: "duplicate content",
-          documentId: existingContent[0].id,
-        });
-      }
-
-      processingData = {
-        title: driveInput.filename,
-        sourceUrl: `https://drive.google.com/file/d/${driveInput.driveFileId}`,
-        filePath: `${driveInput.folderPath}/${driveInput.filename}`,
-        docType: "drive_document",
-        effectiveDate: new Date(driveInput.modifiedTime),
-        lastUpdated: new Date(driveInput.modifiedTime),
-        content: fullContent,
-        documentMetadata: {
-          driveFileId: driveInput.driveFileId,
-          originalMimeType: driveInput.mimeType,
-          folderPath: driveInput.folderPath,
-        },
-        processingMetadata: {
-          source: "google_drive",
-          downloadedAt: new Date().toISOString(),
-          contentLength: fullContent.length,
-        },
-        fileHash: driveInput.fileHash,
-        contentHash,
-        driveFileId: driveInput.driveFileId,
-        driveModifiedTime: new Date(driveInput.modifiedTime),
-      };
-    } else {
-      // handle form file upload
-      const formData = await request.formData();
-      const file = formData.get("file");
-
-      if (!file || !(file instanceof Blob)) {
-        return new Response("no file", { status: 400 });
-      }
-
-      const text = await file.text();
-      let rawDoc;
-
-      try {
-        rawDoc = JSON.parse(text);
-      } catch (error) {
-        return new Response("invalid json file", { status: 400 });
-      }
-
-      const fileBuffer = await file.arrayBuffer();
-      const fileHash = sha256(new Uint8Array(fileBuffer));
-      const contentHash = sha256(text);
-
-      // check for duplicates
-      const existingDoc = await db
-        .select()
-        .from(documents)
-        .where(eq(documents.fileHash, fileHash))
-        .limit(1);
-
-      if (existingDoc.length > 0) {
-        return Response.json({
-          success: true,
-          skipped: true,
-          reason: "duplicate file",
-          documentId: existingDoc[0].id,
-        });
-      }
-
-      processingData = {
-        title: rawDoc.title || file.name.replace(/\.[^/.]+$/, ""),
-        sourceUrl: rawDoc.sourceUrl || "",
-        filePath: rawDoc.filePath || file.name,
-        docType: rawDoc.docType || "uploaded",
-        effectiveDate: rawDoc.effectiveDate
-          ? new Date(rawDoc.effectiveDate)
-          : new Date(),
-        lastUpdated: rawDoc.lastUpdated
-          ? new Date(rawDoc.lastUpdated)
-          : new Date(),
-        content: rawDoc.text || rawDoc.content || "",
-        documentMetadata: rawDoc.metadata || {},
-        processingMetadata: {
-          originalFilename: file.name,
-          fileSize: file.size,
-          mimeType: file.type,
-          uploadedAt: new Date().toISOString(),
-          source: "direct_upload",
-        },
-        fileHash,
-        contentHash,
-      };
+    if (!processingData) {
+      return ApiError.badRequest("invalid request data");
     }
 
-    // create processing entry
-    await db.insert(processing).values({
+    if (processingData.isDuplicate) {
+      return duplicateResponse(
+        processingData.documentId!,
+        processingData.reason!,
+      );
+    }
+
+    await createProcessingEntry({
       id: processingId,
-      orgId: orgId,
-      userId: userId,
-      status: "converted",
-      title: processingData.title,
-      sourceUrl: processingData.sourceUrl,
-      filePath: processingData.filePath,
-      docType: processingData.docType,
-      effectiveDate: processingData.effectiveDate,
-      lastUpdated: processingData.lastUpdated,
-      content: processingData.content,
-      documentMetadata: processingData.documentMetadata,
-      metadata: processingData.processingMetadata,
-      fileHash: processingData.fileHash,
-      contentHash: processingData.contentHash,
-      driveFileId: processingData.driveFileId,
-      driveModifiedTime: processingData.driveModifiedTime,
+      orgId,
+      userId,
+      ...processingData.data!,
     });
 
-    // call processing endpoint
-    const processResponse = await fetch(
-      `${process.env.NEXT_PUBLIC_APP_URL || "http://localhost:3000"}/api/upload/process`,
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          cookie: request.headers.get("cookie") || "",
-        },
-        body: JSON.stringify({ processingId }),
-      },
+    const processResponse = await callInternalApi(
+      "/api/upload/process",
+      { processingId },
+      request,
     );
 
     if (!processResponse.ok) {
-      const errorText = await processResponse.text();
-      throw new Error(`processing failed: ${errorText}`);
+      throw new Error(`processing failed: ${await processResponse.text()}`);
     }
 
     const result = await processResponse.json();
 
-    return Response.json({
-      success: true,
+    return successResponse({
       processingId,
-      documentId: result.documentId,
+      documentId: result.data.documentId,
       message: "file processed successfully",
     });
   } catch (error) {
-    try {
-      await db
-        .update(processing)
-        .set({
-          status: "failed",
-          retries: sql`retries + 1`,
-          updatedAt: new Date(),
-          metadata: sql`jsonb_set(COALESCE(metadata, '{}'), '{error}', '"${error}"')`,
-        })
-        .where(eq(processing.id, processingId));
-    } catch (updateError) {
-      console.error("failed to update processing status:", updateError);
-    }
+    console.error("file upload error:", error);
 
-    return new Response(`upload failed: ${error}`, { status: 500 });
+    await updateProcessingStatus(processingId, "failed", error);
+
+    return ApiError.serverError(`upload failed: ${error}`);
   }
+}
+
+async function prepareProcessingData(
+  request: Request,
+  orgId: string,
+): Promise<{
+  isDuplicate?: boolean;
+  documentId?: string;
+  reason?: string;
+  data?: ProcessingData;
+}> {
+  const contentType = request.headers.get("content-type");
+
+  if (contentType?.includes("application/json")) {
+    return handleDriveFile(request, orgId);
+  } else {
+    return handleFileUpload(request);
+  }
+}
+
+async function handleDriveFile(request: Request, orgId: string): Promise<any> {
+  const driveInput: DriveFileInput = await request.json();
+
+  const fileCheck = await checkDuplicates(driveInput.fileHash);
+  if (fileCheck.isDuplicate) {
+    return {
+      isDuplicate: true,
+      documentId: fileCheck.docId,
+      reason: fileCheck.reason,
+    };
+  }
+
+  let fullContent: string;
+  try {
+    fullContent = await exportDocxToMarkdown(driveInput.driveFileId, orgId);
+  } catch (error) {
+    throw new Error("failed to export docx to markdown");
+  }
+
+  const contentHash = sha256(fullContent);
+
+  const contentCheck = await checkDuplicates(driveInput.fileHash, contentHash);
+  if (contentCheck.isDuplicate) {
+    return {
+      isDuplicate: true,
+      documentId: contentCheck.docId,
+      reason: contentCheck.reason,
+    };
+  }
+
+  const data = createProcessingData(
+    {
+      title: driveInput.filename,
+      sourceUrl: `https://drive.google.com/file/d/${driveInput.driveFileId}`,
+      filePath: `${driveInput.folderPath}/${driveInput.filename}`,
+      docType: "drive_document",
+      effectiveDate: new Date(driveInput.modifiedTime),
+      lastUpdated: new Date(driveInput.modifiedTime),
+      content: fullContent,
+      documentMetadata: {
+        driveFileId: driveInput.driveFileId,
+        originalMimeType: driveInput.mimeType,
+        folderPath: driveInput.folderPath,
+      },
+      processingMetadata: {
+        source: "google_drive",
+        downloadedAt: new Date().toISOString(),
+        contentLength: fullContent.length,
+      },
+      driveFileId: driveInput.driveFileId,
+      driveModifiedTime: new Date(driveInput.modifiedTime),
+    },
+    { fileHash: driveInput.fileHash, contentHash },
+  );
+
+  return { data };
+}
+
+async function handleFileUpload(request: Request): Promise<any> {
+  const formData = await request.formData();
+  const file = formData.get("file");
+
+  if (!file || !(file instanceof Blob)) {
+    throw new Error("no file provided");
+  }
+
+  const text = await file.text();
+  let rawDoc;
+
+  try {
+    rawDoc = JSON.parse(text);
+  } catch (error) {
+    throw new Error("invalid json file");
+  }
+
+  const fileBuffer = await file.arrayBuffer();
+  const fileHash = sha256(new Uint8Array(fileBuffer));
+  const contentHash = sha256(text);
+
+  const dupCheck = await checkDuplicates(fileHash, contentHash);
+  if (dupCheck.isDuplicate) {
+    return {
+      isDuplicate: true,
+      documentId: dupCheck.docId,
+      reason: dupCheck.reason,
+    };
+  }
+
+  const data = createProcessingData(
+    {
+      title: rawDoc.title || file.name.replace(/\.[^/.]+$/, ""),
+      sourceUrl: rawDoc.sourceUrl || "",
+      filePath: rawDoc.filePath || file.name,
+      docType: rawDoc.docType || "uploaded",
+      effectiveDate: rawDoc.effectiveDate
+        ? new Date(rawDoc.effectiveDate)
+        : new Date(),
+      lastUpdated: rawDoc.lastUpdated
+        ? new Date(rawDoc.lastUpdated)
+        : new Date(),
+      content: rawDoc.text || rawDoc.content || "",
+      documentMetadata: rawDoc.metadata || {},
+      processingMetadata: {
+        originalFilename: file.name,
+        fileSize: file.size,
+        mimeType: file.type,
+        uploadedAt: new Date().toISOString(),
+        source: "direct_upload",
+      },
+    },
+    { fileHash, contentHash },
+  );
+
+  return { data };
+}
+
+async function createProcessingEntry(data: any) {
+  await db.insert(processing).values({
+    ...data,
+    status: "converted",
+  });
 }
