@@ -4,6 +4,9 @@ import { auth } from "@clerk/nextjs/server";
 import { embed, generateText } from "ai";
 import { eq, sql } from "drizzle-orm";
 import { drizzle } from "drizzle-orm/neon-http";
+import { getChunksWithPositions } from "@/lib/chunking";
+
+type Chunk = typeof chunks.$inferInsert;
 
 export async function POST(request: Request) {
   const db = drizzle(process.env.DATABASE_URL!);
@@ -25,7 +28,13 @@ export async function POST(request: Request) {
       return new Response("processing entry not found", { status: 404 });
     }
 
-    console.log("[process] processing entry:", processingEntry.content);
+    if (!processingEntry.content) {
+      return new Response("processing entry content not found", {
+        status: 404,
+      });
+    }
+
+    console.log("[process] processing entry:", processingEntry.title);
 
     const summary = await generateText({
       model: google("gemini-2.0-flash"),
@@ -36,24 +45,35 @@ export async function POST(request: Request) {
 
     // TODO: add metadata extraction step here (llm-based)
 
-    // TODO: add content chunking strategy (semantic vs fixed-size)
+    console.log("[process] content length:", processingEntry.content.length);
+
+    const chunksWithPositions = await getChunksWithPositions(
+      processingEntry.content,
+    );
+
+    console.log("# of chunksWithPositions", chunksWithPositions.length);
 
     const model = google.textEmbeddingModel("text-embedding-004", {
       taskType: "RETRIEVAL_DOCUMENT",
     });
 
+    const embeddings = await Promise.all(
+      chunksWithPositions.map((chunk) =>
+        embed({
+          model: model,
+          value: chunk.content,
+        }),
+      ),
+    );
+
+    console.log("# of embeddings", embeddings.length);
+
     const documentId = crypto.randomUUID();
 
-    const [embedding, summaryEmbedding] = await Promise.all([
-      embed({
-        model: model,
-        value: processingEntry.content,
-      }),
-      embed({
-        model: model,
-        value: summary.text,
-      }),
-    ]);
+    const summaryEmbedding = await embed({
+      model: model,
+      value: summary.text,
+    });
 
     await db
       .update(processing)
@@ -63,14 +83,6 @@ export async function POST(request: Request) {
         summary: summary.text,
         summaryEmbedding: summaryEmbedding.embedding,
       })
-      .where(eq(processing.id, processingId));
-
-    // TODO: implement proper chunking strategy here
-    // for now just using the full content as one chunk
-
-    await db
-      .update(processing)
-      .set({ status: "indexed", updatedAt: new Date() })
       .where(eq(processing.id, processingId));
 
     // move to documents table
@@ -91,12 +103,27 @@ export async function POST(request: Request) {
       driveModifiedTime: processingEntry.driveModifiedTime,
     });
 
-    await db.insert(chunks).values({
+    await db
+      .update(processing)
+      .set({ status: "indexed", updatedAt: new Date() })
+      .where(eq(processing.id, processingId));
+
+    const chunkValues: Chunk[] = chunksWithPositions.map((chunk, index) => ({
+      id: crypto.randomUUID(),
       documentId: documentId,
-      content: processingEntry.content || "",
+      userId: userId,
+      orgId: orgId,
+      content: chunk.content,
       metadata: processingEntry.documentMetadata || {},
-      embedding: embedding.embedding,
-    });
+      embedding: embeddings[index].embedding,
+      chunkIndex: chunk.chunkIndex,
+      chunkSize: 1000, // TODO: magic numbers rn. fix later.
+      chunkOverlap: 100, // TODO: magic numbers rn. fix later.
+      startChar: chunk.startChar,
+      endChar: chunk.endChar,
+    }));
+
+    await db.insert(chunks).values(chunkValues);
 
     await db
       .update(processing)

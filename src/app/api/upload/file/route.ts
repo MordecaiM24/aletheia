@@ -65,9 +65,6 @@ export async function POST(request: Request) {
         });
       }
 
-      // use first 1000 chars for testing
-      const testContent = fullContent.substring(0, 1000);
-
       processingData = {
         title: driveInput.filename,
         sourceUrl: `https://drive.google.com/file/d/${driveInput.driveFileId}`,
@@ -75,7 +72,7 @@ export async function POST(request: Request) {
         docType: "drive_document",
         effectiveDate: new Date(driveInput.modifiedTime),
         lastUpdated: new Date(driveInput.modifiedTime),
-        content: testContent,
+        content: fullContent,
         documentMetadata: {
           driveFileId: driveInput.driveFileId,
           originalMimeType: driveInput.mimeType,
@@ -85,7 +82,6 @@ export async function POST(request: Request) {
           source: "google_drive",
           downloadedAt: new Date().toISOString(),
           contentLength: fullContent.length,
-          testContentLength: testContent.length,
         },
         fileHash: driveInput.fileHash,
         contentHash,
