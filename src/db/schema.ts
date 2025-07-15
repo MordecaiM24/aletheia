@@ -69,6 +69,8 @@ export const chunks = pgTable(
     documentId: text("document_id").references(() => documents.id, {
       onDelete: "cascade",
     }),
+    userId: text("user_id").notNull(),
+    orgId: text("org_id").notNull(),
     content: text().notNull(),
     metadata: jsonb().notNull(),
     embedding: vector("embedding", { dimensions: 768 }),
@@ -77,6 +79,13 @@ export const chunks = pgTable(
       .generatedAlwaysAs(
         (): SQL => sql`to_tsvector('english', ${chunks.content})`,
       ),
+    chunkIndex: integer("chunk_index").notNull(),
+    chunkSize: integer("chunk_size").notNull(),
+    chunkOverlap: integer("chunk_overlap").notNull(),
+    startChar: integer("start_char").notNull(),
+    endChar: integer().notNull(),
+    createdAt: timestamp("created_at").defaultNow().notNull(),
+    updatedAt: timestamp("updated_at").defaultNow().notNull(),
   },
   (table) => [
     index("idx_embedding").using(
